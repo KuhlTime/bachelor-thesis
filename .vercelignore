@@ -1,0 +1,17 @@
+node_modules
+.vercel
+.bin
+bin
+package-lock.json
+yarn.lock
+yarn-error.log
+.env
+.env**
+**.env
+static
+content
+.github
+style.csl
+watch.sh
+generate.sh
+bibliography.bib
