@@ -1,35 +1,10 @@
 \setcounter{page}{1}
-# Einleitung
+# Introduction
 
-## Mathematik
+<!-- How is this thesis structured? -->
+<!-- Where does this work fit in? -->
+<!-- What problem does this thesis try to solve? -->
+<!-- How will I address this issue? -->
 
-$f(x)=x^2$
-
-## Zitate
-
-Hier steht zitierter Text @simpson_2020_you
-
-## Fußnote
-
-Dies ist ein kompilzierte Passage^[Jetzt ist es einleuchtend].
-
-## Bild
-
-![Programmers Life](images/sample.png){ width=140px }
-
-## Tabelle
-
-| Teil       |   Wert |
-| ---------- | -----: |
-| Mehrheit   | $95\%$ |
-| Minderheit |  $5\%$ |
-
-Table: Es ist die Mehrheit.
-
-## Code
-
-```javascript
-function saySomethingFunny() {
-  console.log("Sometimes I believe the compiler ignores all my comments")
-}
-```
+## Note of thanks
+<!-- Who is to thank for? -->
