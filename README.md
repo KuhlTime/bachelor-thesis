@@ -1,5 +1,7 @@
 Important Notes for structuring the thesis:
 
+- A bachelor thesis should be between 5000 and 7000 words long.
+
 # Tell a story
 
 Taken from 
