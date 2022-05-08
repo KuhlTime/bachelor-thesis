@@ -1,8 +1,10 @@
+# Writing the thesis
+
 Important Notes for structuring the thesis:
 
 - A bachelor thesis should be between 5000 and 7000 words long.
 
-# Tell a story
+## Tell a story
 
 Taken from 
 - [Writing a Bachelor Tehsis in Computer Science](https://liacs.leidenuniv.nl/~nijssensgr/bachelorklas-2014-2015/writing.pdf)
@@ -30,6 +32,7 @@ The 3 steps to follow:
 - Active tense, **not** passive tense
 
 
-# Further reading
+## Further reading
 
 - [Writing Your Thesis](https://www.cs7.tf.fau.eu/teaching/student-theses/writing-your-thesis/)
+- [How to Write a Master's Thesis in Computer Science](https://www.cs.auckland.ac.nz/~ian/msc/write)
