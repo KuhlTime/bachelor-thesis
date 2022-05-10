@@ -11,7 +11,7 @@ I also want to thank my professor, **Prof. Dr. rer. nat. Wolfgang Lux** and his 
 In conjunction with the fire department of Campbell River I set out to create a software that would help them to schedule operations in so-called "confined spaces". Confined spaces being areas which are not designed for permanent human occupancy and therefore might pose a risk to human safety. In case of an emergency the staff is obligated to help with the rescue of any person in the confined space.
 
 <!-- How is this thesis structured? -->
-## Thesis Structure
+## Structure
 The thesis is divided into several parts. Each of which builds up on the previous one.
 After giving an overview on what needs to be achieved and which features need to be implemented, I will go into more detail on how the whole system is conceptualized and how it was implemented. Everything is then followed up by summarizing what issues have been resolved and what could be improved.
 
