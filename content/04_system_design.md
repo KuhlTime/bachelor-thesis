@@ -35,13 +35,8 @@
   <!-- What are the benefits / disadvantages of the technology used? -->
 
 <!-- What database should be used? What features should it poses? -->
+  <!-- How is logging of changes enabled? -->
 
 <!-- What parts of the application need testing scripts in order to continously check their correct behaviour? -->
 
-## Version 1.0
-
-## Version 2.0
-
-## Version 3.0
-
-## Version 4.0
+## Technology

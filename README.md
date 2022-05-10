@@ -29,7 +29,7 @@ The 3 steps to follow:
 1. **Motivation - Why?**
    - Real World Applications
    - Earlier results and their weaknesses
-     - Motivationg examples
+     - Motivation examples
 2. **Problem Description - What?**
    - Requirements
    - Specification of the desirable functionality a user interface should have

@@ -1,8 +1,6 @@
 <!-- Goal: 1500 Words -->
 # Implementation
 
-## Technology
-
 <!-- What does the electron-vite-fusion boilerplate do? -->
 
 <!-- How have I designed the application road map? -->
