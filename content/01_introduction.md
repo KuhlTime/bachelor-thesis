@@ -4,7 +4,7 @@
 
 <!-- Note of thanks -->
 Before starting with my actual thesis, I want to give a huge thanks to **Kelly Bellefleuer** and the entire fire department of Campbell River. All of them have taken lots of time out of their schedule to make this software a reality, answered all of my questions and given me essential feedback on how to improve the software.
-I also want to thank my professor, Prof. Dr. rer. nat. Wolfgang Lux and his assistant Frederik Feichtmeier B. Eng. for providing me with help along the way of writing this thesis.
+I also want to thank my professor, **Prof. Dr. rer. nat. Wolfgang Lux** and his assistant **Frederik Feichtmeier B. Eng.** for providing me with help along the way of writing this thesis.
 
 ## Overview
 
