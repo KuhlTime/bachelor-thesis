@@ -1,6 +1,10 @@
 <!-- Goal: 1500 Words -->
 # Implementation
 
+## Technology
+
+<!-- What does the electron-vite-fusion boilerplate do? -->
+
 <!-- How have I designed the application road map? -->
 <!-- What project management tools have I used in order to keep track of my tasks? Notion, GitHub Issues, Tags, Gantt-Chart -->
 

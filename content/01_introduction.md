@@ -8,7 +8,7 @@ I also want to thank my professor, Prof. Dr. rer. nat. Wolfgang Lux and his assi
 
 ## Overview
 
-In conjunction with the fire department of Campbell River, a town in the west of Canada I set out to create a software that would help them to schedule operations in so-called "confined spaces". Confined spaces being areas which are not designed for permanent human occupancy and therefore might pose a risk to human safety. In case of an emergency the staff is obligated to help with the rescue of any person in the confined space.
+In conjunction with the fire department of Campbell River I set out to create a software that would help them to schedule operations in so-called "confined spaces". Confined spaces being areas which are not designed for permanent human occupancy and therefore might pose a risk to human safety. In case of an emergency the staff is obligated to help with the rescue of any person in the confined space.
 
 <!-- How is this thesis structured? -->
 ## Thesis Structure
@@ -18,4 +18,4 @@ After giving an overview on what needs to be achieved and which features need to
 <!-- What problem does this thesis try to solve? -->
 <!-- How will I address this issue? -->
 ## Problem
-As the old software no longer supports these kinds of operations a replacement is needed. By planning and developing a multitude of different applications the whole process from organizing to rescue will be streamlined and improved. As the software is vital to perform, reliability and security will be of major concern.
+As the old software no longer supports the capture of confined space operations a replacement is needed. By planning and developing a multitude of different applications the whole process from organizing to rescue will be streamlined and improved. As the software is vital to perform, reliability and security will be of major concern.
