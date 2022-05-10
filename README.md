@@ -4,6 +4,19 @@ Important Notes for structuring the thesis:
 
 - A bachelor thesis should be between 5000 and 7000 words long.
 
+## Writing Goals
+
+| Chapter        |      Words |
+| -------------- | ---------: |
+| Introduction   |      `300` |
+| Fundamentals   |      `700` |
+| Capabilities   |      `500` |
+| System Design  |     `2000` |
+| Implementation |     `1500` |
+| Evaluation     |      `400` |
+| Conclusion     |      `400` |
+| **Total**      | **`5800`** |
+
 ## Tell a story
 
 Taken from 

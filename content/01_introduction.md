@@ -1,4 +1,5 @@
 \setcounter{page}{1}
+<!-- Goal: 300 Words -->
 # Introduction
 
 <!-- Note of thanks -->

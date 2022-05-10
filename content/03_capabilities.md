@@ -1,5 +1,5 @@
 <!-- TODO: Find a better title for this chapter. -->
-<!-- at least 500 Words -->
+<!-- Goal: 500 Words -->
 # Capabilities
 
 <!-- What gaps / issues does the software need to address? -->

@@ -1,4 +1,4 @@
-<!-- at least 3000 Words -->
+<!-- Goal: 2000 Words -->
 # System Design
 <!-- The chapter should describe the applications on a high level. Not the implementation. No languages and no code! -->
 

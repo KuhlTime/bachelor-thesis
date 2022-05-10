@@ -1,3 +1,4 @@
+<!-- Goal: 1500 Words -->
 # Implementation
 
 <!-- What features / code snippets need deeper explaination? -->

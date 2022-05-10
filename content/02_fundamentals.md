@@ -1,3 +1,4 @@
+<!-- Goal: 700 Words -->
 # Fundamentals
 
 <!-- How did I recieve this topic? -->

@@ -1,3 +1,4 @@
+<!-- Goal: 400 words -->
 # Conclusion
 
 <!-- What have I achived with this thesis? -->
