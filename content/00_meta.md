@@ -2,7 +2,7 @@
 link-citations: true
 lof: true
 lot: true
-lang: de-DE
+lang: en-US
 ---
 
 \thispagestyle{empty}
