@@ -2,8 +2,7 @@
 \newpage
 # Fundamentals
 <!-- The CRFD explained -->
-The city of Campbell River is located in the west of Canada. It is the considered to be the last big city between the more developed south and the natural north of Vancouver Island.
-The Campbell River Fire Department (CRFD) is responsible for dispatching 49 different fire services located all over Vancouver Island and with its more than 40 fire man
+The city of Campbell River is located in the western part of Canada. It is considered to be the last big city between the more developed south and the more natural north of Vancouver Island.
 
   <!-- Where are they located? -->
   <!-- What do they do? -->
@@ -13,14 +12,16 @@ The Campbell River Fire Department (CRFD) is responsible for dispatching 49 diff
 ## Confined Spaces
 <!-- How does the legislation for cs in Canada look like? -->
 <!-- TODO: Declutter, does not look good for opener -->
-As defined by the Canadian department of justice, inside the **Occupational Health and Safety Regulations**, short *OHS* in subsection 11.01 a Confined Space (CS) is met by the following criteria @departmentofjusticecanada_2022_sor86304:
+As defined by the Canadian department of justice, inside the **Occupational Health and Safety Regulations**, short *OHS* a Confined Space (CS) is met by the following criteria @departmentofjusticecanada_2022_sor86304 (11.01):
+
+A space that...
 
 1. Is enclosed or partially enclosed
 2. Is not designed or intended for continuous human occupancy
 3. Has a limited or restricted means of entry or exit or an internal configuration that could complicate provision of first aid, evacuation, rescue or other emergency response 
 
 <!-- What classification of cs are there? -->
-A CS can be classified as a **Hazardous Confined Space** when human health or life might be at danger do to the following conditions:
+A confined space can be classified as a **Hazardous Confined Space** when human health or life might be at danger do to the following conditions:
 
 Due to its...
 
@@ -28,14 +29,18 @@ Due to its...
 2. substances and materials in it, *or*
 3. any other danger arising from entering or exiting that space
 
-Furthermore, a confined space can be considered **Hot Work** if any source of fire or ignition is present inside the confined space.
+Furthermore, a confined space can be considered **Hot Work** if any source of fire or ignition is present.
 
 <!-- TODO: Add Confined Spaces Interpretation Image -->
 
-CS are mostly part of a fabrication site or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict operation flows are forced up on these companies.
+Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place. These rulesets 
+
+\newpage
+<!-- TODO: Ask for Permission from Dräger -->
+![Confined Space Entry @drgerwerkagcokgaa_2015_training - Ask for Permission!](images/dr%C3%A4ger-confined-space.jpg) 
 
 <!-- TODO: Rewrite -->
-Before a person is allowed to enter a confined space the employer first needs to perform, what is called confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the Canadian *OHS*.
+Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the Canadian *OHS*. It mandates that any entity retaining confined spaces needs to have a detailed report on site.
 
 <!-- What happens in case of an emegrency? -->
 <!-- What is the obligation of an emegency responder? -->
