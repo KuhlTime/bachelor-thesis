@@ -37,7 +37,7 @@ Confined spaces are commonly part of a fabrication sites or public infrastructur
 
 \newpage
 <!-- TODO: Ask for Permission from Dräger -->
-![Confined Space Entry @drgerwerkagcokgaa_2015_training - Ask for Permission!](images/dr%C3%A4ger-confined-space.jpg) 
+![Confined Space Entry @drgerwerkagcokgaa_2015_training - Ask for Permission!](images/draeger-confined-space.jpg) 
 
 <!-- TODO: Rewrite -->
 Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the Canadian *OHS*. It mandates that any entity retaining confined spaces needs to have a detailed report on site.
