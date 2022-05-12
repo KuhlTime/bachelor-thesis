@@ -62,8 +62,7 @@ Inside a confined space one might encounter one or more of the following hazards
 \newpage
 Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place. @bellefleur_2022_in
 
-<!-- TODO: Ask for Permission from Dräger -->
-![Confined Space Entry @drgerwerkagcokgaa_2015_training - Credit: Dräger (Ask for Permission!)](images/draeger-confined-space.jpg) 
+![Confined Space Entry - Credit: Dräger](images/draeger-confined-space.jpg) 
 
 <!-- TODO: Rewrite -->
 Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the Canadian *OHS*. It mandates that any entity retaining confined spaces needs to have a detailed hazard report on site. 
