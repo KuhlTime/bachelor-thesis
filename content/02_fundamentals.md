@@ -2,9 +2,13 @@
 \newpage
 # Fundamentals
 <!-- The CRFD explained -->
-The city of Campbell River is located in the western part of Canada. It is considered to be the last big city between the more developed south and the more natural north of Vancouver Island.
-
   <!-- Where are they located? -->
+The city of Campbell River is located in the western part of Canada. It is the second-largest city on Vancouver Island with a total population of more than 37,800 permanent residents. @cityofcampbellriver_2019_connect
+The city is reachable via car, plane and seaplane and is about a 30-minute flight away from the metropolis of Vancouver.
+
+The Campbell River Fire Department (in this work often abbreviated with *CRFD*) ... . <!-- TODO: Finish sentence -->
+The main fire station is located near the town center and houses X fire trucks. The fire station and its 10 operators serve a total of 49 different fire stations located all across Vancouver Island. Any incoming emergency calls get captured and then forwarded to the appropriate station.
+
   <!-- What do they do? -->
   <!-- Where lay the operational differences between firebrigades here in Germany and Canada? -->
 
@@ -12,7 +16,7 @@ The city of Campbell River is located in the western part of Canada. It is consi
 ## Confined Spaces
 <!-- How does the legislation for cs in Canada look like? -->
 <!-- TODO: Declutter, does not look good for opener -->
-As defined by the Canadian department of justice, inside the **Occupational Health and Safety Regulations**, short *OHS* a Confined Space (CS) is met by the following criteria @departmentofjusticecanada_2022_sor86304 (11.01):
+As defined by the Canadian department of justice, inside the **Occupational Health and Safety Regulations**, short *OHS* a confined space is met by the following criteria @departmentofjusticecanada_2022_sor86304 (11.01):
 
 A space that...
 
@@ -21,26 +25,68 @@ A space that...
 3. Has a limited or restricted means of entry or exit or an internal configuration that could complicate provision of first aid, evacuation, rescue or other emergency response 
 
 <!-- What classification of cs are there? -->
-A confined space can be classified as a **Hazardous Confined Space** when human health or life might be at danger do to the following conditions:
+A confined space can be classified as a **Hazardous Confined Space** when human health or life might be at danger due to one of the following conditions:
 
-Due to its...
+Its...
 
 1. design, construction, location or atmosphere
 2. substances and materials in it, *or*
 3. any other danger arising from entering or exiting that space
 
-Furthermore, a confined space can be considered **Hot Work** if any source of fire or ignition is present.
+A confined space is considered **Hot Work** if any source of fire or ignition is present.
+
+Inside a confined space one might encounter one or more of the following hazards @govermentofcanada_2021_confined:
+
+- **Physical Hazard**
+  like 
+  *noise*, *engulfment*, *flooding*, *moving machinery*, *extreme temperatures*, *radiation*, *fire*, *explosions*, ...
+- **Biological Hazard**
+  like
+  *mould*, *bacteria*, *viruses*, *blood-borne pathogens*, *biological toxins*, ...
+- **Chemical Hazard**
+  like
+  *gases*, *vapors*, *fumes*, *chemical asphyxiant*, *lack of oxygen*, *asbestos*, *lead*, ...
+- **Electrical Hazard**
+  like
+  *exposed wiring*, *electrical panels*, ...
+- **Ergonomic Hazard**
+  like
+  *maintaining a difficult posture*, *repetitive strain*, *lifting*, *awkward reaching*, *use of hand tools*, ...
+- **Psychological Hazard**
+  like
+  *working alone*, *claustrophobia*, *fatigue*, ...
+
 
 <!-- TODO: Add Confined Spaces Interpretation Image -->
 
-Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place. These rulesets 
-
 \newpage
+Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place. @bellefleur_2022_in
+
 <!-- TODO: Ask for Permission from Dräger -->
-![Confined Space Entry @drgerwerkagcokgaa_2015_training - Ask for Permission!](images/draeger-confined-space.jpg) 
+![Confined Space Entry @drgerwerkagcokgaa_2015_training - Credit: Dräger (Ask for Permission!)](images/draeger-confined-space.jpg) 
 
 <!-- TODO: Rewrite -->
-Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the Canadian *OHS*. It mandates that any entity retaining confined spaces needs to have a detailed report on site.
+Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the Canadian *OHS*. It mandates that any entity retaining confined spaces needs to have a detailed hazard report on site. 
+
+<!-- Does there need to be an emergency responder on sight? -->
+
+### Identification
+
+An employer has to ensure that all its governing confined spaces are correctly 
+
+### Hazard Assessment
+
+For every confined space the employer has to produce a detailed Hazard Report. The Report has to include the following information:
+
+<!-- TODO: Reorder list -->
+- The date at which the report was created.
+- An extensive list of all the hazards a person entering that space may encounter. Each hazard has to have a resolution on how a certain threat can be prevented, controlled or extinguished.
+- It needs to mention which equipment is required on site by the worker entering that space and what equipment might be required by the first aid responders.
+- What checks and tasks have to be performed before someone is allowed access to the confined space.
+- It needs to clarify the way of getting approval to enter that space.
+- Any additional information for the worker or the emergency responders has to be stated.
+
+Only persons that have certain training and are qualified to perform a hazard assessment are allowed to fill out such a report. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences.
 
 <!-- What happens in case of an emegrency? -->
 <!-- What is the obligation of an emegency responder? -->

@@ -30,6 +30,8 @@ With the introduction of Version 3 the Trigger application will be replaced by a
 
 <!-- TODO: Image of the Dispatchment Center -->
 
+<!-- TODO: Add Mindmap -->
+
 **Version 3.0**:
 
 Through a custom build user interface the application should help operators to easily manage multiple confined operations
