@@ -75,13 +75,19 @@ Before a person is allowed to enter a confined space the employer first needs to
 
 ### Identification
 
-The identification process is a way of determine if there are any confined spaces on sight and whether they need to be classified as hazardous. 
+The identification process is a way of determining if there are any confined spaces on sight and whether they need to be classified as hazardous. Together with a qualified person, which is either someone from the work place committee or a health and safety representative the following actions are mandatory to be carried out:
 
-@canadiandepartmentofjustice_2022_sor86304 (11.02)
+1. The qualified person has to identify all confined and hazardous confined spaces.
+2. The qualified person has to provide a catalog of all the confined and hazardous confined spaces that have been located in (1).
+3. It is the employer's duty to properly sign these areas to prevent anyone from entering them.
+4. The employer has to keep the record readily available. This document has to be updated / reviewed either every 3 years @canadiandepartmentofjustice_2022_sor86304 (11.03) or whenever the conditions of that particular confined space changed.
+5. Before someone is granted access to a **none**-hazardous confined space. The employer needs to ensure that safety measures such as "person-check and emergency response systems" @canadiandepartmentofjustice_2022_sor86304 (11.02.5) are put into place.
+
+The previously mentioned steps have been broken down to their core concepts. The full legislatory definitions are part of the subsection 11.02 of the (+OHS) @canadiandepartmentofjustice_2022_sor86304.
 
 ### Hazard Assessment
 
-For every confined space the employer has to produce a detailed Hazard Report. The Report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03):
+For every confined space the employer has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03):
 
 <!-- TODO: Reorder list -->
 - The date at which the report was created.
