@@ -6,6 +6,7 @@
 As the old software dropped support on managing confined spaces a new software should fill in the gaps that has left in the operation of the dispatch center. For a continuous improvement of the software, the software is divided up into multiple releases cycles with increasing amount of functionality and complexity. 
 
 <!-- TODO: Fix Image Size -->
+<!-- TODO: Eigene Darstellung -->
 ![Software Release Roadmap](images/cs-release-plan.png)
 
 In order for the application to quickly be deployed into the field, the first two releases only consist of a very basic feature set to indicate whether there is an ongoing operation or not. With the releases the application should evolve into a more complex and feature-rich application.
@@ -41,7 +42,7 @@ Through a custom build user interface the application should help operators to e
 <!-- Map Feature -->
 <!-- Search -->
 <!-- Forms -->
-  <!-- Hazard Assesment for new Confined Spaces -->
+  <!-- Hazard Assesment for new confined spaces -->
 <!-- Warning when infromation of the confined space is outdated -->
   <!-- Warn the operator -->
 

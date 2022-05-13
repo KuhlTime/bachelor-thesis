@@ -6,16 +6,16 @@ Important Notes for structuring the thesis:
 
 ## Writing Goals
 
-| Chapter        |      Words |
-| -------------- | ---------: |
-| Introduction   |      `300` |
-| Fundamentals   |      `700` |
-| Capabilities   |      `500` |
-| System Design  |     `2000` |
-| Implementation |     `1500` |
-| Evaluation     |      `400` |
-| Conclusion     |      `400` |
-| **Total**      | **`5800`** |
+| Chapter        |    Pages |
+| -------------- | -------: |
+| Introduction   |      `2` |
+| Fundamentals   |      `6` |
+| Capabilities   |      `4` |
+| System Design  |     `12` |
+| Implementation |      `8` |
+| Evaluation     |      `4` |
+| Conclusion     |      `2` |
+| **Total**      | **`38`** |
 
 ## Tell a story
 

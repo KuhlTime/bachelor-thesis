@@ -1,0 +1,1 @@
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qdesign, construction, location or atmosphere\nsubstances and materials in it, or\nany other danger arising from entering or exiting that space\\E$"}
