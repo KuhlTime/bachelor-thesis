@@ -19,7 +19,7 @@ Most common emergencies include house and forest fires, car accidents ... @belle
 ## Confined Spaces
 <!-- How does the legislation for cs in Canada look like? -->
 <!-- TODO: Declutter, does not look good for opener -->
-As defined by the Canadian department of justice, inside the **Occupational Health and Safety Regulations** ((+OHS)) a **Confined Space** is met by the following criteria @canadiandepartmentofjustice_2022_sor86304 (11.01):
+As defined by the Canadian Department of Justice, inside the **Occupational Health and Safety Regulations** ((+COHSR)) a **Confined Space** is met by the following criteria @canadiandepartmentofjustice_2022_sor86304 (11.01):
 
 A space that...
 
@@ -39,7 +39,10 @@ c. any other conditions relating to it.
 
 A confined space is considered **Hot Work** if any source of fire or ignition is present. @canadiandepartmentofjustice_2022_sor86304 (11.01)
 
-Inside a confined space one might encounter one or more of the following hazards @govermentofcanada_2021_confined:
+\newpage
+![Confined Spaces Classification - Source: Author](images/cs-classification.png)
+
+Inside a confined space one might encounter one or more of the following hazards. @govermentofcanada_2021_confined:
 
 - **Physical Hazard**
   like 
@@ -60,16 +63,14 @@ Inside a confined space one might encounter one or more of the following hazards
   like
   *working alone*, *claustrophobia*, *fatigue*, ...
 
-
-<!-- TODO: Add Confined Spaces Interpretation Image -->
-
 \newpage
-Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place. @bellefleur_2022_in
+<!-- TODO: List more exampled brought up in @govermentofcanada_2021_confined -->
+Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place. @bellefleur_2022_in @govermentofcanada_2021_confined
 
-![Confined Space Entry - © Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg)
+![Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg)
 
 <!-- TODO: Rewrite -->
-Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the (+OHS). @canadiandepartmentofjustice_2022_sor86304
+Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the (+COHSR). @canadiandepartmentofjustice_2022_sor86304
 
 <!-- Does there need to be an emergency responder on sight? -->
 
@@ -83,11 +84,13 @@ The identification process is a way of determining if there are any confined spa
 4. The employer has to keep the record readily available. This document has to be updated / reviewed either every 3 years @canadiandepartmentofjustice_2022_sor86304 (11.03) or whenever the conditions of that particular confined space changed.
 5. Before someone is granted access to a **none**-hazardous confined space. The employer needs to ensure that safety measures such as "person-check and emergency response systems" @canadiandepartmentofjustice_2022_sor86304 (11.02.5) are put into place.
 
-The previously mentioned steps have been broken down to their core concepts. The full legislatory definitions are part of the subsection 11.02 of the (+OHS) @canadiandepartmentofjustice_2022_sor86304.
+The previously mentioned steps have been broken down to their core concepts. The full legislatory definitions are part of the subsection 11.02 of the (+COHSR) @canadiandepartmentofjustice_2022_sor86304.
+
+<!-- NOTE: A person is never allowed to enter a confined space on their own. They always need someone that  -->
 
 ### Hazard Assessment
 
-For every confined space the employer has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03):
+For every confined space the employer has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03) @govermentofcanada_2021_confined:
 
 <!-- TODO: Reorder list -->
 - The date at which the report was created.
@@ -97,15 +100,25 @@ For every confined space the employer has to produce a detailed hazard report. T
 - It needs to clarify the way of getting approval to enter that space.
 - Any additional information for the worker or the emergency responders has to be stated.
 
-Only persons that have certain training and are qualified to perform a hazard assessment are allowed to fill out such a report. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences. @canadiandepartmentofjustice_2022_sor86304 (11.03)
+<!-- TODO: What is an Entry Permit System? @govermentofcanada_2021_confined -->
+
+Only persons that have certain training and are qualified to perform a hazard assessment and are allowed to fill out such a report. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences. 
+@canadiandepartmentofjustice_2022_sor86304 (11.03) @govermentofcanada_2021_confined 
+
+<!-- TODO: Reread -->
+Just like the identification of the confined spaces has to be reviewed every 3 years and updated as soon as any changes happen to that confined space the hazards have to be reassessed as well. An exception being when the confined space was not entered in the previous 3 years and is not planed to be entered. @govermentofcanada_2021_confined 
+
+### Execution
 
 <!-- What happens in case of an emegrency? -->
+<!-- What equipment is needed to perform an operation inside a confined space? -->
+
+### Emergency Responders
 <!-- What is the obligation of an emegency responder? -->
-<!-- Is there anything simular here in germany? -->
-
-The CRFD acts as an emergency responder. As such it is obligated to have personal on hand when s
-
 <!-- What do operators of the CRFD need to know about a confined space operation? -->
+
+
+<!-- NOTE: The CRFD acts as an emergency responder. As such it is obligated to have personal on hand when s -->
 
 <!-- Related Software -->
 ## Computer-Aided Dispatch Software
