@@ -3,7 +3,7 @@
 # Fundamentals
 <!-- The CRFD explained -->
   <!-- Where are they located? -->
-The city of Campbell River is located in the western part of Canada. It is the second-largest city on Vancouver Island. With a total population of more than 37,800 permanent residents. @cityofcampbellriver_2019_connect
+The city of Campbell River is located in the western part of Canada. It is the second-largest city on Vancouver Island. With a total population of more than 37,800 permanent residents @cityofcampbellriver_2019_connect.
 The city is reachable via car, ferry, plane and seaplane and is about a 30-minute flight away from the metropolis of Vancouver.
 
 The Campbell River Fire Department ... . <!-- TODO: Finish sentence -->
@@ -38,6 +38,8 @@ b. the materials or substances in it; or
 c. any other conditions relating to it.
 
 A confined space is considered **Hot Work** if any source of fire or ignition is present. @canadiandepartmentofjustice_2022_sor86304 (11.01)
+
+Figure 1 shows a visual representation of the different kind of classifications.
 
 \newpage
 ![Confined Spaces Classification - Source: Author](images/cs-classification.png)
@@ -81,7 +83,7 @@ The identification process is a way of determining if there are any confined spa
 1. The qualified person has to identify all confined and hazardous confined spaces.
 2. The qualified person has to provide a catalog of all the confined and hazardous confined spaces that have been located in (1).
 3. It is the employer's duty to properly sign these areas to prevent anyone from entering them.
-4. The employer has to keep the record readily available. This document has to be updated / reviewed either every 3 years @canadiandepartmentofjustice_2022_sor86304 (11.03) or whenever the conditions of that particular confined space changed.
+4. The employer has to keep the record readily available. This document has to be updated / reviewed either every 3 years @canadiandepartmentofjustice_2022_sor86304 (11.03) or whenever the conditions of that particular confined space change.
 5. Before someone is granted access to a **none**-hazardous confined space. The employer needs to ensure that safety measures such as "person-check and emergency response systems" @canadiandepartmentofjustice_2022_sor86304 (11.02.5) are put into place.
 
 The previously mentioned steps have been broken down to their core concepts. The full legislatory definitions are part of the subsection 11.02 of the (+COHSR) @canadiandepartmentofjustice_2022_sor86304.
@@ -90,7 +92,7 @@ The previously mentioned steps have been broken down to their core concepts. The
 
 ### Hazard Assessment
 
-For every confined space the employer has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03) @govermentofcanada_2021_confined:
+For every confined space the assigned qualified person has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03) @govermentofcanada_2021_confined:
 
 <!-- TODO: Reorder list -->
 - The date at which the report was created.
@@ -102,14 +104,19 @@ For every confined space the employer has to produce a detailed hazard report. T
 
 <!-- TODO: What is an Entry Permit System? @govermentofcanada_2021_confined -->
 
-Only persons that have certain training and are qualified to perform a hazard assessment and are allowed to fill out such a report. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences. 
-@canadiandepartmentofjustice_2022_sor86304 (11.03) @govermentofcanada_2021_confined 
+Only persons that have certain training and are qualified to perform a hazard assessment and are allowed to fill out such a report @canadiandepartmentofjustice_2022_sor86304 (11.03) @govermentofcanada_2021_confined. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences. 
+<!-- TODO: Find ressource legal consequences -->
 
 <!-- TODO: Reread -->
 Just like the identification of the confined spaces has to be reviewed every 3 years and updated as soon as any changes happen to that confined space the hazards have to be reassessed as well. An exception being when the confined space was not entered in the previous 3 years and is not planed to be entered. @govermentofcanada_2021_confined 
 
-### Execution
+### Procedures
 
+From the previous two reports a procedure for a safe entry and exit of a confined space can be derived. The procedures will establish a roadmap for the workers to follow .
+
+In case an entry permit system is in place the exact timing of when en operation is going to take place (start, expected end time and actual end time) as well as the name of the person entering that confined space needs to be documented. @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
+
+<!-- How does the flow of entering a confined space look like? Flow-Chart -->
 <!-- What happens in case of an emegrency? -->
 <!-- What equipment is needed to perform an operation inside a confined space? -->
 
