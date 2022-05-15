@@ -44,7 +44,7 @@ Figure 1 shows a visual representation of the different kind of classifications.
 \newpage
 ![Confined Spaces Classification - Source: Author](images/cs-classification.png)
 
-Inside a confined space one might encounter one or more of the following hazards. @govermentofcanada_2021_confined:
+Inside a confined space one might encounter one or more of the following hazards @governmentofcanada_2021_confined :
 
 - **Physical Hazard**
   like 
@@ -102,6 +102,7 @@ For every confined space the assigned qualified person has to produce a detailed
 - It needs to clarify the way of getting approval to enter that space.
 - Any additional information for the worker or the emergency responders has to be stated.
 
+<!-- TODO:  (2)(f) any situation in which an entry permit system is required. -->
 <!-- TODO: What is an Entry Permit System? @govermentofcanada_2021_confined -->
 
 Only persons that have certain training and are qualified to perform a hazard assessment and are allowed to fill out such a report @canadiandepartmentofjustice_2022_sor86304 (11.03) @govermentofcanada_2021_confined. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences. 
@@ -112,25 +113,28 @@ Just like the identification of the confined spaces has to be reviewed every 3 y
 
 ### Procedures
 
-From the previous two reports a procedure for a safe entry and exit of a confined space can be derived. The procedures will establish a roadmap for the workers to follow .
+From the previous two reports a procedure for a safe entry and exit of a confined space can be derived. The procedures will establish a roadmap for the workers to follow, which safety tests need to be run and what equipment is to be prepared and what equipment has to be available in case of an emergency.
 
-In case an entry permit system is in place the exact timing of when en operation is going to take place (start, expected end time and actual end time) as well as the name of the person entering that confined space needs to be documented. @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
+In case an entry permit system ^[An entry permit system is a further safety system that schedules confined space entries by reserving a time ] is in place the exact timing of when en operation is going to take place (start, expected end time and actual end time) as well as the name of the person entering that confined space needs to be documented. @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
 
 <!-- How does the flow of entering a confined space look like? Flow-Chart -->
 <!-- What happens in case of an emegrency? -->
 <!-- What equipment is needed to perform an operation inside a confined space? -->
 
+
+
 ### Emergency Responders
 <!-- What is the obligation of an emegency responder? -->
 <!-- What do operators of the CRFD need to know about a confined space operation? -->
 
+### Training
 
 <!-- NOTE: The CRFD acts as an emergency responder. As such it is obligated to have personal on hand when s -->
 
 <!-- Related Software -->
 ## Computer-Aided Dispatch Software
 
-*CAD* is a special category of software that's helping to dispatch emergency services such as police and firefighters. The software is used to provide a common flow for handling incoming emergencies and to ensure a high agility and quick response to calls.
+Computer-Aided Dispatch ((+CAD)), not to be misunderstood with Computer-Aided Design^[**Computer-Aided Design** misleadingly also referred to as CAD-Software is a software that's main purpose lays in the creation of digital construction plans and 3d models. It is most commonly used in mechanical engineering, civil engineering and electrical engineering. @autodeskinc_cad] is a special category of software that's helping to dispatch emergency services such as police and fire stations @a2021_computeraided. The software is used to provide a common flow for handling incoming emergencies and to ensure a high agility and quick response to calls @usdepartmentofhomelandsecurity_2011_tech @apcointernational_2012_public.
   <!-- What disptach softwares are out there? -->
   <!-- What have they been using so far? -->
   <!-- How do these softwares operate? -->
