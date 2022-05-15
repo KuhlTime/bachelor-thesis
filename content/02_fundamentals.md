@@ -7,7 +7,7 @@ The city of Campbell River is located in the western part of Canada. It is the s
 The city is reachable via car, ferry, plane and seaplane and is about a 30-minute flight away from the metropolis of Vancouver.
 
 The Campbell River Fire Department ... . <!-- TODO: Finish sentence -->
-The main fire station is located near the town center and houses X fire trucks. The fire station and its 10 operators serve a total of 49 different fire stations located all across Vancouver Island. Any incoming emergency calls get captured and then forwarded to the appropriate station. @cityofcampbellriver_campbell
+The main fire station is located near the town center and houses X fire trucks. The fire station and its 10 operators serve a total of 49 different fire stations located all across Vancouver Island. Any incoming emergency calls get captured and then forwarded to the appropriate station @cityofcampbellriver_campbell.
 
 <!-- TODO: Ask Kelly what are the most common emergencies they need to respond to -->
 Most common emergencies include house and forest fires, car accidents ... @bellefleur_2022_in
@@ -42,9 +42,9 @@ A confined space is considered **Hot Work** if any source of fire or ignition is
 Figure 1 shows a visual representation of the different kind of classifications.
 
 \newpage
-![Confined Spaces Classification - Source: Author](images/cs-classification.png)
+![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png)
 
-Inside a confined space one might encounter one or more of the following hazards @governmentofcanada_2021_confined :
+Inside a confined space one might encounter one or more of the following hazards @governmentofcanada_2021_confined:
 
 - **Physical Hazard**
   like 
@@ -66,13 +66,13 @@ Inside a confined space one might encounter one or more of the following hazards
   *working alone*, *claustrophobia*, *fatigue*, ...
 
 \newpage
-<!-- TODO: List more exampled brought up in @govermentofcanada_2021_confined -->
-Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place. @bellefleur_2022_in @govermentofcanada_2021_confined
+<!-- TODO: List more exampled brought up in @governmentofcanada_2021_confined -->
+Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place @bellefleur_2022_in @governmentofcanada_2021_confined.
 
 ![Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg)
 
 <!-- TODO: Rewrite -->
-Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the (+COHSR). @canadiandepartmentofjustice_2022_sor86304
+Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the (+COHSR) @canadiandepartmentofjustice_2022_sor86304.
 
 <!-- Does there need to be an emergency responder on sight? -->
 
@@ -92,7 +92,7 @@ The previously mentioned steps have been broken down to their core concepts. The
 
 ### Hazard Assessment
 
-For every confined space the assigned qualified person has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03) @govermentofcanada_2021_confined:
+For every confined space the assigned qualified person has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03) @governmentofcanada_2021_confined:
 
 <!-- TODO: Reorder list -->
 - The date at which the report was created.
@@ -103,19 +103,23 @@ For every confined space the assigned qualified person has to produce a detailed
 - Any additional information for the worker or the emergency responders has to be stated.
 
 <!-- TODO:  (2)(f) any situation in which an entry permit system is required. -->
-<!-- TODO: What is an Entry Permit System? @govermentofcanada_2021_confined -->
+<!-- TODO: What is an Entry Permit System? @governmentofcanada_2021_confined -->
 
-Only persons that have certain training and are qualified to perform a hazard assessment and are allowed to fill out such a report @canadiandepartmentofjustice_2022_sor86304 (11.03) @govermentofcanada_2021_confined. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences. 
+Only persons that have certain training and are qualified to perform a hazard assessment and are allowed to fill out such a report @canadiandepartmentofjustice_2022_sor86304 (11.03) @governmentofcanada_2021_confined. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences. 
 <!-- TODO: Find ressource legal consequences -->
 
 <!-- TODO: Reread -->
-Just like the identification of the confined spaces has to be reviewed every 3 years and updated as soon as any changes happen to that confined space the hazards have to be reassessed as well. An exception being when the confined space was not entered in the previous 3 years and is not planed to be entered. @govermentofcanada_2021_confined 
+Just like the identification of the confined spaces has to be reviewed every 3 years and updated as soon as any changes happen to that confined space the hazards have to be reassessed as well. An exception being when the confined space was not entered in the previous 3 years and is not planed to be entered @governmentofcanada_2021_confined. 
 
 ### Procedures
 
-From the previous two reports a procedure for a safe entry and exit of a confined space can be derived. The procedures will establish a roadmap for the workers to follow, which safety tests need to be run and what equipment is to be prepared and what equipment has to be available in case of an emergency.
+From the previous two reports a procedure for a safe entry and exit of a confined space can be derived. The procedures will establish a roadmap for all the actors involved. Every confined space needs to have "safe entry and exit procedures", "two-way communication and person check systems" and "emergency response measures" @canadiandepartmentofjustice_2022_sor86304 (11.04(2)(a)). <!-- TODO: Not entirely sure! --> In case of a hazardous confined space the procedure plan has to state which safety tests need to be run and what equipment has to be prepared for both the workers and the emergency response personal. @canadiandepartmentofjustice_2022_sor86304 (11.04).
 
-In case an entry permit system ^[An entry permit system is a further safety system that schedules confined space entries by reserving a time ] is in place the exact timing of when en operation is going to take place (start, expected end time and actual end time) as well as the name of the person entering that confined space needs to be documented. @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
+In case an entry permit system ^[An **entry permit system** is a further safety system that includes a governing instance controlled by the employer. Its task is to schedule operations and hand out permits to the workers entering a hazardous confined space @usdepartmentofhomelandsecurity_2011_tech.] is in place the qualified person has to fill out a permit handed out by the employer. <!-- TODO: Rewrite --> A permit holds additional information about the hazardous confined space.  @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
+
+Depending on the type of hazard found in a confined space special rules and thresholds may apply. See subsection 11.05(1) of the (+COSHR).
+
+<!-- TODO: Example @usdeperatmentoflabor_2018_confined -->
 
 <!-- How does the flow of entering a confined space look like? Flow-Chart -->
 <!-- What happens in case of an emegrency? -->
@@ -134,7 +138,8 @@ In case an entry permit system ^[An entry permit system is a further safety syst
 <!-- Related Software -->
 ## Computer-Aided Dispatch Software
 
-Computer-Aided Dispatch ((+CAD)), not to be misunderstood with Computer-Aided Design^[**Computer-Aided Design** misleadingly also referred to as CAD-Software is a software that's main purpose lays in the creation of digital construction plans and 3d models. It is most commonly used in mechanical engineering, civil engineering and electrical engineering. @autodeskinc_cad] is a special category of software that's helping to dispatch emergency services such as police and fire stations @a2021_computeraided. The software is used to provide a common flow for handling incoming emergencies and to ensure a high agility and quick response to calls @usdepartmentofhomelandsecurity_2011_tech @apcointernational_2012_public.
+Computer-Aided Dispatch ((+CAD)), not to be misunderstood with Computer-Aided Design^[**Computer-Aided Design** misleadingly also referred to as CAD-Software is a software that's main purpose lays in the creation of digital construction plans and 3d models. It is most commonly used in mechanical engineering, civil engineering and electrical engineering. @autodeskinc_cad] is a special category of software that's helping to dispatch emergency services such as police and fire stations @a2021_computeraided. The software is used to provide a common flow for handling incoming emergencies and to ensure a high agility and quick response to incoming emergency calls @usdepartmentofhomelandsecurity_2011_tech @apcointernational_2012_public.
+
   <!-- What disptach softwares are out there? -->
   <!-- What have they been using so far? -->
   <!-- How do these softwares operate? -->
