@@ -44,7 +44,7 @@ Figure 1 shows a visual representation of the different kind of classifications.
 \newpage
 ![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png)
 
-Inside a confined space one might encounter one or more of the following hazards @governmentofcanada_2021_confined:
+Inside a confined space one might encounter one or more of the following hazards @governmentofcanada_2021_confined @mcpherson_2020_webinar:
 
 - **Physical Hazard**
   like 
@@ -117,7 +117,7 @@ From the previous two reports a procedure for a safe entry and exit of a confine
 
 In case an entry permit system ^[An **entry permit system** is a further safety system that includes a governing instance controlled by the employer. Its task is to schedule operations and hand out permits to the workers entering a hazardous confined space @usdepartmentofhomelandsecurity_2011_tech.] is in place the qualified person has to fill out a permit handed out by the employer. <!-- TODO: Rewrite --> A permit holds additional information about the hazardous confined space.  @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
 
-Depending on the type of hazard found in a confined space special rules and thresholds may apply. See subsection 11.05(1) of the (+COSHR).
+Depending on the type of hazard found in a confined space special rules and thresholds may apply. See subsection 11.05(1) of the (+COHSR).
 
 <!-- TODO: Example @usdeperatmentoflabor_2018_confined -->
 
