@@ -5,6 +5,9 @@ header-includes:
     - \usepackage{glossaries}
     - \makenoidxglossaries
     - \include{glossary}
+    - \setcounter{secnumdepth}{3}
+    - \usepackage{tikz}
+    - - \usepackage{pgfplots}
 include-after:
     - \newpage
     - \listoffigures

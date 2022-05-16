@@ -44,7 +44,7 @@ Figure 1 shows a visual representation of the different kind of classifications.
 \newpage
 ![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png)
 
-Inside a confined space one might encounter one or more of the following hazards @governmentofcanada_2021_confined @mcpherson_2020_webinar:
+Inside a confined space one might encounter one or more of the following hazards @governmentofcanada_2021_confined, @mcpherson_2020_webinar:
 
 - **Physical Hazard**
   like 
@@ -67,16 +67,17 @@ Inside a confined space one might encounter one or more of the following hazards
 
 \newpage
 <!-- TODO: List more exampled brought up in @governmentofcanada_2021_confined -->
-Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place @bellefleur_2022_in @governmentofcanada_2021_confined.
+Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place @bellefleur_2022_in, @governmentofcanada_2021_confined.
 
 ![Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg)
 
-<!-- TODO: Rewrite -->
-Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the (+COHSR) @canadiandepartmentofjustice_2022_sor86304.
-
 <!-- Does there need to be an emergency responder on sight? -->
 
-### Identification
+### Legislation <!-- TODO: Is it a regulation or legislation? -->
+
+Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the (+COHSR) @canadiandepartmentofjustice_2022_sor86304. From there on up a procedure for safe entry and exit can be established.
+
+#### Identification
 
 The identification process is a way of determining if there are any confined spaces on sight and whether they need to be classified as hazardous. Together with a qualified person, which is either someone from the work place committee or a health and safety representative the following actions are mandatory to be carried out:
 
@@ -90,9 +91,9 @@ The previously mentioned steps have been broken down to their core concepts. The
 
 <!-- NOTE: A person is never allowed to enter a confined space on their own. They always need someone that  -->
 
-### Hazard Assessment
+#### Hazard Assessment
 
-For every confined space the assigned qualified person has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03) @governmentofcanada_2021_confined:
+For every confined space the assigned qualified person has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03), @governmentofcanada_2021_confined:
 
 <!-- TODO: Reorder list -->
 - The date at which the report was created.
@@ -105,17 +106,17 @@ For every confined space the assigned qualified person has to produce a detailed
 <!-- TODO:  (2)(f) any situation in which an entry permit system is required. -->
 <!-- TODO: What is an Entry Permit System? @governmentofcanada_2021_confined -->
 
-Only persons that have certain training and are qualified to perform a hazard assessment and are allowed to fill out such a report @canadiandepartmentofjustice_2022_sor86304 (11.03) @governmentofcanada_2021_confined. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences. 
+Only persons that have certain training and are qualified to perform a hazard assessment and are allowed to fill out such a report @canadiandepartmentofjustice_2022_sor86304 (11.03), @governmentofcanada_2021_confined. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences. 
 <!-- TODO: Find ressource legal consequences -->
 
 <!-- TODO: Reread -->
 Just like the identification of the confined spaces has to be reviewed every 3 years and updated as soon as any changes happen to that confined space the hazards have to be reassessed as well. An exception being when the confined space was not entered in the previous 3 years and is not planed to be entered @governmentofcanada_2021_confined. 
 
-### Procedures
+#### Establishing Procedures
 
 From the previous two reports a procedure for a safe entry and exit of a confined space can be derived. The procedures will establish a roadmap for all the actors involved. Every confined space needs to have "safe entry and exit procedures", "two-way communication and person check systems" and "emergency response measures" @canadiandepartmentofjustice_2022_sor86304 (11.04(2)(a)). <!-- TODO: Not entirely sure! --> In case of a hazardous confined space the procedure plan has to state which safety tests need to be run and what equipment has to be prepared for both the workers and the emergency response personal. @canadiandepartmentofjustice_2022_sor86304 (11.04).
 
-In case an entry permit system ^[An **entry permit system** is a further safety system that includes a governing instance controlled by the employer. Its task is to schedule operations and hand out permits to the workers entering a hazardous confined space @usdepartmentofhomelandsecurity_2011_tech.] is in place the qualified person has to fill out a permit handed out by the employer. <!-- TODO: Rewrite --> A permit holds additional information about the hazardous confined space.  @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
+In case an entry permit system^[An **entry permit system** is a further safety system that includes a governing instance controlled by the employer. Its task is to schedule operations and hand out permits to the workers entering a hazardous confined space @usdepartmentofhomelandsecurity_2011_tech.] is in place the qualified person has to fill out a permit handed out by the employer. <!-- TODO: Rewrite --> A permit holds additional information about the hazardous confined space.  @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
 
 Depending on the type of hazard found in a confined space special rules and thresholds may apply. See subsection 11.05(1) of the (+COHSR).
 
@@ -125,6 +126,56 @@ Depending on the type of hazard found in a confined space special rules and thre
 <!-- What happens in case of an emegrency? -->
 <!-- What equipment is needed to perform an operation inside a confined space? -->
 
+### Standards
+
+A standard is a guideline which was established by a group of expert in a certain topic. Whilst regulations build the basis, standards ensures that certain tasks are performed with quality and efficiency in mind @foundationofcannabisunifiedstandardsinc_standards. 
+
+Common standards for operating a confined space in Canada are the (+CSA) Z1006 and the (+NFPA) 350 @mcpherson_2020_webinar.
+
+### Incidents
+
+In Canada alone, the Canadian rescue training provider Roco Rescue recorded an average of 128 fatalities per year, in the timespan from 2011 to 2018 @rocorescueinc_2021_confined. With 61% most casualties happen due to physical injuries such as falling objects and engulfment. 34% account to atmospheric hazards like "toxic chemicals, oxygen deficiency or combustible dust" @mcpherson_2020_webinar.
+
+<!--
+ | Year | Casualties |
+ | ---- | ---------: |
+ | 2011 |        120 |
+ | 2012 |         88 |
+ | 2013 |        112 |
+ | 2014 |        116 |
+ | 2015 |        136 |
+ | 2016 |        144 |
+ | 2017 |        166 |
+ | 2018 |        148 |
+
+Table: Casualties per Year @rocorescueinc_2021_confined
+
+\pgfplotstableread[row sep=\\,col sep=&]{
+    interval & carT \\
+    2011 & 120 \\
+    2012 & 88\\
+    2013 & 112\\
+    2014 & 116\\
+    2015 & 136\\
+    2016 & 144\\
+    2017 & 166\\
+    2018 & 148\\
+    }\mydata
+
+\begin{figure}
+  \begin{tikzpicture}
+    \begin{axis}[
+        ybar,
+        symbolic x coords={2011,2012,2013,2014,2015,2016,2017,2018},
+        xtick=data,
+        ymin=0,
+        ymax=180,
+      ]
+      \addplot table[x=interval,y=carT]{\mydata};
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Casualties per Year $@rocorescueinc_2021_confined$}
+\end{figure} -->
 
 
 ### Emergency Responders
@@ -138,7 +189,15 @@ Depending on the type of hazard found in a confined space special rules and thre
 <!-- Related Software -->
 ## Computer-Aided Dispatch Software
 
-Computer-Aided Dispatch ((+CAD)), not to be misunderstood with Computer-Aided Design^[**Computer-Aided Design** misleadingly also referred to as CAD-Software is a software that's main purpose lays in the creation of digital construction plans and 3d models. It is most commonly used in mechanical engineering, civil engineering and electrical engineering. @autodeskinc_cad] is a special category of software that's helping to dispatch emergency services such as police and fire stations @a2021_computeraided. The software is used to provide a common flow for handling incoming emergencies and to ensure a high agility and quick response to incoming emergency calls @usdepartmentofhomelandsecurity_2011_tech @apcointernational_2012_public.
+Computer-Aided Dispatch ((+CAD)), not to be misunderstood with Computer-Aided Design^[**Computer-Aided Design** misleadingly also referred to as CAD-Software is a software that's main purpose lays in the creation of digital construction plans and three-dimensional (3d) models. It is typically used in mechanical engineering, civil engineering and $\\$ electrical engineering. @autodeskinc_cad] is a special category of software that's helping to dispatch emergency services such as police and fire stations @a2021_computeraided. The software is used to provide a common flow for handling incoming emergencies -- to ensure a high agility and quick response to incoming emergency calls @usdepartmentofhomelandsecurity_2011_tech, @apcointernational_2012_public.
+
+More modern implementations of such a software are oftentimes referred to as **Next-Generation 911** ((+NG911)). 911 being the common emergency number in North-America @a2022_911. Whereas traditional dispatchment software was focused on "static land-line connections" @arcgisbyesriinc_ng911 (+NG911) focuses on providing advanced functionalities such as:
+
+- processing of send video, audio and text messages @usnational911program_911gov
+- they are able to receive data from different "transmitting devices such as wearable medical devices, car computers and building alarms" @usnational911program_911gov
+- intercommunication between different departments and emergency services @usnational911program_911gov
+
+These features allow for better emergency service through new ways of communication and enable faster response times to incoming accidents.
 
   <!-- What disptach softwares are out there? -->
   <!-- What have they been using so far? -->
