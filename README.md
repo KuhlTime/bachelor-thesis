@@ -2,7 +2,7 @@
 
 Important Notes for structuring the thesis:
 
-- A bachelor thesis should be between 5000 and 7000 words long.
+- A normal bachelor-thesis is between 40 and 60 pages on avarage. What the exect requirements are is dependant up on the examiner and on the topic that was choosen.
 
 ## Writing Goals
 
@@ -20,7 +20,7 @@ Important Notes for structuring the thesis:
 ## Tell a story
 
 Taken from 
-- [Writing a Bachelor Tehsis in Computer Science](https://liacs.leidenuniv.nl/~nijssensgr/bachelorklas-2014-2015/writing.pdf)
+- [Writing a Bachelor Thesis in Computer Science](https://liacs.leidenuniv.nl/~nijssensgr/bachelorklas-2014-2015/writing.pdf)
 
 **MOST IMPORTANT TAKEAWAY**: First outline and then fill in the gaps. "Iterate, Iterate, Iterate"
 
