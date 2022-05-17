@@ -2,7 +2,6 @@
 \newpage
 # Fundamentals
 <!-- The CRFD explained -->
-  <!-- Where are they located? -->
 The city of Campbell River is located in the western part of Canada. It is the second-largest city on Vancouver Island. With a total population of more than 37,800 permanent residents @cityofcampbellriver_2019_connect.
 The city is reachable via car, ferry, plane and seaplane and is about a 30-minute flight away from the metropolis of Vancouver.
 
@@ -12,12 +11,10 @@ The main fire station is located near the town center and houses X fire trucks. 
 <!-- TODO: Ask Kelly what are the most common emergencies they need to respond to -->
 Most common emergencies include house and forest fires, car accidents ... @bellefleur_2022_in
 
-  <!-- What do they do? -->
-  <!-- Where lay the operational differences between firebrigades here in Germany and Canada? -->
+  <!-- TODO: What do they do? -->
+  <!-- TODO: Where lay the operational differences between firebrigades here in Germany and Canada? -->
 
-<!-- What is a confined space?  -->
 ## Confined Spaces
-<!-- How does the legislation for cs in Canada look like? -->
 <!-- TODO: Declutter, does not look good for opener -->
 As defined by the Canadian Department of Justice, inside the **Occupational Health and Safety Regulations** ((+COHSR)) a **Confined Space** is met by the following criteria @canadiandepartmentofjustice_2022_sor86304 (11.01):
 
@@ -71,7 +68,7 @@ Confined spaces are commonly part of a fabrication sites or public infrastructur
 
 ![Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg)
 
-<!-- Does there need to be an emergency responder on sight? -->
+<!-- TODO: Does there need to be an emergency responder on sight? -->
 
 ### Legislation <!-- TODO: Is it a regulation or legislation? -->
 
@@ -122,15 +119,19 @@ Depending on the type of hazard found in a confined space special rules and thre
 
 <!-- TODO: Example @usdeperatmentoflabor_2018_confined -->
 
-<!-- How does the flow of entering a confined space look like? Flow-Chart -->
-<!-- What happens in case of an emegrency? -->
-<!-- What equipment is needed to perform an operation inside a confined space? -->
+<!-- TODO: How does the flow of entering a confined space look like? Flow-Chart -->
+<!-- TODO: What happens in case of an emegrency? -->
+<!-- TODO: What equipment is needed to perform an operation inside a confined space? -->
 
+\newpage
 ### Standards
 
 A standard is a guideline which was established by a group of expert in a certain topic. Whilst regulations build the basis, standards ensures that certain tasks are performed with quality and efficiency in mind @foundationofcannabisunifiedstandardsinc_standards. 
 
 Common standards for operating a confined space in Canada are the (+CSA) Z1006 and the (+NFPA) 350 @mcpherson_2020_webinar.
+
+<!-- TODO: US and Canada closely related -->
+
 
 ### Incidents
 
@@ -140,7 +141,7 @@ As there are not a lot of statistics concerning injuries or fatalities in confin
 
 In presentations by two engineers of 3M, they state that 60% of all casualties happen to would-be rescuers^[**Would-be rescuer** Rescuer that died during the rescue mission] @mcpherson_2020_webinar, @meyer_2019_confined. These numbers go back to a study from 1986 and are rendered incorrect by an Australian study from 2019. 
 
-"In 1986, NIOSH issued an alert which concluded that ‘More than 60% of confined space fatalities occur among would-be rescuers’ (NIOSH, 1986). The sample size used to produce this alert was very small and had no stated selection criteria. An analysis of a number of studies since by Selman et al. (2018 - Chapter 4 of this work) found that proportion of rescuer fatalities was much lower, and no more than 17% of all deaths" @selmon_2019_workrelated.
+"In 1986, NIOSH issued an alert which concluded that ‘More than 60% of confined space fatalities occur among would-be rescuers’ (NIOSH, 1986). The sample size used to produce this alert was very small and had no stated selection criteria. [...] rescuer fatalities was much lower, and no more than 17% of all deaths" @selmon_2019_workrelated.
 
 <!--
  | Year | Casualties |
@@ -185,8 +186,8 @@ Table: Casualties per Year @rocorescueinc_2021_confined
 
 
 ### Emergency Responders
-<!-- What is the obligation of an emegency responder? -->
-<!-- What do operators of the CRFD need to know about a confined space operation? -->
+<!-- TODO: What is the obligation of an emegency responder? -->
+<!-- TODO: What do operators of the CRFD need to know about a confined space operation? -->
 
 ### Training
 
@@ -205,6 +206,8 @@ More modern implementations of such a software are oftentimes referred to as **N
 
 These features allow for better emergency service through new ways of communication and enable faster response times to incoming accidents.
 
-  <!-- What disptach softwares are out there? -->
-  <!-- What have they been using so far? -->
-  <!-- How do these softwares operate? -->
+What most of these software products have in common is a map view that displays the location of any emergency units and the current incidents.
+
+  <!-- TODO: What disptach softwares are out there? -->
+  <!-- TODO: What have they been using so far? -->
+  <!-- TODO: How do these softwares operate? -->

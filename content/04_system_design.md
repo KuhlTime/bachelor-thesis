@@ -9,7 +9,7 @@
 
 <!-- How are the connections between the different Application modeled? -->
 
-<!-- How should the application data be modeled? -->
+<!-- TODO: How should the application data be modeled? ERD Diagram -->
 
 <!-- Does the software needs to be scalable? -->
 
@@ -48,7 +48,17 @@
 
 ### VueJS
 
+<!-- Who has created Vue? -->
+<!-- React -->
+<!-- What is reactivity? -->
+
+#### Vite
+
 ### Electron
+
+<!-- Multi-Platform -->
+<!-- Compatibility -->
+<!-- Tauri -->
 
 ### Firebase
 <!-- What database should be used? What features should it poses? -->
