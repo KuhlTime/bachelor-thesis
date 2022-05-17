@@ -136,6 +136,12 @@ Common standards for operating a confined space in Canada are the (+CSA) Z1006 a
 
 In Canada alone, the Canadian rescue training provider Roco Rescue recorded an average of 128 fatalities per year, in the timespan from 2011 to 2018 @rocorescueinc_2021_confined. With 61% most casualties happen due to physical injuries such as falling objects and engulfment. 34% account to atmospheric hazards like "toxic chemicals, oxygen deficiency or combustible dust" @mcpherson_2020_webinar.
 
+As there are not a lot of statistics concerning injuries or fatalities in confined space, numbers may depend on the source of information.
+
+In presentations by two engineers of 3M, they state that 60% of all casualties happen to would-be rescuers^[**Would-be rescuer** Rescuer that died during the rescue mission] @mcpherson_2020_webinar, @meyer_2019_confined. These numbers go back to a study from 1986 and are rendered incorrect by an Australian study from 2019. 
+
+"In 1986, NIOSH issued an alert which concluded that ‘More than 60% of confined space fatalities occur among would-be rescuers’ (NIOSH, 1986). The sample size used to produce this alert was very small and had no stated selection criteria. An analysis of a number of studies since by Selman et al. (2018 - Chapter 4 of this work) found that proportion of rescuer fatalities was much lower, and no more than 17% of all deaths" @selmon_2019_workrelated.
+
 <!--
  | Year | Casualties |
  | ---- | ---------: |
