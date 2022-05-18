@@ -23,3 +23,5 @@ include-after:
 
 \thispagestyle{empty}
 \tableofcontents
+
+<!-- TODO: Update all the Figure statements -->

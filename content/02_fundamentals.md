@@ -1,5 +1,5 @@
 <!-- Goal: 700 Words -->
-\newpage
+
 # Fundamentals
 
 <!-- Related Software -->
@@ -10,12 +10,17 @@ Computer-Aided Dispatch ((+CAD)), not to be misunderstood with Computer-Aided De
 More modern implementations of such a software are oftentimes referred to as **Next-Generation 911** ((+NG911)). 911 being the common emergency number in North-America @wikipediacontributors_2022_911. Whereas traditional dispatchment software was focused on "static land-line connections" @arcgisbyesriinc_ng911 (+NG911) focuses on providing advanced functionalities such as:
 
 - processing of send video, audio and text messages @usnational911program_911gov
-- they are able to receive data from different "transmitting devices such as wearable medical devices, car computers and building alarms" @usnational911program_911gov
+- the ability to receive data from different "transmitting devices such as wearable medical devices, car computers and building alarms" @usnational911program_911gov
 - intercommunication between different departments and emergency services @usnational911program_911gov
 
 These features allow for better emergency service through new ways of communication and enable faster response times to incoming accidents.
 
 What most of these software products have in common is a map view that displays the location of any emergency units and the current incidents.
+
+The fire department of Campbell River is currently using an (+CAD) software by called Centralsquare. @centralsquare_computeraided.
+
+
+![Centralsquare CAD - Source: Kelly Bellefleur](images/cad.png)
 
   <!-- TODO: What disptach softwares are out there? -->
   <!-- TODO: What have they been using so far? -->
@@ -59,7 +64,6 @@ c. any other conditions relating to it.
 
 A confined space is considered **Hot Work** if any source of fire or ignition is present. @canadiandepartmentofjustice_2022_sor86304 (11.01)
 
-\newpage
 Figure 2 shows a visual representation of the different kind of confined spaces classifications.
 
 ![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png)
@@ -86,7 +90,6 @@ Inside a confined space one might encounter one or more of the following hazards
   *working alone*, *claustrophobia*, *fatigue*, ...
 
 <!-- TODO: List more exampled brought up in @governmentofcanada_2021_confined -->
-\newpage
 Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place @bellefleur_2022_in, @governmentofcanada_2021_confined, @worksafebc_confined.
 
 ![Hazardous Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg)
