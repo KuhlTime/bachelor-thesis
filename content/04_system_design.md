@@ -1,5 +1,8 @@
-<!-- Goal: 2000 Words -->
+<!-- Goal: 12 pages -->
 # System Design
+
+As the whole ecosystem is made up of many smaller software pieces discussed in the previous part *[3 Capabilities](#capabilities)* many design considerations had to be made. In this chapter I will walk over all the important concepts I have come up with and will go into more detail the more this chapter progresses. First I will lay out general concepts on how the application should function. Later I will be more specific and explain the individual software libraries and technologies used in order to accomplish the previously set goals.
+
 <!-- The chapter should describe the applications on a high level. Not the implementation. No languages and no code! -->
 
 ## Architecture
@@ -36,12 +39,19 @@
 
   <!-- How is future provness guaranteed? -->
 
-## User Interface
+## User Interface Design
+
+![Indicator States - Source: Author](images/indicator-states.png)
+
 <!-- How should the UI function? -->
 <!-- How can incorrect usage of the application be prevented? How does the UI reflect these protections? -->
 <!-- What DevOps Pipelines need to be developed? -->
+<!-- What pages are needed for the Dispatcher? -->
+<!-- UI components and their use cases? -->
 
-## Technology
+<!-- How should Forms in the Dispatcher application should look like? What data is needed by the operator? -->
+
+## Technologies
 <!-- What technologies / libraries have been used? -->
   <!-- What part of the application is each software used for? -->
   <!-- What are the benefits / disadvantages of the technology used? -->
@@ -63,6 +73,10 @@
 ### Firebase
 <!-- What database should be used? What features should it poses? -->
   <!-- How is logging of changes enabled? -->
+
+### Swift
+
+### Flutter
 
 ## Testing
 <!-- What is static Code Quality Analysis? How does it work? -->
