@@ -1,1 +1,3 @@
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qdesign, construction, location or atmosphere\nsubstances and materials in it, or\nany other danger arising from entering or exiting that space\\E$"}
+{"rule":"ABLE_TO_PASSIVE","sentence":"^\\QSelf rescue where entrants are able to evacuate the confined space on their own\nNon-entry rescue entrants are unable to leave the confined space on their own but are able to be retrieved through an extraction system^\nEntry rescue\\E$"}
+{"rule":"ABLE_TO_PASSIVE","sentence":"^\\QNon-entry rescue Entrants are unable to leave the confined space on their own but are able to be retrieved through an extraction system.\\E$"}

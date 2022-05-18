@@ -59,7 +59,8 @@ c. any other conditions relating to it.
 
 A confined space is considered **Hot Work** if any source of fire or ignition is present. @canadiandepartmentofjustice_2022_sor86304 (11.01)
 
-Figure 2 shows a visual representation of the different kind of classifications.
+\newpage
+Figure 2 shows a visual representation of the different kind of confined spaces classifications.
 
 ![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png)
 
@@ -85,9 +86,10 @@ Inside a confined space one might encounter one or more of the following hazards
   *working alone*, *claustrophobia*, *fatigue*, ...
 
 <!-- TODO: List more exampled brought up in @governmentofcanada_2021_confined -->
+\newpage
 Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place @bellefleur_2022_in, @governmentofcanada_2021_confined, @worksafebc_confined.
 
-![Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg)
+![Hazardous Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg)
 
 <!-- TODO: Does there need to be an emergency responder on sight? -->
 
@@ -174,7 +176,7 @@ In presentations by two engineers of 3M, they state that 60% of all casualties h
 
 "In 1986, NIOSH issued an alert which concluded that ‘More than 60% of confined space fatalities occur among would-be rescuers’ (NIOSH, 1986). The sample size used to produce this alert was very small and had no stated selection criteria. [...] rescuer fatalities was much lower, and no more than 17% of all deaths" @selmon_2019_workrelated.
 
-Because of the strict regulations put into place by the Canadian Government, deputy Chief K. Bellefleur can not remember a time when there has been an accident in Campbell River in the last 5 years. Most fatalities he says happen due to a lack of carelessness. @bellefleur_2022_in
+Because of the strict regulations put into place by the Canadian Government, deputy Chief K. Bellefleur can not remember a time when there has been any accident in Campbell River in the last 5 years. Most fatalities he says happen due to a lack of carelessness. @bellefleur_2022_in
 
 <!--
  | Year | Casualties |
@@ -219,10 +221,34 @@ Table: Casualties per Year @rocorescueinc_2021_confined
 
 ### Training
 
+In order for someone to be allowed access to a confined space they need special certification from training providers. In courses workers and emergency responders will learn about entry and exit procedures, risk management, hazard assessment and hazard control. @a3mcanada_2019_training, @worksitesafety_confined
+
 <!-- NOTE: The CRFD acts as an emergency responder. As such it is obligated to have personal on hand when s -->
 
+<!-- TODO: What are they doing right now if they would need to resuce someone -->
+About 90% of firefighters at the Campbell River Fire Department have undergone thorough training in Rope and Confined Space Rescue @bellefleur_2022_in. Because they are a comparably small fire department "everyone has to be good at everything" @bellefleur_2022_in.
+
 ### Rescue
+
+<!-- TODO: What are they doing right now if they would need to resuce someone -->
+About 90% of firefighters at the Campbell River Fire Department have undergone thorough training in Rope and Confined Space Rescue. @bellefleur_2022_in
+
+In case of an emergency inside a confined space there are three types of rescue operations with increasing amount of complexity and risk @selman_2019_confined: 
+
+1. **Self rescue** Where entrants are able to evacuate the confined space on their own.
+2. **Non-entry rescue** Entrants are unable to leave the confined space on their own but are able to be retrieved through an extraction system.
+3. **Entry rescue** Entrants are unable to leave on their own and no extraction system is in place. A trained rescuer has to enter the confined space recover the person inside.
+
+Australian researchers Jason Selman, Jeffrey Spicket, Janis Jansz and Benjamnin Mullis proposed a five-step system they call **(+REALE)** @selman_2019_confined. The system should provide a framework for emergency responders to ensure a well-organized sequence of events.
+
+A citation of these steps from their publication 'Confined space rescue: A proposed procedure to reduce the risks' @selman_2019_confined:
+
+1. **Reconnaissance** of the rescue task
+2. **Elimination** or reduction of hazards
+3. **Accessing** the casualty, in which a minimal number of rescuers enter the confined space and make contact with the casualty.
+4. Provision of **Life-saving** first aid to the casualty
+5. **Extrication** of the casualty as required
+
 <!-- TODO: What is the obligation of an emegency responder? -->
 <!-- TODO: What do operators of the CRFD need to know about a confined space operation? -->
-@selman_2019_confined
 

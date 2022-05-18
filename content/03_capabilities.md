@@ -33,6 +33,8 @@ With the introduction of Version 3 the Trigger application will be replaced by a
 
 <!-- TODO: Add Mindmap -->
 
+<!-- TODO: Important Metrics, like Oxygen requirements should be highlighted -->
+
 <!-- How have they been dispatching operations currently? -->
 
 **Version 3.0**:
