@@ -1,7 +1,26 @@
 <!-- Goal: 700 Words -->
 \newpage
 # Fundamentals
-<!-- The CRFD explained -->
+
+<!-- Related Software -->
+## Computer-Aided Dispatch (CAD)
+
+Computer-Aided Dispatch ((+CAD)), not to be misunderstood with Computer-Aided Design^[**Computer-Aided Design** misleadingly also referred to as CAD-Software is a software that's main purpose lays in the creation of digital construction plans and three-dimensional (3d) models. It is typically used in mechanical engineering, civil engineering and $\\$ electrical engineering. @autodeskinc_cad] is a special category of software that's helping to dispatch emergency services such as police and fire stations @wikipediacontributors_2021_computeraided. The software is used to provide a common flow for handling incoming emergencies -- to ensure a high agility and quick response to incoming emergency calls @usdepartmentofhomelandsecurity_2011_tech, @apcointernational_2012_public.
+
+More modern implementations of such a software are oftentimes referred to as **Next-Generation 911** ((+NG911)). 911 being the common emergency number in North-America @wikipediacontributors_2022_911. Whereas traditional dispatchment software was focused on "static land-line connections" @arcgisbyesriinc_ng911 (+NG911) focuses on providing advanced functionalities such as:
+
+- processing of send video, audio and text messages @usnational911program_911gov
+- they are able to receive data from different "transmitting devices such as wearable medical devices, car computers and building alarms" @usnational911program_911gov
+- intercommunication between different departments and emergency services @usnational911program_911gov
+
+These features allow for better emergency service through new ways of communication and enable faster response times to incoming accidents.
+
+What most of these software products have in common is a map view that displays the location of any emergency units and the current incidents.
+
+  <!-- TODO: What disptach softwares are out there? -->
+  <!-- TODO: What have they been using so far? -->
+  <!-- TODO: How do these softwares operate? -->
+
 
 ## Campbell River Fire Department
 
@@ -202,25 +221,8 @@ Table: Casualties per Year @rocorescueinc_2021_confined
 
 <!-- NOTE: The CRFD acts as an emergency responder. As such it is obligated to have personal on hand when s -->
 
-### Emergency Responders
+### Rescue
 <!-- TODO: What is the obligation of an emegency responder? -->
 <!-- TODO: What do operators of the CRFD need to know about a confined space operation? -->
+@selman_2019_confined
 
-<!-- Related Software -->
-## Computer-Aided Dispatch Software
-
-Computer-Aided Dispatch ((+CAD)), not to be misunderstood with Computer-Aided Design^[**Computer-Aided Design** misleadingly also referred to as CAD-Software is a software that's main purpose lays in the creation of digital construction plans and three-dimensional (3d) models. It is typically used in mechanical engineering, civil engineering and $\\$ electrical engineering. @autodeskinc_cad] is a special category of software that's helping to dispatch emergency services such as police and fire stations @wikipediacontributors_2021_computeraided. The software is used to provide a common flow for handling incoming emergencies -- to ensure a high agility and quick response to incoming emergency calls @usdepartmentofhomelandsecurity_2011_tech, @apcointernational_2012_public.
-
-More modern implementations of such a software are oftentimes referred to as **Next-Generation 911** ((+NG911)). 911 being the common emergency number in North-America @wikipediacontributors_2022_911. Whereas traditional dispatchment software was focused on "static land-line connections" @arcgisbyesriinc_ng911 (+NG911) focuses on providing advanced functionalities such as:
-
-- processing of send video, audio and text messages @usnational911program_911gov
-- they are able to receive data from different "transmitting devices such as wearable medical devices, car computers and building alarms" @usnational911program_911gov
-- intercommunication between different departments and emergency services @usnational911program_911gov
-
-These features allow for better emergency service through new ways of communication and enable faster response times to incoming accidents.
-
-What most of these software products have in common is a map view that displays the location of any emergency units and the current incidents.
-
-  <!-- TODO: What disptach softwares are out there? -->
-  <!-- TODO: What have they been using so far? -->
-  <!-- TODO: How do these softwares operate? -->

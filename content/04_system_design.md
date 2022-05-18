@@ -39,9 +39,23 @@ As the whole ecosystem is made up of many smaller software pieces discussed in t
 
   <!-- How is future provness guaranteed? -->
 
-## User Interface Design
+## Interface Design
+
+For the User Interface^[The **User Interface** ((+UI)) describes the visual style of an application @dumont_2021_ui] ((+UI)) and the User Experience^[The **User Experience** ((+UX)) describes the functionality of an application. As to *what steps need to be taken in order to perform a certain task*. When talking about a "good" (+UX) that generally means that a software is intuitive and easy to use.] ((+UX))
+
+#### Terminal
+
+abc
 
 ![Indicator States - Source: Author](images/indicator-states.png)
+
+#### Trigger
+
+#### Dispatcher
+
+For the dispatchment application I have come up with a whole design system. That should bring a uniform U
+
+#### Worker
 
 <!-- How should the UI function? -->
 <!-- How can incorrect usage of the application be prevented? How does the UI reflect these protections? -->
