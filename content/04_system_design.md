@@ -10,7 +10,7 @@ As the whole ecosystem is made up of many smaller software pieces discussed in t
 <!-- What is the architecture of this application? -->
   <!-- What do books recommend on how a good system architecture should look like? -->
 
-<!-- How are the connections between the different Application modeled? -->
+<!-- How will the different applications communicate with one another? -->
 
 <!-- TODO: How should the application data be modeled? ERD Diagram -->
 

@@ -34,15 +34,15 @@ The Terminal application is deployed to the complete fleet of vehicles throughou
 
 ![Windows Tablet Onboard - Source: K. Bellefleur](images/tablet-onboard.jpg)
 
-A small application, mimicking the functionality of a LED should indicate to everyone onboard that there is an active confined space operation. With that information the operators should be reminded that in case of any incoming emergencies they have to stuff or call additional personal to standby for any emergency that might happen inside that space. In case the incoming emergency requires the complete stuff of the fire department the workers inside the confined space have to be notified and may need to terminate their operation.
+A small application, mimicking the functionality of a LED should indicate to everyone onboard that there is an active confined space operation. With that information the operators should be reminded that in case of any incoming emergencies they have to stuff or call additional personal to standby for any incident happening inside the confined space. In case the incoming emergency requires the complete stuff of the fire department the workers inside the confined space have to be notified and may need to terminate their operation.
 
 #### Version 1
 
-The first version of the application should have the very basic feature of displaying the on and off state with an additional offline indicator to show whenever the data could not be retrieved from the backend.
+The first version of the application should have the very basic feature of displaying the on and off state with an additional offline indicator to give a warning whenever the data could not be retrieved from the backend.
 
 #### Version 2
 
-Building up on the first version. The terminal should now implement a sound whenever the state of the LED indication changes and maybe play a little animation to subtly get the attention of the one looking at the screen.
+Building up on the first version. The terminal should now implement a sound whenever the state of the LED indicator changes and maybe play a little animation to subtly get the attention of whoever is looking at the monitor.
 
 #### Version 3
 
@@ -54,9 +54,9 @@ In case of an emergency the application should present an easy guideline on how 
 
 ## Trigger
 
-This application runs on the operators desktop inside the dispatchment center. Whenever a worker calls in to enter a confined space and gets approval from the operators they are able to press a button that send that status change to all running *Terminal* applications inside the vehicles.
+This application runs on the operators desktop inside the dispatchment center. Whenever a worker calls in to enter a confined space and gets approval by the operators they are able to press a button that send that status change to all running *Terminal* applications inside the vehicles.
 
-As the software is not allowed on the main dispatchment devices this application will most likely run external Microsoft Surface Pro tablets running Windows 10 standing next to the dispatchment screens of the operators. @bellefleur_2022_in
+As the software is not allowed on the main dispatchment devices this application will most likely run externaly on a Microsoft Surface Pro tablet running Windows 10. @bellefleur_2022_in
 
 ![Dispatchment Center Campbell River - Source: NI911 @ni911_contact](images/cr-dispatchment-center.jpg)
 
@@ -68,7 +68,7 @@ A simple button to toggle the confined space state on or off is more than enough
 
 #### Version 3 or higher
 
-With Version 3 the *Trigger* application is no longer needed and will get replace by the *Dispatcher* which has lots more features and handles the triggering of the *Terminal* on its own.
+With Version 3 the *Trigger* application is no longer needed and will get replace by the *Dispatcher* which has lots more functionality and handles the triggering of the *Terminal* on its own.
 
 ## Dispatcher
 
@@ -78,7 +78,7 @@ With the introduction of version 3 the *Trigger* application will be replaced by
 
 #### Version 3
 
-For the 3rd release cycle the fire department could imagine the following features being implemented into the dispatchment application:
+The fire department could imagine the following features being implemented into the dispatchment application:
 
 - Static input forms to input information about an operation, such as:
   - Company name
@@ -91,7 +91,7 @@ For the 3rd release cycle the fire department could imagine the following featur
 
 #### Version 4
 
-This version should introduce some authentication process to access the data.
+This version should introduce some authentication process to protect the data from any unauthorized person to be accessed.
 
 <!-- Map Feature -->
 <!-- Search -->
@@ -102,11 +102,11 @@ This version should introduce some authentication process to access the data.
 
 ## Worker
 
-The *Worker* is a concept that I made an early prototype off. This application should introduce a new method for the worker to communicate with the fire department. I have imagined an app that can be installed on the workers phone. Inside the application access to a confined space can be scheduled and requested from the fire departments operators. When access is granted the phone will constantly send feedback and data back to the operators. In case the operation did not get canceled and the predetermined exit time gets exceeded operators get informed over a possible issue and be able to call for a sign of life.
+The *Worker* is a concept that I made an early prototype off. This application should introduce a new method for the worker to communicate with the fire department. I have imagined an app that can be installed on the workers phone. Inside the application -- access to a confined space can be scheduled and requested from the fire departments operators. When access is granted the phone will constantly send feedback and data back to the operators. In case the operation did not get canceled and the predetermined exit time gets exceeded, operators will get informed over a possible issue and be able to call in to check on the workers well-being.
 
 Possible data that can be transmitted to the operators might include:
 
-- GPS Location
+- The GPS Location of the device
 - Phone Acceleration Spikes
 - Battery Level
 - Connection Strength
