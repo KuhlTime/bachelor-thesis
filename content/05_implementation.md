@@ -5,7 +5,7 @@
 
 As time for this thesis is limited a strict project management strategy was needed. Each release version was broken down into 
 
-![Kanban Board](images/kanban-board.jpg){height=400px}
+![Kanban Board - Source: Author](images/kanban-board.jpg){height=400px}
 
 <!-- How have I designed the application road map? -->
 <!-- What project management tools have I used in order to keep track of my tasks? Notion, GitHub Issues, Tags, Gantt-Chart -->

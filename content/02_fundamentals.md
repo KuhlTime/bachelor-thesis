@@ -17,10 +17,10 @@ These features allow for better emergency service through new ways of communicat
 
 What most of these software products have in common is a map view that displays the location of any emergency units and the current incidents.
 
-The fire department of Campbell River is currently using an (+CAD) software by called Centralsquare. @centralsquare_computeraided.
+The fire department of Campbell River is currently using an (+CAD) software by a company called Centralsquare. @centralsquare_computeraided.
 
 
-![Centralsquare CAD - Source: Kelly Bellefleur](images/cad.png)
+![Centralsquare CAD - Source: K. Bellefleur](images/cad.png)
 
   <!-- TODO: What disptach softwares are out there? -->
   <!-- TODO: What have they been using so far? -->
@@ -64,7 +64,8 @@ c. any other conditions relating to it.
 
 A confined space is considered **Hot Work** if any source of fire or ignition is present. @canadiandepartmentofjustice_2022_sor86304 (11.01)
 
-Figure 2 shows a visual representation of the different kind of confined spaces classifications.
+<!-- TODO: Figure Number -->
+Figure X shows a visual representation of the different kind of confined spaces classifications.
 
 ![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png)
 

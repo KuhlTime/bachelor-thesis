@@ -55,6 +55,9 @@ abc
 
 For the dispatchment application I have come up with a whole design system. That should bring a uniform U
 
+<!-- TODO: Use the following passage somewhere -->
+<!-- NOTE: A rescue is a balancing act between speed and safety. No rescue comes without risks that is why it is important to have only the most demanding information visiable that is vital to perform an operation. -->
+
 #### Worker
 
 <!-- How should the UI function? -->

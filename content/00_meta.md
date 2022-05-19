@@ -7,7 +7,10 @@ header-includes:
     - \include{glossary}
     - \setcounter{secnumdepth}{3}
     - \usepackage{tikz}
-    - - \usepackage{pgfplots}
+    - \usepackage{pgfplots}
+    - \usepackage{rotating}
+    - \usepackage{graphicx}
+    - \usepackage{lscape}
 include-after:
     - \newpage
     - \listoffigures
