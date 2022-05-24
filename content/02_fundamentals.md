@@ -180,7 +180,7 @@ In presentations by two engineers of 3M, they state that 60% of all casualties h
 
 "In 1986, NIOSH issued an alert which concluded that ‘More than 60% of confined space fatalities occur among would-be rescuers’ (NIOSH, 1986). The sample size used to produce this alert was very small and had no stated selection criteria. [...] rescuer fatalities was much lower, and no more than 17% of all deaths" @selmon_2019_workrelated.
 
-Because of the strict regulations put into place by the Canadian Government, deputy Chief K. Bellefleur can not remember a time when there has been any accident in Campbell River in the last 5 years. Most fatalities he says happen due to a lack of carelessness. @bellefleur_2022_in
+Because of the strict regulations put into place by the Canadian Government, deputy Chief K. Bellefleur can not remember a time when there has been any accident in Campbell River in the last 5 years. Most fatalities he says happen due to a lack of carefulness. @bellefleur_2022_in
 
 <!--
  | Year | Casualties |
