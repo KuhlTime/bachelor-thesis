@@ -5,9 +5,7 @@
 
 For the applications to work, a wide variety of technologies were used. This chapter should give a quick overview on each software and explain the core concepts needed to understand the further development of the applications.
 
-A common application can be devided into two parts. The **frontend**, the applications that gets used by the enduser and the **backend**, the applications that is used by the system itself. Commonly frontends only refers to a website, I will missuse this term for mobile applications, as both fullfill the same purpose -- to provide an interface to the enduser.
-
-
+A common application can be divided into two parts. The **frontend**, the applications that gets used by the end user and the **backend**, the applications that is used by the system itself. Commonly frontends only refers to a website, I will misuse this term for mobile applications, as both fulfill the same purpose -- to provide an interface to the end user.
 
 ## Frontend Development
 ### Electron
@@ -22,7 +20,7 @@ npm install electron
 
 ### VueJS
 
-VueJS is a reactive frontend framework that is used to build web applications. A **reactive** application keeps variables stored inside a so called "reference". On any change to that referenced data the (+UI) automatically updates to reflect the changes. This averts the need to write complex update routines to change the content that is being displaied to the user. 
+VueJS is a reactive frontend framework that is used to build web applications. A **reactive** application keeps variables stored inside a so-called "reference". On any change to that referenced data the (+UI) automatically updates to reflect the changes. This averts the need to write complex update routines to change the content that is being displayed to the user. 
 
 <!-- Who has created Vue? -->
 <!-- React -->
