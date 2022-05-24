@@ -256,3 +256,5 @@ A citation of these steps from their publication 'Confined space rescue: A propo
 <!-- TODO: What is the obligation of an emegency responder? -->
 <!-- TODO: What do operators of the CRFD need to know about a confined space operation? -->
 
+
+## Data Protection

@@ -46,7 +46,7 @@ Building up on the first version. The terminal should now implement a sound when
 
 #### Version 3
 
-As the application gets much bigger with 3rd version of the ecosystem. More data will be provided by the operators. This will give the opportunity to display a list of confined spaces inside the vehicle.
+As the application gets much bigger with the 3rd version of the ecosystem. More data will be provided by the operators. This will give the opportunity to display a list of confined spaces inside the vehicle.
 
 #### Version 4
 
@@ -56,11 +56,11 @@ In case of an emergency the application should present an easy guideline on how 
 
 This application runs on the operators desktop inside the dispatchment center. Whenever a worker calls in to enter a confined space and gets approval by the operators they are able to press a button that send that status change to all running *Terminal* applications inside the vehicles.
 
-As the software is not allowed on the main dispatchment devices this application will most likely run externaly on a Microsoft Surface Pro tablet running Windows 10. @bellefleur_2022_in
+As the software is not allowed on the main dispatchment devices this application will most likely run externally on a Microsoft Surface Pro tablet running Windows 10. @bellefleur_2022_in
 
 ![Dispatchment Center Campbell River - Source: NI911 @ni911_contact](images/cr-dispatchment-center.jpg)
 
-The first version of both the *Terminal* and the *Trigger* build up the basis on what the fire department is demanding.
+The first version of both the *Terminal* and the *Trigger* build up the basis on what is required by the fire department.
 
 #### Version 1 and 2
 
@@ -102,7 +102,7 @@ This version should introduce some authentication process to protect the data fr
 
 ## Worker
 
-The *Worker* is a concept that I made an early prototype off. This application should introduce a new method for the worker to communicate with the fire department. I have imagined an app that can be installed on the workers phone. Inside the application -- access to a confined space can be scheduled and requested from the fire departments operators. When access is granted the phone will constantly send feedback and data back to the operators. In case the operation did not get canceled and the predetermined exit time gets exceeded, operators will get informed over a possible issue and be able to call in to check on the workers well-being.
+The *Worker* is a concept that I made an early prototype off. This application should introduce a new method for the worker to communicate with the fire department. I have imagined an app that can be installed on the workers phone. Inside the application -- access to a confined space can be scheduled and requested from the fire departments operators. When access is granted the phone will constantly send data back to the operators. In case the operation did not get canceled and the predetermined exit time gets exceeded, operators will get informed over a possible issue and be able to call in to check on the workers well-being.
 
 Possible data that can be transmitted to the operators might include:
 
