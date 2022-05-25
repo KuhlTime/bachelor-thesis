@@ -18,12 +18,44 @@ As the first two releases are quite limited in their functionality these flows w
 
 ### Register new Contractor
 
-As the 
+Local companies are required by law to either have an emergency responder on their own or have a contract with one @bellefleur_2022_in. Each new contractor of the fire department will be able to get registered inside the system. When creating a new client inside the software a form should ask for relevant information about the work place. As there has been a huge gab in the detail of any contractors' documentation about their work sites @bellefleur_2022_in some information should be made mandatory to be provided, to ensure consistency across all confined spaces. The documentation of some ranged from complete folders of documents, hazards assessments to almost no information at all @bellefleur_2022_in.
 
-<!-- As there has been a huge gab between good documentation and no documentation at all. Some information should be made mandatory for the contractor to fill out. -->
+- Name of the company
+- Address
+- Contact information for the company
+- A list of the identified confined spaces where work might get carried out
+
+A copy of the contract and any other documents regarding the company should be uploaded to the system to remove the need for the operator to go through any folder and look for the documents. A physical copy should always be kept on hand in case of a system failure.
+<!-- NOTE: Keep all documents in one place -->
+
+What exactly is needed to register a new confined space will be further discussed in the next section [*Adding a Confined Space*](#adding-a-confined-space).
 
 <!-- TODO: 3 year hazard report warning -->
 <!-- TODO: Confirmation E-Mail for the Contractor to sign that the information is correct. -->
+
+
+### Adding a Confined Space
+
+Before an operation can be scheduled the confined space needs to be registered. This process is done by the operator entering the information the contractor provided. The operator will be guided through this process to ensure all relevant information is captured.
+
+- Name of the confined space
+- Location of the entry point
+- Lock-out board location
+- Measurement taken before entry
+- Hazards to be expected in the confined space
+- Date of the hazard assessment
+- Mitigation measures to be taken
+- Equipment to be used
+- Emergency equipment to be used
+- Further documentation and files
+
+After entering the confined space into the system a verification about the correctness of the information will be requested from the company through an automated e-mail or SMS.
+
+Should the date of the hazard assessment be older than the maximum 3 years -- the operator is obliged to ask for an updated report.
+
+### Updating a Confined Space
+
+Besides adding a confined space the operator should be able to update the information about a confined space. This may be needed when some conditions inside the confined space changed 
 
 ### Schedule Confined Space
 
