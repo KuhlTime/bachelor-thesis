@@ -99,7 +99,7 @@ Confined spaces are commonly part of a fabrication sites or public infrastructur
 
 ### Legislation <!-- TODO: Is it a regulation or legislation? -->
 
-Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the (+COHSR) @canadiandepartmentofjustice_2022_sor86304. From there on up a procedure for safe entry and exit can be established. Besides the (+COHSR) each state builds up on these fundamental regulations and builds up their own framework for handling confined spaces.
+Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the (+COHSR) @canadiandepartmentofjustice_2022_sor86304. From there on up a procedure for safe entry and exit can be established. Besides the (+COHSR) each state builds up on these fundamental regulations and adds their own definition upon these.
 
 #### Identification
 
@@ -234,16 +234,13 @@ About 90% of firefighters at the Campbell River Fire Department have undergone t
 
 ### Rescue
 
-<!-- TODO: What are they doing right now if they would need to resuce someone -->
-About 90% of firefighters at the Campbell River Fire Department have undergone thorough training in Rope and Confined Space Rescue. @bellefleur_2022_in
-
 In case of an emergency inside a confined space there are three types of rescue operations with increasing amount of complexity and risk @selman_2019_confined: 
 
 1. **Self rescue** Where entrants are able to evacuate the confined space on their own.
 2. **Non-entry rescue** Entrants are unable to leave the confined space on their own but are able to be retrieved through an extraction system.
 3. **Entry rescue** Entrants are unable to leave on their own and no extraction system is in place. A trained rescuer has to enter the confined space recover the person inside.
 
-Australian researchers Jason Selman, Jeffrey Spicket, Janis Jansz and Benjamnin Mullis proposed a five-step system they call **(+REALE)** @selman_2019_confined. The system should provide a framework for emergency responders to ensure a well-organized sequence of events.
+Australian researchers Jason Selman, Jeffrey Spicket, Janis Jansz and Benjamnin Mullis proposed a five-step resuce system they call **(+REALE)** @selman_2019_confined. The system should provide a framework for emergency responders to ensure a well-organized sequence of events.
 
 A citation of these steps from their publication 'Confined space rescue: A proposed procedure to reduce the risks' @selman_2019_confined:
 

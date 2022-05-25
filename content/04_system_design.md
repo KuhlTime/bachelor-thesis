@@ -18,6 +18,8 @@ As the first two releases are quite limited in their functionality these flows w
 
 ### Register new Contractor
 
+As the 
+
 <!-- As there has been a huge gab between good documentation and no documentation at all. Some information should be made mandatory for the contractor to fill out. -->
 
 <!-- TODO: 3 year hazard report warning -->
