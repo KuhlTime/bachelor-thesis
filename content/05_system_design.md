@@ -4,17 +4,13 @@
 <!-- TODO: Rewrite -->
 As the whole ecosystem is made up of many smaller software pieces discussed in the previous part *[3 Capabilities](#capabilities)* many design considerations had to be made. In this chapter I will walk over all the important concepts I have come up with and will go into more detail the more this chapter progresses. First I will lay out general concepts on how the application should function. Later I will get more specific and explain the individual software libraries and technologies used in order to accomplish the previously set goals.
 
-## Architecture
-
-Releases 1 and 2 will consist of two electron applications 
-
-<!-- Write this in a flow of how the data should flow -->
-
 ## Application Flows
 
 For a good user experience the interactions with the software were designed before developing the applications. Each flow represents the flow in which firemen, operators, workers and employers might work with the software.
 
-As the first two releases are quite limited in their functionality these flows will represent the release versions 3 and up.
+**Version 1 and 2** are rather limited -- their whole purpose is to simply signal and remind the fireman inside the fire trucks of any ongoing confined spaces operations. When approved by the operators they are able to press a simple button on their device that then gets transmitted to all vehicles. As there are multiple operators inside the dispatchment center their triggering applications will also be informed about the status change.
+
+**Version 3 and above** process more complex routines which I will explain in the following chapters:
 
 ### Register new Contractor
 
@@ -93,14 +89,14 @@ Should the entry be requested through the *Worker* application, the operator wil
 
 Each operation can be in one of eight different states:
 
-1. Scheduled
-2. Requested
-3. Canceled
-4. Approved
-5. Declined
-6. In Progress
-7. Emergency
-8. Completed
+  1. Scheduled
+  2. Requested
+  3. Canceled
+  4. Approved
+  5. Declined
+  6. In Progress
+  7. Emergency
+  8. Completed
 
 Once a request to enter the confined space has been made to the operators the request will either be approved or declined. A decline of the request may be caused due to a lack of information about the operation or a lack of emergency responders inside the fire department.
 
@@ -124,6 +120,82 @@ Should the whole fire department be busy with a huge emergency requiring all stu
 <!-- Does the software needs to be scalable? -->
 
 <!-- What should be the maximum cost of the ecostytem? -->
+
+## Data Model
+
+For the whole application I have come up with a complex data model. I have tried to capture the most relevant information and created room for expansion where necessary. Inside the data model distinctions between the actual entity and nested type interfaces are being made. The nested objects provide further structure thought the application, but unlike the entities these types are always stored inside an entity and therefor are not directly referenceable by any object. This helps with data persistence and is especially important for later verifying the correct handling of an emergency.
+
+<!-- TODO: Add source -->
+![Entity Relationship Diagram](images/erd-shrunk.png)
+
+Each entity has a unique identifier and some metadata associated with it. The metadata holds information like a timestamp -- when the entity was last updated `LastUpdated: Timestamp` and information about who performed that change `LastUpdatedBy: Ref(User)`. Later holding a reference to the user that performed the change. The names are purposely chosen to only reflect the latest change to an object as each entity owns a subcollection of the changes that have been made to it.
+
+To keep data usage at a minimum the subcollection does not store complete snapshots of the object but only holds the changes that have been made to it. Besides the actual change this change snapshot will always include the previously mentioned `LastUpdated` and `LastUpdatedBy` fields. The Internet Engineering Task Force ((+IETF))^[The IETF or *Internet Engineering Task Force* is a standards body that focuses on developing and publishing standards for the open web. @ietfinternetengineeringtaskforce_2019_about] published an (+RFC)^[(+RFC) stands for *Request For Comments* and describes a standard published to the (+IETF). It is called *Request For Comments* as a standard is not directly recommended by the (+IETF) and requests to be evaluated by anyone @drjulianonions_2021_rfc, @nottingham_2018_how. It first has to go through a number of stages before it should be used in production by anyone. @emberjs_rfc] that describes how one might store changes made to a JSON object in a standardized way. The standard has been published in April 2013 under the name "JavaScript Object Notion (JSON) Patch" ([RFC 9602](https://www.rfc-editor.org/rfc/rfc6902.html)) by Paul C. Bryan and Mark Nottingham. @bryan_2013_rfc, @dharmafly_2022_json
+
+The standard has been adapted by many existing libraries for all major programming languages. And is therefor fairly straightforward to implement into the application.
+
+As an example for the following object...
+
+```json
+{
+  "foo": "abc",
+  "bar": "def"
+}
+```
+
+... a change using the [RFC 9602](https://www.rfc-editor.org/rfc/rfc6902.html) standard might look like this:
+
+```json
+[
+  { "op": "replace", "path": "/bar", "value": "abc" },
+  { "op": "remove", "path": "/foo" }
+]
+```
+
+Each change inside the array describes one of 6 different case-sensitive operations that can be performed on the original data object. The operations `op` are:
+
+  - `add`: Add a new property to the object.
+  - `remove`: Remove a property from the object.
+  - `replace`: Replace the value of a property.
+  - `move`: Move a property to another location.
+  - `copy`: Copy a property to another location.
+  - `test`: Test that a property exists and has the expected value.
+
+Only the `add`, `remove` and `replace` operations are of interest to the application.
+
+With all of that information a history graph can be created and traversed to the user that created or modified the object at any point in time.
+
+### Contact
+
+A contact holds relevant information about a person. It stores the contacts name, address, phone number, email address and a selection of predetermined types to better identify the duty of the contact. As the contact information plays an important role with the traceability of information the contact object is not allowed to be deleted.
+
+### Users (Entity)
+
+Every person that wants to interact with the application has to be a registered user. Users have a role assigned to them. The role determines what operations the individual user is allowed to perform and which parts of the application he is able to see.
+
+
+<!-- TODO: What happens on user deletion -->
+
+### Contractors (Entity)
+### Confined Spaces (Entity)
+
+  - Assessment
+    - Notification when older than 3 years
+  - Hazard
+  - Measurement
+  - Equipment
+
+### Operations (Entity)
+
+- Ideas
+  - Approved by User
+- Emergency Report
+- Injury
+
+### Capture Points (Entity)
+
+- Sensor Event
+  - Ability to connect on sight sensors
 
 ## Quality
 

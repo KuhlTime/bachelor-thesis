@@ -7,7 +7,7 @@
 
 Computer-Aided Dispatch ((+CAD)), not to be misunderstood with Computer-Aided Design^[**Computer-Aided Design** misleadingly also referred to as CAD-Software is a software that's main purpose lays in the creation of digital construction plans and three-dimensional (3d) models. It is typically used in mechanical engineering, civil engineering and $\\$ electrical engineering. @autodeskinc_cad] is a special category of software that's helping to dispatch emergency services such as police and fire stations @wikipediacontributors_2021_computeraided. The software is used to provide a common flow for handling incoming emergencies -- to ensure a high agility and quick response to incoming emergency calls @usdepartmentofhomelandsecurity_2011_tech, @apcointernational_2012_public.
 
-More modern implementations of such a software are oftentimes referred to as **Next-Generation 911** ((+NG911)). 911 being the common emergency number in North-America @wikipediacontributors_2022_911. Whereas traditional dispatchment software was focused on "static land-line connections" @arcgisbyesriinc_ng911 (+NG911) focuses on providing advanced functionalities such as:
+More modern implementations of such a software are oftentimes referred to as **Next-Generation 911** ((+NG911)). 911 being the common emergency number in North-America @wikipediacontributors_2022_911. Whereas traditional dispatchment software was focused on communication via "static land-line connections" @arcgisbyesriinc_ng911 (+NG911) focuses on providing advanced functionalities such as:
 
 - processing of send video, audio and text messages @usnational911program_911gov
 - the ability to receive data from different "transmitting devices such as wearable medical devices, car computers and building alarms" @usnational911program_911gov
@@ -15,10 +15,11 @@ More modern implementations of such a software are oftentimes referred to as **N
 
 These features allow for better emergency service through new ways of communication and enable faster response times to incoming accidents.
 
+<!-- TODO: Rewrite -->
 What most of these software products have in common is a map view that displays the location of any emergency units and the current incidents.
+<!-- TODO: Add something -->
 
-The fire department of Campbell River is currently using an (+CAD) software by a company called Centralsquare. @centralsquare_computeraided.
-
+The fire department of Campbell River is currently using a (+CAD) software by a company called Centralsquare. @centralsquare_computeraided. Even though newer versions with more functionalities of that software do exist an older version is still used. The control over which software is used for their main emergency dispatchment is not handled by them but by the <!-- TODO: Agency -->
 
 ![Centralsquare CAD - Source: K. Bellefleur](images/cad.png)
 
@@ -30,13 +31,13 @@ The fire department of Campbell River is currently using an (+CAD) software by a
 ## Campbell River Fire Department
 
 The city of Campbell River is located in the western part of Canada. It is the second-largest city on Vancouver Island. With a total population of more than 37,800 permanent residents @cityofcampbellriver_2019_connect.
-The city is reachable via car, ferry, plane and seaplane and is about a 30-minute flight away from the metropolis of Vancouver.
+The city is reachable by car, ferry, plane and seaplane and is about a 30-minute flight away from the metropolis of Vancouver.
 
-The Campbell River Fire Department is the local fire department covering the wider area of Campbell River. <!-- TODO: Ask Kelly for specific operation radius --> The main fire station is located near the city center and houses a wide range of different fire trucks and rescue vehicles. @a2022_campbell
+The Fire Department is covering the wider area of Campbell River. <!-- TODO: Ask Kelly for specific operation radius --> The main fire station is located near the city center and houses a wide range of different fire trucks and rescue vehicles. @a2022_campbell
 
 ![2015 Rosenbauer Commander 4000 - Source: S. MacKichan @mackichan_2021_campbell](images/cr-tower.jpg)
 
-A second, smaller fire station located to the south of Campbell River houses a second set of fire fighting vehicles @a2022_campbell.
+A second, smaller fire station is located to the south of Campbell River -- houses a second set of fire fighting vehicles @a2022_campbell.
 
 Roughly 60% of all incoming emergencies happen to be medical calls, where the fire brigade is assisting with medical treatment of a patient. Approximately 10% of all responses are fire related and have to be extinguished. Besides these operations public assists, car accidents and false alarms are quite common. @bellefleur_2022_in
 
@@ -157,14 +158,14 @@ British Columbia ((+BC)) is the 3rd largest state and also the most western stat
 Under subsection 9.37 'Provision of rescue services' of the WorkSafeBC extended (+COHSR) it is required, that any company has to supply a qualified rescue person on their own @governmentofbritishcolumbia_2021_bc (9.37(1)) or has to contract a 3rd party rescue service to perform a rescue if necessary @governmentofbritishcolumbia_2021_bc (9.37(2)). 
 
 <!-- TODO: Let Kelly check if any of this is classified -->
-The Fire Department of Campbell River provides this kind of service to local companies in their vicinity. Companies that claim their services have to sign a contract that enforces them to provide detailed information on their confined spaces described in *[2.2.1 Legislation](#legislation)*. Before workers are granted access to perform work inside a confined space they have to provide a form to notify the fire department of their intended start and end time. In addition to that the form has to state possible hazards, the lockout board location^[A **lockout board** or **lockout station** is a safety system that should prevent any hazards from happening by disabling and physically locking their functionality or control interface. When everything has been locked the key gets stored in a final container. Only the worker who is entering the confined space can remove all applied locks. That way it is made sure that no one can accidentally re-enable some functionality and cause an accident. @bellefleur_2022_in, @wikipediacontributors_2020_lockouttagout], the workers involved, information on entry and exit and the equipment required. Only after handing in that form and receiving the "get-go" from the fire departments operators -- they are allowed to perform start working. @bellefleur_2022_in
+The Fire Department of Campbell River provides this kind of service to local companies in their vicinity. Companies that claim their services have to sign a contract that enforces them to provide detailed information on their confined spaces described in *[2.2.1 Legislation](#legislation)*. Before workers are granted access to perform work inside a confined space they have to provide a form to notify the fire department of their intended start and end time. In addition to that the form has to state possible hazards, the lockout board location^[A **lockout board** or **lockout station** is a safety system that should prevent any hazards from happening by disabling and physically locking their functionality or control interface. When everything has been locked the key gets stored in a final container. Only the worker who is entering the confined space can remove all applied locks. That way it is made sure that no one can accidentally re-enable some functionality and cause an accident. @bellefleur_2022_in, @wikipediacontributors_2020_lockouttagout], the workers involved, information on entry and exit and the equipment required. Only after handing in that form and receiving the "get-go" from the fire departments operators -- they are allowed to start working. @bellefleur_2022_in
 
 <!-- TODO: Add a user flow diagramm -->
 <!-- TODO: If allowed provide the Confined Space Rescue Standby (Off‐Site) Request Form-->
 
 ### Standards
 
-A standard is a guideline which was established by a group of expert in a certain topic. Whilst regulations build the basis, standards ensures that certain tasks are performed with quality and efficiency in mind @foundationofcannabisunifiedstandardsinc_standards. 
+A standard is a guideline which was established by a group of expert in a certain topic. Whilst regulations and govermental laws build the basis, standards ensures that certain tasks are performed with quality and efficiency in mind @foundationofcannabisunifiedstandardsinc_standards. 
 
 Common standards for operating a confined space in Canada are the (+CSA) Z1006 and the (+NFPA) 350 @mcpherson_2020_webinar.
 
@@ -176,11 +177,12 @@ In Canada alone, the Canadian rescue training provider Roco Rescue recorded an a
 
 As there are not a lot of statistics concerning injuries or fatalities in confined space, numbers may depend on the source of information.
 
-In presentations by two engineers of 3M, they state that 60% of all casualties happen to would-be rescuers^[**Would-be rescuer** Rescuer that died during the rescue operation] @mcpherson_2020_webinar, @meyer_2019_confined. These numbers go back to a study from 1986 and are rendered incorrect by an Australian study from 2019. 
+In presentations by two engineers of 3M, they state that 60% of all casualties happen to would-be rescuers^[**Would-be rescuer** Rescuer that died during the rescue operation] @mcpherson_2020_webinar, @meyer_2019_confined. These numbers go back to a study from 1986 and are rendered incorrect by an Australian study from 2019, which has taken multiple source from many developed countries to come up with their own incident estimations. 
 
 "In 1986, NIOSH issued an alert which concluded that ‘More than 60% of confined space fatalities occur among would-be rescuers’ (NIOSH, 1986). The sample size used to produce this alert was very small and had no stated selection criteria. [...] rescuer fatalities was much lower, and no more than 17% of all deaths" @selmon_2019_workrelated.
 
-Because of the strict regulations put into place by the Canadian Government, deputy Chief K. Bellefleur can not remember a time when there has been any accident in Campbell River in the last 5 years. Most fatalities he says happen due to a lack of carefulness. @bellefleur_2022_in
+Because of the strict regulations put into place by the Canadian Government, deputy Chief K. Bellefleur can not remember a time when there has been any confined space accident in Campbell River in recent years. Most fatalities he says happen due to a lack of carefulness @bellefleur_2022_in. The problem with that being that training for this kind of rescue sometimes falls short as these events happen so infrequently if at all. As many of the abilities come down to well-trained risk assessment of their fire firefighters they will most likely be able to help a person in need, still there being a level of uncertainty when it comes to hazards that they not normally come across. @bellefleur_2022_in
+
 
 <!--
  | Year | Casualties |
@@ -229,7 +231,6 @@ In order for someone to be allowed access to a confined space they need special 
 
 <!-- NOTE: The CRFD acts as an emergency responder. As such it is obligated to have personal on hand when s -->
 
-<!-- TODO: What are they doing right now if they would need to resuce someone -->
 About 90% of firefighters at the Campbell River Fire Department have undergone thorough training in Rope and Confined Space Rescue @bellefleur_2022_in. Because they are a comparably small fire department "everyone has to be good at everything" @bellefleur_2022_in.
 
 ### Rescue
@@ -252,6 +253,3 @@ A citation of these steps from their publication 'Confined space rescue: A propo
 
 <!-- TODO: What is the obligation of an emegency responder? -->
 <!-- TODO: What do operators of the CRFD need to know about a confined space operation? -->
-
-
-## Data Protection
