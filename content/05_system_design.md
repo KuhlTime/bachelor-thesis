@@ -130,7 +130,7 @@ For the whole application I have come up with a complex data model. I have tried
 
 Each entity has a unique identifier and some metadata associated with it. The metadata holds information like a timestamp -- when the entity was last updated `LastUpdated: Timestamp` and information about who performed that change `LastUpdatedBy: Ref(User)`. Later holding a reference to the user that performed the change. The names are purposely chosen to only reflect the latest change to an object as each entity owns a subcollection of the changes that have been made to it.
 
-To keep data usage at a minimum the subcollection does not store complete snapshots of the object but only holds the changes that have been made to it. Besides the actual change this change snapshot will always include the previously mentioned `LastUpdated` and `LastUpdatedBy` fields. The Internet Engineering Task Force ((+IETF))^[The IETF or *Internet Engineering Task Force* is a standards body that focuses on developing and publishing standards for the open web. @ietfinternetengineeringtaskforce_2019_about] published an (+RFC)^[(+RFC) stands for *Request For Comments* and describes a standard published to the (+IETF). It is called *Request For Comments* as a standard is not directly recommended by the (+IETF) and requests to be evaluated by anyone @drjulianonions_2021_rfc, @nottingham_2018_how. It first has to go through a number of stages before it should be used in production by anyone. @emberjs_rfc] that describes how one might store changes made to a JSON object in a standardized way. The standard has been published in April 2013 under the name "JavaScript Object Notion (JSON) Patch" ([RFC 9602](https://www.rfc-editor.org/rfc/rfc6902.html)) by Paul C. Bryan and Mark Nottingham. @bryan_2013_rfc, @dharmafly_2022_json
+To keep data usage at a minimum the subcollection does not store complete snapshots of the object but only holds the changes that have been made to it. Besides the actual change this change snapshot will always include the previously mentioned `LastUpdated` and `LastUpdatedBy` fields. The Internet Engineering Task Force ((+IETF))^[The **IETF** or *Internet Engineering Task Force* is a standards body that focuses on developing and publishing standards for the open web. @ietfinternetengineeringtaskforce_2019_about] published an (+RFC)^[**(+RFC)** stands for *Request For Comments* and describes a standard published to the (+IETF). It is called *Request For Comments* as a standard is not directly recommended by the (+IETF) and requests to be evaluated by anyone @drjulianonions_2021_rfc, @nottingham_2018_how. It first has to go through a number of stages before it should be used in production by anyone. @emberjs_rfc] that describes how one might store changes made to a JSON object in a standardized way. The standard has been published in April 2013 under the name "JavaScript Object Notion (JSON) Patch" ([RFC 9602](https://www.rfc-editor.org/rfc/rfc6902.html)) by Paul C. Bryan and Mark Nottingham. @bryan_2013_rfc, @dharmafly_2022_json
 
 The standard has been adapted by many existing libraries for all major programming languages. And is therefor fairly straightforward to implement into the application.
 
@@ -167,17 +167,20 @@ With all of that information a history graph can be created and traversed to the
 
 ### Contact
 
-A contact holds relevant information about a person. It stores the contacts name, address, phone number, email address and a selection of predetermined types to better identify the duty of the contact. As the contact information plays an important role with the traceability of information the contact object is not allowed to be deleted.
+A contact holds relevant information about a person. It stores the contacts name, address, phone number, email address and a selection of predetermined types to better identify the duty of the contact. As the contact information plays an important role with the traceability of information the contact object is not allowed to be deleted. <!-- TODO: Figure--> The contact entity in Figure X shows no connection to any other objects as the contact entity can be all thought the models.
 
-### Users (Entity)
+### Users
 
 Every person that wants to interact with the application has to be a registered user. Users have a role assigned to them. The role determines what operations the individual user is allowed to perform and which parts of the application he is able to see.
+
+<!-- TODO: See where this goes -->
+Optional^[Present in many modern programming languages an **optional value** is one that can deliberately be omitted. The absence of a value is often denoted by a special `undefined`, `nil` or `null` value. A type annotation often uses a `?` to indicate that the value is optional. @microsoft_2022_documentation, @appleinc_the]
 
 
 <!-- TODO: What happens on user deletion -->
 
-### Contractors (Entity)
-### Confined Spaces (Entity)
+### Contractors
+### Confined Spaces
 
   - Assessment
     - Notification when older than 3 years
@@ -185,14 +188,14 @@ Every person that wants to interact with the application has to be a registered 
   - Measurement
   - Equipment
 
-### Operations (Entity)
+### Operations
 
 - Ideas
   - Approved by User
 - Emergency Report
 - Injury
 
-### Capture Points (Entity)
+### Capture Points
 
 - Sensor Event
   - Ability to connect on sight sensors
