@@ -10,7 +10,7 @@ The software should be rolled out in multiple release cycles with an increasing 
 
 <!-- TODO: Fix Image Size -->
 <!-- TODO: Remove In Progress Sound (Dublicate) -->
-![Software Release Roadmap - Source: Author](images/cs-release-plan.png)
+![Software Release Roadmap - Source: Author](images/cs-release-plan.png){#fig:cs-release-plan}
 
 In order for the application to quickly be deployed into the field, the first two releases only consist of a very basic feature set to indicate whether there is an ongoing operation or not. With each release the application should evolve into a more complex and feature-rich application. Version 1 is the bare minimum of what is needed by the fire department. This would already drastically improve their safety concerning confined spaces, as they currently use sticky notes taped to the windshield of the vehicles to indicate that there is an ongoing confined space operation. @bellefleur_2022_in
 
@@ -32,7 +32,7 @@ The complete ecosystem should consist of multiple applications that should all h
 <!-- TODO: Figure number -->
 The Terminal application is deployed to the complete fleet of vehicles throughout the fire department. Each truck has one or more Windows based computers mounted to the dashboard or to the seats of the vehicle. See Figure X.
 
-![Windows Tablet Onboard - Source: K. Bellefleur](images/tablet-onboard.jpg)
+![Windows Tablet Onboard - Source: K. Bellefleur](images/tablet-onboard.jpg){#fig:tablet-onboard}
 
 A small application, mimicking the functionality of a LED should indicate to everyone onboard that there is an active confined space operation. With that information the operators should be reminded that in case of any incoming emergencies they have to stuff or call additional personal to standby for any incident happening inside the confined space. In case the incoming emergency requires the complete stuff of the fire department the workers inside the confined space have to be notified and may need to terminate their operation.
 
@@ -58,7 +58,7 @@ This application runs on the operators desktop inside the dispatchment center. W
 
 As the software is not allowed on the main dispatchment devices this application will most likely run externally on a Microsoft Surface Pro tablet running Windows 10. @bellefleur_2022_in
 
-![Dispatchment Center Campbell River - Source: NI911 @ni911_contact](images/cr-dispatchment-center.jpg)
+![Dispatchment Center Campbell River - Source: NI911 @ni911_contact](images/cr-dispatchment-center.jpg){#fig:cr-dispatchment-center}
 
 The first version of both the *Terminal* and the *Trigger* build up the basis on what is required by the fire department.
 

@@ -2,14 +2,16 @@
 link-citations: true
 lang: en-US
 header-includes:
+    - \usepackage{graphicx}
+    - \usepackage{wrapfig}
     - \usepackage{glossaries}
     - \makenoidxglossaries
     - \include{glossary}
+    - \graphicspath{ {./content/images} }
     - \setcounter{secnumdepth}{3}
     - \usepackage{tikz}
     - \usepackage{pgfplots}
     - \usepackage{rotating}
-    - \usepackage{graphicx}
     - \usepackage{lscape}
 include-after:
     - \newpage

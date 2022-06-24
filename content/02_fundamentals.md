@@ -21,7 +21,7 @@ What most of these software products have in common is a map view that displays 
 
 The fire department of Campbell River is currently using a (+CAD) software by a company called Centralsquare. @centralsquare_computeraided. Even though newer versions with more functionalities of that software do exist an older version is still used. The control over which software is used for their main emergency dispatchment is not handled by them but by the <!-- TODO: Agency -->
 
-![Centralsquare CAD - Source: K. Bellefleur](images/cad.png)
+![Centralsquare CAD - Source: K. Bellefleur](images/cad.png){#fig:cad}
 
   <!-- TODO: What disptach softwares are out there? -->
   <!-- TODO: What have they been using so far? -->
@@ -35,7 +35,7 @@ The city is reachable by car, ferry, plane and seaplane and is about a 30-minute
 
 The Fire Department is covering the wider area of Campbell River. <!-- TODO: Ask Kelly for specific operation radius --> The main fire station is located near the city center and houses a wide range of different fire trucks and rescue vehicles. @a2022_campbell
 
-![2015 Rosenbauer Commander 4000 - Source: S. MacKichan @mackichan_2021_campbell](images/cr-tower.jpg)
+![2015 Rosenbauer Commander 4000 - Source: S. MacKichan @mackichan_2021_campbell](images/cr-tower.jpg){#fig:cr-tower}
 
 A second, smaller fire station is located to the south of Campbell River -- houses a second set of fire fighting vehicles @a2022_campbell.
 
@@ -65,10 +65,9 @@ c. any other conditions relating to it.
 
 A confined space is considered **Hot Work** if any source of fire or ignition is present. @canadiandepartmentofjustice_2022_sor86304 (11.01)
 
-<!-- TODO: Figure Number -->
-Figure X shows a visual representation of the different kind of confined spaces classifications.
+Figure @fig:csclassification shows a visual representation of the different kind of confined spaces classifications.
 
-![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png)
+![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png){#fig:csclassification}
 
 Inside a confined space one might encounter one or more of the following hazards @governmentofcanada_2021_confined, @mcpherson_2020_webinar:
 
@@ -94,7 +93,7 @@ Inside a confined space one might encounter one or more of the following hazards
 <!-- TODO: List more exampled brought up in @governmentofcanada_2021_confined -->
 Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place @bellefleur_2022_in, @governmentofcanada_2021_confined, @worksafebc_confined.
 
-![Hazardous Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg)
+![Hazardous Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg){#fig:draegerConfinedSpace}
 
 <!-- TODO: Does there need to be an emergency responder on sight? -->
 

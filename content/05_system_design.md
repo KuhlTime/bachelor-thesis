@@ -110,12 +110,14 @@ Should the whole fire department be busy with a huge emergency requiring all stu
 
 ## Architecture
 
+<!-- Only for one fire department -->
+  <!-- No cross fire department data -->
+<!-- Additional fire department through a terraform script -->
+
 <!-- What is the architecture of this application? -->
   <!-- What do books recommend on how a good system architecture should look like? -->
 
 <!-- How will the different applications communicate with one another? -->
-
-<!-- TODO: How should the application data be modeled? ERD Diagram -->
 
 <!-- Does the software needs to be scalable? -->
 
@@ -125,14 +127,15 @@ Should the whole fire department be busy with a huge emergency requiring all stu
 
 For the whole application I have come up with a complex data model. I have tried to capture the most relevant information and created room for expansion where necessary. Inside the data model distinctions between the actual entity and nested type interfaces are being made. The nested objects provide further structure thought the application, but unlike the entities these types are always stored inside an entity and therefor are not directly referenceable by any object. This helps with data persistence and is especially important for later verifying the correct handling of an emergency.
 
-<!-- TODO: Add source -->
-![Entity Relationship Diagram](images/erd-shrunk.png)
+<!-- TODO: Add source (Eigene Darstellung) -->
+<!-- TODO: Update -->
+![Condensed Entity Relationship Diagram](images/erd-shrunk.png){#fig:erdShrunk}
 
-Each entity has a unique identifier and some metadata associated with it. The metadata holds information like a timestamp -- when the entity was last updated `LastUpdated: Timestamp` and information about who performed that change `LastUpdatedBy: Ref(User)`. Later holding a reference to the user that performed the change. The names are purposely chosen to only reflect the latest change to an object as each entity owns a subcollection of the changes that have been made to it.
+Each entity has a unique identifier ((+UUID))^[A **Universally Unique IDentifier** or short **UUID** is generated from a set of five different algorithms which produce a 128 Bit long string that helps with unique labeling of data for better "sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general". @leach_2005_a] by which to reference the particular document and some additional metadata. The metadata holds information like a timestamp -- when the entity was last changed `LastUpdated: Timestamp` and a reference to the user who performed that change `LastUpdatedByUser: Ref(User)`. The names are purposely chosen to only reflect the latest change. Any change gets documented inside a subcollection called `History`.
 
-To keep data usage at a minimum the subcollection does not store complete snapshots of the object but only holds the changes that have been made to it. Besides the actual change this change snapshot will always include the previously mentioned `LastUpdated` and `LastUpdatedBy` fields. The Internet Engineering Task Force ((+IETF))^[The **IETF** or *Internet Engineering Task Force* is a standards body that focuses on developing and publishing standards for the open web. @ietfinternetengineeringtaskforce_2019_about] published an (+RFC)^[**(+RFC)** stands for *Request For Comments* and describes a standard published to the (+IETF). It is called *Request For Comments* as a standard is not directly recommended by the (+IETF) and requests to be evaluated by anyone @drjulianonions_2021_rfc, @nottingham_2018_how. It first has to go through a number of stages before it should be used in production by anyone. @emberjs_rfc] that describes how one might store changes made to a JSON object in a standardized way. The standard has been published in April 2013 under the name "JavaScript Object Notion (JSON) Patch" ([RFC 9602](https://www.rfc-editor.org/rfc/rfc6902.html)) by Paul C. Bryan and Mark Nottingham. @bryan_2013_rfc, @dharmafly_2022_json
+To keep data usage at a minimum the `History` subcollection does not store complete snapshots of the object but only holds the changes that have been made to it. Besides the actual change made to the object each change document will always include the previously mentioned `LastUpdated` and `LastUpdatedByUser` fields. The Internet Engineering Task Force ((+IETF))^[The **IETF** or *Internet Engineering Task Force* is a standards body that focuses on developing and publishing standards for the open web. @ietfinternetengineeringtaskforce_2019_about] published an Request For Comments ((+RFC))^[**(+RFC)** stands for *Request For Comments* and describes a standard published to the (+IETF). It is called *Request For Comments* as a standard is not directly recommended by the (+IETF) and requests to be evaluated by anyone @drjulianonions_2021_rfc, @nottingham_2018_how. It first has to go through a number of stages before it should be used in production by anyone. @emberjs_rfc] that describes how one might store changes made to a JSON object in a standardized way. The standard has been published in April 2013 under the name "JavaScript Object Notion (JSON) Patch" ([RFC 9602](https://www.rfc-editor.org/rfc/rfc6902.html)) by Paul C. Bryan and Mark Nottingham. @bryan_2013_rfc, @dharmafly_2022_json
 
-The standard has been adapted by many existing libraries for all major programming languages. And is therefor fairly straightforward to implement into the application.
+The standard has been adapted by many existing libraries for all major programming languages @dharmafly_2022_json. And is therefor fairly straightforward to implement into the application.
 
 As an example for the following object...
 
@@ -167,20 +170,36 @@ With all of that information a history graph can be created and traversed to the
 
 ### Contact
 
-A contact holds relevant information about a person. It stores the contacts name, address, phone number, email address and a selection of predetermined types to better identify the duty of the contact. As the contact information plays an important role with the traceability of information the contact object is not allowed to be deleted. <!-- TODO: Figure--> The contact entity in Figure X shows no connection to any other objects as the contact entity can be all thought the models.
+![Contact Entity](images/erd-contact.png){ #fig:erdContact width=80% }
+
+A contact holds relevant information about an actor involved in the confined space process. The entity stores relevant contact information like the persons name, address, phone number, email address and a selection of types to better identify the duty of the person. Each contact has a few mandatory fields and additional information like the persons body measurements which are optional^[Present in many modern programming languages an **optional value** is one that can deliberately be omitted. The absence of a value is often denoted by a special `undefined`, `nil` or `null` value. A type annotation often uses a `?` to indicate that the value is optional. @microsoft_2022_documentation, @appleinc_the] -- symbolized in Figure @fig:erdContact by the `?` question mark. These fields will most likely not be provided and are a demonstration of where additional fields might be implemented. Any frontend application accessing the data needs to be able to handle the absence of these values. 
+
+As the contact information plays an important role for the traceability of information the contact object is not allowed to be deleted. The contact entity in Figure @fig:erdShrunk shows no connection to any other objects as the contact entity can be found all throughout the model structure.
 
 ### Users
 
-Every person that wants to interact with the application has to be a registered user. Users have a role assigned to them. The role determines what operations the individual user is allowed to perform and which parts of the application he is able to see.
+<!-- TODO: Look where to put this -->
+As with the `LastUpdatedByUser` metadata field any reference always has an indication of the entity that can be expected from that reference.
 
-<!-- TODO: See where this goes -->
-Optional^[Present in many modern programming languages an **optional value** is one that can deliberately be omitted. The absence of a value is often denoted by a special `undefined`, `nil` or `null` value. A type annotation often uses a `?` to indicate that the value is optional. @microsoft_2022_documentation, @appleinc_the]
+<!-- TODO: Update -->
+![User Entity](images/erd-user.png){ #fig:erdUser width=30% }
+
+Every person that wants to interact with the application has to be a registered user. Users have a role assigned to them. The `UserRole` field determines what operations the individual user is allowed to perform and which parts of the application he is able to see. 
 
 
 <!-- TODO: What happens on user deletion -->
 
 ### Contractors
+
+Any institution that wants the fire department to be their emergency responder for any of their planned confined space entries has to sign a contract assuring the fire department that they will provide them with accurate information about their work place and the hazards that are to be expected inside the confined spaces. 
+
+The Contractor entity holds general information, like the companies name and information about whom to contact for any administrative or technical issues related to the work place. Furthermore, the Contractor entity holds references to their confined spaces and their workers' user accounts. More on that later.
+
+Inside the `Documents` property the fire department is able to store any documents that are relevant to the work place, like the signed contract, maps, floor plans, etc. As for Firebase any files that have been uploaded will get stored inside the Firebase Storage service. The actual object will then hold a URL to access the particular file.
+
 ### Confined Spaces
+
+Confined space build a vital part that should be modeled with this application. 
 
   - Assessment
     - Notification when older than 3 years
@@ -200,6 +219,24 @@ Optional^[Present in many modern programming languages an **optional value** is 
 - Sensor Event
   - Ability to connect on sight sensors
 
+## Safety
+
+<!-- What are common errors that need to be prevented? e.g. User error (Incorrect use), Network Connectivity -->
+  <!-- How is the application protected against hackers? -->
+  <!-- What attack surfaces does the application poses? -->
+  <!-- What are the consquences of someone breaching different parts of the system -->
+  <!-- How can this be prevented? -->
+
+  <!-- How is future provness guaranteed? -->
+
+### Communication
+
+### Data Access Control
+
+### Data Privacy
+
+@googleinc_2022_privacy
+
 ## Quality
 
 <!-- What qualitiy / security standards need to be set? -->
@@ -212,24 +249,13 @@ Optional^[Present in many modern programming languages an **optional value** is 
 <!-- How should issues and crashes be handled? -->
 <!-- What Fallback is there in case of a malfuntion or a complete system outage? -->
 
-### Safety
-  <!-- What are common errors that need to be prevented? e.g. User error (Incorrect use), Network Connectivity -->
-  <!-- How is the application protected against hackers? -->
-  <!-- What attack surfaces does the application poses? -->
-  <!-- What are the consquences of someone breaching different parts of the system -->
-  <!-- How can this be prevented? -->
-
-  <!-- How is future provness guaranteed? -->
-
 ## Interface Design
 
 For the User Interface^[The **User Interface** ((+UI)) describes the visual style of an application @dumont_2021_ui] ((+UI)) and the User Experience^[The **User Experience** ((+UX)) describes the functionality of an application. As to *what steps need to be taken in order to perform a certain task*. When talking about a "good" (+UX) that generally means that a software is intuitive and easy to use.] ((+UX))
 
 #### Terminal
 
-abc
-
-![Indicator States - Source: Author](images/indicator-states.png)
+![Indicator States - Source: Author](images/indicator-states.png){#fig:indicatorStates}
 
 #### Trigger
 
