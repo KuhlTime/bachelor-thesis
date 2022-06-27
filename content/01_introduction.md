@@ -4,9 +4,8 @@
 
 ## Overview
 
-In conjunction with the fire department of Campbell River I set out to create a software that would help them to schedule operations in so-called "confined spaces". Confined spaces being areas which are not designed for permanent human occupancy and therefore might pose a risk to human safety. In case of an emergency the staff is obligated to help with the rescue of any person in that confined space.
+In conjunction with the fire department of Campbell River I set out to create a software that would help them to remember and schedule operations in so-called "confined spaces". Confined spaces being areas which are not designed for permanent human occupancy and therefore might pose a risk to human safety. In case of an emergency the staff is obligated to help with the rescue of any person inside that confined space.
 
-<!-- How is this thesis structured? -->
 ## Structure
 <!-- TODO: Mention different Applications and their release stages -->
 The thesis is divided into several parts. Each of which builds up on the previous one.

@@ -3,10 +3,9 @@
 # Capabilities
 
 <!-- What gaps / issues does the software need to address? -->
-Canadian authorities prohibited the management of confined spaces through the (+CAD) software that is currently used at the Campbell River fire department. The planned software should fill in these gaps. As the original software was not designed to handle confined spaces, operators got creative and created pending emergency calls which should indicate that some workers would be in a confined space.
+Canadian authorities prohibited the management of confined spaces through the (+CAD) software that is currently used at the Campbell River fire department. The planned software should fill in these gaps. As the original software was not designed to handle confined spaces, operators got creative and created pending emergency calls which should indicate that some workers would be in a confined space. @bellefleur_2022_in
 
-<!-- TODO: Figure number -->
-The software should be rolled out in multiple release cycles with an increasing amount of functionality and complexity. As for the features required I have created a roadmap (Figure X) that indicates the functionality implemented in each cycle.
+The software should be rolled out in multiple release cycles with an increasing amount of functionality and complexity. As for the features required I have created a roadmap (Figure @fig:cs-release-plan) that indicates the functionality implemented in each cycle.
 
 <!-- TODO: Fix Image Size -->
 <!-- TODO: Remove In Progress Sound (Dublicate) -->
@@ -14,8 +13,7 @@ The software should be rolled out in multiple release cycles with an increasing 
 
 In order for the application to quickly be deployed into the field, the first two releases only consist of a very basic feature set to indicate whether there is an ongoing operation or not. With each release the application should evolve into a more complex and feature-rich application. Version 1 is the bare minimum of what is needed by the fire department. This would already drastically improve their safety concerning confined spaces, as they currently use sticky notes taped to the windshield of the vehicles to indicate that there is an ongoing confined space operation. @bellefleur_2022_in
 
-<!-- TODO: Figure number -->
-The complete ecosystem should consist of multiple applications that should all handle a different task. In the following subchapters I will explain -- what will be the purpose of each of the pieces of software and how they evolve throughout the different releases. I will list the requirements made by the fire department and add additional features and ideas that I came up with. See Figure X.
+The complete ecosystem should consist of multiple applications that should all handle a different task. In the following subchapters I will explain the purpose of each of the pieces of software and how they evolve throughout the different releases. I will list the requirements made by the fire department and add additional features and ideas that I came up with. See Figure @fig:nature.
 
 <!-- Based on: https://latex-tutorial.com/landscape-page/ -->
 
@@ -29,12 +27,11 @@ The complete ecosystem should consist of multiple applications that should all h
 \newpage
 ## Terminal
 
-<!-- TODO: Figure number -->
-The Terminal application is deployed to the complete fleet of vehicles throughout the fire department. Each truck has one or more Windows based computers mounted to the dashboard or to the seats of the vehicle. See Figure X.
+The Terminal application is deployed to the complete fleet of vehicles throughout the fire department. Each truck has one or more Windows based computers mounted to the dashboard or to the seats of the vehicle. See Figure @fig:tablet-onboard.
 
 ![Windows Tablet Onboard - Source: K. Bellefleur](images/tablet-onboard.jpg){#fig:tablet-onboard}
 
-A small application, mimicking the functionality of a LED should indicate to everyone onboard that there is an active confined space operation. With that information the operators should be reminded that in case of any incoming emergencies they have to stuff or call additional personal to standby for any incident happening inside the confined space. In case the incoming emergency requires the complete stuff of the fire department the workers inside the confined space have to be notified and may need to terminate their operation.
+A small application, mimicking the functionality of a LED should indicate to everyone onboard that there is an active confined space operation. With that information the operators should be reminded that in case of any incoming emergencies they have to staff or call additional personal to standby for any incident happening inside the confined space. In case the incoming emergency requires the complete staff of the fire department the workers inside the confined space have to be notified and may need to terminate their operation.
 
 #### Version 1
 
@@ -54,9 +51,9 @@ In case of an emergency the application should present an easy guideline on how 
 
 ## Trigger
 
-This application runs on the operators desktop inside the dispatchment center. Whenever a worker calls in to enter a confined space and gets approval by the operators they are able to press a button that send that status change to all running *Terminal* applications inside the vehicles.
+This application runs on the operators desktop inside the dispatchment center. Whenever a worker calls in to enter a confined space and gets approval by the operators they are able to press a button that sends the status change to all running *Terminal* applications inside the vehicles.
 
-As the software is not allowed on the main dispatchment devices this application will most likely run externally on a Microsoft Surface Pro tablet running Windows 10. @bellefleur_2022_in
+As the software is not allowed on the main dispatchment devices this application will most likely run externally on a Microsoft Surface Pro tablets owned by the fire deparmtent. @bellefleur_2022_in
 
 ![Dispatchment Center Campbell River - Source: NI911 @ni911_contact](images/cr-dispatchment-center.jpg){#fig:cr-dispatchment-center}
 
@@ -64,7 +61,7 @@ The first version of both the *Terminal* and the *Trigger* build up the basis on
 
 #### Version 1 and 2
 
-A simple button to toggle the confined space state on or off is more than enough.
+A simple button to toggle the confined space state on or off is more than enough. The state should be synchronized across all the applications.
 
 #### Version 3 or higher
 
@@ -102,7 +99,7 @@ This version should introduce some authentication process to protect the data fr
 
 ## Worker
 
-The *Worker* is a concept that I made an early prototype off. This application should introduce a new method for the worker to communicate with the fire department. I have imagined an app that can be installed on the workers phone. Inside the application -- access to a confined space can be scheduled and requested from the fire departments operators. When access is granted the phone will constantly send data back to the operators. In case the operation did not get canceled and the predetermined exit time gets exceeded, operators will get informed over a possible issue and be able to call in to check on the workers well-being.
+The *Worker* is a concept that I made an early prototype off. This application should introduce a new method for the worker to communicate with the fire department. I have imagined an app that can be installed on the workers phone. Inside the application -- access to a confined space can be scheduled and requested from the fire departments operators without the need to phone in. When access is granted the phone will constantly send data back to the operators. In case the operation was not marked as completed by any of the workers and the predetermined exit time gets exceeded, operators will get informed over a possible issue and be able to check back on the workers well-being.
 
 Possible data that can be transmitted to the operators might include:
 
@@ -114,7 +111,7 @@ Possible data that can be transmitted to the operators might include:
 
 This would open up new ways of responding to emergencies and give the workers an extra level of security. 
 
-Although iOS usage on smartphones in Canada is quite high compared to Europe. The application should be developed for both major players iOS (57.3% @statcounter_2022_mobile) and Android (42.5% @statcounter_2022_mobile) to ensure maximum coverage.
+Although iOS usage on smartphones in Canada is quite high compared to Europe. The application should be developed for both major mobile operating systems iOS (57.3% @statcounter_2022_mobile) and Android (42.5% @statcounter_2022_mobile) to ensure maximum coverage.
 
 <!-- What requirements should the application fullfill? -->
 

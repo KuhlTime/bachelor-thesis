@@ -16,8 +16,17 @@ As time for this thesis is limited a strict project management strategy was need
 As multiple applications relied up on electron as their application core I first created a boilerplate that 
   <!-- Code Signing -->
 
+## Firebase
 
-## Firebase Historian
+### Firebase Database
+
+### Firebase Rules
+
+### Firebase Storage
+
+### Firebase Cloud Functions
+
+### Firebase Historian
 
 <!-- What features / code snippets need deeper explaination? -->
   <!-- What are these features / sntippets used for? -->
@@ -27,3 +36,5 @@ As multiple applications relied up on electron as their application core I first
 <!-- How much data is firestore using when on cellular? Make some tests to see how much data is beeing used -->
   <!-- How are the security rules defined? -->
   <!-- How is data being stored? -->
+
+## cs-models

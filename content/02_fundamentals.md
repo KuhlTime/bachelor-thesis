@@ -16,10 +16,10 @@ More modern implementations of such a software are oftentimes referred to as **N
 These features allow for better emergency service through new ways of communication and enable faster response times to incoming accidents.
 
 <!-- TODO: Rewrite -->
-What most of these software products have in common is a map view that displays the location of any emergency units and the current incidents.
+What most of these software products have in common is list of current emergencies and a map view that displays the location of any emergency units and the current incidents.
 <!-- TODO: Add something -->
 
-The fire department of Campbell River is currently using a (+CAD) software by a company called Centralsquare. @centralsquare_computeraided. Even though newer versions with more functionalities of that software do exist an older version is still used. The control over which software is used for their main emergency dispatchment is not handled by them but by the <!-- TODO: Agency -->
+The fire department of Campbell River is currently using a (+CAD) software by a company called Centralsquare. @centralsquare_computeraided. Even though newer versions with more functionalities of that product do exist an older version is still used as the fire department is not directly in control of what software is allowed to be used on their official IT infrastructure.
 
 ![Centralsquare CAD - Source: K. Bellefleur](images/cad.png){#fig:cad}
 
@@ -33,11 +33,14 @@ The fire department of Campbell River is currently using a (+CAD) software by a 
 The city of Campbell River is located in the western part of Canada. It is the second-largest city on Vancouver Island. With a total population of more than 37,800 permanent residents @cityofcampbellriver_2019_connect.
 The city is reachable by car, ferry, plane and seaplane and is about a 30-minute flight away from the metropolis of Vancouver.
 
+<!-- TODO: Add Source -->
+![Map of Canada](images/map.png){#fig:map}
+
 The Fire Department is covering the wider area of Campbell River. <!-- TODO: Ask Kelly for specific operation radius --> The main fire station is located near the city center and houses a wide range of different fire trucks and rescue vehicles. @a2022_campbell
 
 ![2015 Rosenbauer Commander 4000 - Source: S. MacKichan @mackichan_2021_campbell](images/cr-tower.jpg){#fig:cr-tower}
 
-A second, smaller fire station is located to the south of Campbell River -- houses a second set of fire fighting vehicles @a2022_campbell.
+A second, smaller fire station is located to the south of Campbell River and houses a second set of fire fighting vehicles @a2022_campbell.
 
 Roughly 60% of all incoming emergencies happen to be medical calls, where the fire brigade is assisting with medical treatment of a patient. Approximately 10% of all responses are fire related and have to be extinguished. Besides these operations public assists, car accidents and false alarms are quite common. @bellefleur_2022_in
 
@@ -65,7 +68,7 @@ c. any other conditions relating to it.
 
 A confined space is considered **Hot Work** if any source of fire or ignition is present. @canadiandepartmentofjustice_2022_sor86304 (11.01)
 
-Figure @fig:csclassification shows a visual representation of the different kind of confined spaces classifications.
+Figure @fig:csclassification shows a visual representation of the different kinds of confined spaces classifications.
 
 ![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png){#fig:csclassification}
 
@@ -111,7 +114,7 @@ The identification process is a way of determining if there are any confined spa
 4. The employer has to keep the record readily available. This document has to be updated / reviewed either every 3 years @canadiandepartmentofjustice_2022_sor86304 (11.03) or whenever the conditions of that particular confined space change.
 5. Before someone is granted access to a **none**-hazardous confined space. The employer needs to ensure that safety measures such as "person-check and emergency response systems" @canadiandepartmentofjustice_2022_sor86304 (11.02(5)) are put into place.
 
-The previously mentioned steps have been broken down to their core concepts. The full legislatory definitions are part of the subsection 11.02 of the (+COHSR) @canadiandepartmentofjustice_2022_sor86304.
+The previously mentioned steps have been broken down to their core concepts. The full legislatory definitions are part of subsection 11.02 of the (+COHSR) @canadiandepartmentofjustice_2022_sor86304.
 
 <!-- NOTE: A person is never allowed to enter a confined space on their own. They always need someone that  -->
 
@@ -120,9 +123,9 @@ The previously mentioned steps have been broken down to their core concepts. The
 For every confined space the assigned qualified person has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03), @governmentofcanada_2021_confined:
 
 <!-- TODO: Reorder list -->
-- The date at which the report was created.
+- The date at which the hazard assessment was carried out.
 - An extensive list of all the hazards a person entering that space may encounter. Each hazard has to have a resolution on how a certain threat can be prevented, controlled or extinguished.
-- It needs to mention which equipment is required on site by the worker entering that space and what equipment might be required by the first aid responders.
+- It needs to mention which equipment is required on site by the worker entering the space and what equipment might be required by the first aid responders.
 - What checks and tasks have to be performed before someone is allowed access to the confined space.
 - It needs to clarify the way of getting approval to enter that space.
 - Any additional information for the worker or the emergency responders has to be stated.
@@ -130,7 +133,7 @@ For every confined space the assigned qualified person has to produce a detailed
 <!-- TODO:  (2)(f) any situation in which an entry permit system is required. -->
 <!-- TODO: What is an Entry Permit System? @governmentofcanada_2021_confined -->
 
-Only persons that have certain training and are qualified to perform a hazard assessment and are allowed to fill out such a report @canadiandepartmentofjustice_2022_sor86304 (11.03), @governmentofcanada_2021_confined. In case of any accidents that have to do with a lack of information on that report they are held responsible and might face legal consequences. 
+Only persons that have certain training and are qualified to perform a hazard assessment are allowed to fill out such a report @canadiandepartmentofjustice_2022_sor86304 (11.03), @governmentofcanada_2021_confined. In case of any accidents that have to do with a lack of information on that report the person whose job it was to create the report might be held responsible and might face legal consequences. 
 <!-- TODO: Find ressource legal consequences -->
 
 <!-- TODO: Reread -->
@@ -138,7 +141,7 @@ Just like the identification of the confined spaces has to be reviewed every 3 y
 
 #### Establishing Procedures
 
-From the previous two reports a procedure for a safe entry and exit of a confined space can be derived. The procedures will establish a roadmap for all the actors involved. Every confined space needs to have "safe entry and exit procedures", "two-way communication and person check systems" and "emergency response measures" @canadiandepartmentofjustice_2022_sor86304 (11.04(2)(a)). <!-- TODO: Not entirely sure! --> In case of a hazardous confined space the procedure plan has to state which safety tests need to be run and what equipment has to be prepared for both the workers and the emergency response personal. @canadiandepartmentofjustice_2022_sor86304 (11.04).
+From the previous two reports a procedure for a safe entry and exit of a confined space can be derived. The procedures will set up a roadmap for all the actors involved. Every confined space needs to have "safe entry and exit procedures", "two-way communication and person check systems" and "emergency response measures" @canadiandepartmentofjustice_2022_sor86304 (11.04(2)(a)). <!-- TODO: Not entirely sure! --> In case of a hazardous confined space the procedure plan has to state which safety tests need to be performed ahead of time and what equipment has to be prepared for both the workers and the emergency response personal. @canadiandepartmentofjustice_2022_sor86304 (11.04).
 
 In case an entry permit system^[An **entry permit system** is a further safety system that includes a governing instance controlled by the employer. Its task is to schedule operations and hand out permits to the workers entering a hazardous confined space @usdepartmentofhomelandsecurity_2011_tech.] is in place the qualified person has to fill out a permit handed out by the employer. <!-- TODO: Rewrite --> A permit holds additional information about the hazardous confined space.  @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
 
@@ -157,15 +160,15 @@ British Columbia ((+BC)) is the 3rd largest state and also the most western stat
 Under subsection 9.37 'Provision of rescue services' of the WorkSafeBC extended (+COHSR) it is required, that any company has to supply a qualified rescue person on their own @governmentofbritishcolumbia_2021_bc (9.37(1)) or has to contract a 3rd party rescue service to perform a rescue if necessary @governmentofbritishcolumbia_2021_bc (9.37(2)). 
 
 <!-- TODO: Let Kelly check if any of this is classified -->
-The Fire Department of Campbell River provides this kind of service to local companies in their vicinity. Companies that claim their services have to sign a contract that enforces them to provide detailed information on their confined spaces described in *[2.2.1 Legislation](#legislation)*. Before workers are granted access to perform work inside a confined space they have to provide a form to notify the fire department of their intended start and end time. In addition to that the form has to state possible hazards, the lockout board location^[A **lockout board** or **lockout station** is a safety system that should prevent any hazards from happening by disabling and physically locking their functionality or control interface. When everything has been locked the key gets stored in a final container. Only the worker who is entering the confined space can remove all applied locks. That way it is made sure that no one can accidentally re-enable some functionality and cause an accident. @bellefleur_2022_in, @wikipediacontributors_2020_lockouttagout], the workers involved, information on entry and exit and the equipment required. Only after handing in that form and receiving the "get-go" from the fire departments operators -- they are allowed to start working. @bellefleur_2022_in
+The Fire Department of Campbell River provides this kind of service to local companies in their vicinity. Companies that claim their services have to sign a contract that enforces them to provide detailed information on their confined spaces described in *[2.2.1 Legislation](#legislation)*. Before workers are granted access to perform work inside a confined space they have to provide a form to notify the fire department of their intended start and end time. In addition to that the form has to state possible hazards, the lockout board location^[A **lockout board** or **lockout station** is a safety system that should prevent any hazards from happening by disabling and physically locking their functionality or control interface. When everything has been locked the key gets stored in a final container. Only the worker who is entering the confined space can remove all applied locks. That way it is made sure that no one can accidentally re-enable some functionality and cause an accident. @bellefleur_2022_in, @wikipediacontributors_2020_lockouttagout], the workers involved, information on entry and exit and the equipment required. Only after handing in that form and receiving the "get-go" from the fire departments operators -- they are allowed to begin their work. @bellefleur_2022_in
 
 <!-- TODO: Add a user flow diagramm -->
 <!-- TODO: If allowed provide the Confined Space Rescue Standby (Off‐Site) Request Form-->
 
 ### Standards
 
-A standard is a guideline which was established by a group of expert in a certain topic. Whilst regulations and governmental laws build the basis, standards ensures that certain tasks are performed with quality and efficiency in mind @foundationofcannabisunifiedstandardsinc_standards. 
-
+A standard is a guideline established by a group of expert in a certain topic. Whilst regulations and governmental laws build the basis, standards ensures that certain tasks are performed with a high safety and a repeatable efficiency @foundationofcannabisunifiedstandardsinc_standards. 
+ß
 Common standards for operating a confined space in Canada are the (+CSA) Z1006 and the (+NFPA) 350 @mcpherson_2020_webinar.
 
 <!-- TODO: US and Canada closely related -->

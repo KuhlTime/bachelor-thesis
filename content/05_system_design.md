@@ -8,23 +8,15 @@ As the whole ecosystem is made up of many smaller software pieces discussed in t
 
 For a good user experience the interactions with the software were designed before developing the applications. Each flow represents the flow in which firemen, operators, workers and employers might work with the software.
 
-**Version 1 and 2** are rather limited -- their whole purpose is to simply signal and remind the fireman inside the fire trucks of any ongoing confined spaces operations. When approved by the operators they are able to press a simple button on their device that then gets transmitted to all vehicles. As there are multiple operators inside the dispatchment center their triggering applications will also be informed about the status change.
+**Version 1 and 2** are rather limited -- their whole purpose is to simply signal and remind the fireman inside the fire trucks of any ongoing confined spaces operations. When approved by the operators they are able to press a button to notify all vehicles that there is a confined space operation running. As there are multiple operators inside the dispatchment center their triggering applications will also be informed about the status change.
 
-**Version 3 and above** process more complex routines which I will explain in the following chapters:
+**Version 3 and above** are way more complex. Following each functionality of the applications will be explained:
 
-### Register new Contractor
+### Register a new Contractor
 
 Local companies are required by law to either have an emergency responder on their own or have a contract with one @bellefleur_2022_in. Each new contractor of the fire department will be able to get registered inside the system. When creating a new client inside the software a form should ask for relevant information about the work place. As there has been a huge gab in the detail of any contractors' documentation about their work sites @bellefleur_2022_in some information should be made mandatory to be provided, to ensure consistency across all confined spaces. The documentation of some ranged from complete folders of documents, hazards assessments to almost no information at all @bellefleur_2022_in.
 
-- Name of the company
-- Address
-- Contact information for the company
-- A list of the identified confined spaces where work might get carried out
-
 A copy of the contract and any other documents regarding the company should be uploaded to the system to remove the need for the operator to go through any folder and look for the documents. A physical copy should always be kept on hand in case of a system failure.
-<!-- NOTE: Keep all documents in one place -->
-
-What exactly is needed to register a new confined space will be further discussed in the next section [*Adding a Confined Space*](#adding-a-confined-space).
 
 <!-- TODO: 3 year hazard report warning -->
 <!-- TODO: Confirmation E-Mail for the Contractor to sign that the information is correct. -->
@@ -45,13 +37,13 @@ Before an operation can be scheduled the confined space needs to be registered. 
 - Emergency equipment to be used
 - Further documentation and files
 
-After entering the confined space into the system a verification about the correctness of the information will be requested from the company through an automated e-mail or SMS.
+After entering the confined space into the system a verification about the correctness of the information will be requested from the company through an automated E-Mail or SMS.
 
-Should the date of the hazard assessment be older than the maximum 3 years -- the operator is obliged to ask for an updated report.
+Should the date of the hazard assessment be older than the maximum 3 years -- the operator is obliged to ask for an updated report. Shortly before the assessment is due the companies contact will receive an automated e-mail asking them for an updated report.
 
 ### Updating a Confined Space
 
-Besides adding a confined space the operator should be able to update the information about a confined space. This may be needed when some conditions inside the confined space changed.
+Besides adding a confined space the operator should be able to update the information about a confined space. This may be needed when some conditions inside the confined space changed. As with the creation of a confined space and the accompanied hazard report the contact person has to confirm the correctness.
 
 ### Schedule Confined Space
 
@@ -79,7 +71,7 @@ Should the selected space's hazard report be older than the maximum age of three
 
 After filling out all the information a review page should give a summary of the data that has been entered.
 
-Once the operation has been scheduled the emergency contact will receive an e-mail or an SMS with the information provided in the form. By clicking on a link provided inside the e-mail or the SMS the emergency contact can confirm the captured information is valid.
+Once the operation has been scheduled the emergency contact will receive an E-Mail or an SMS with the information provided in the form. By clicking on a link provided inside the E-Mail or the SMS the emergency contact can confirm the captured information is valid.
 
 ### Entering a Confined Space
 
@@ -108,6 +100,15 @@ Should the whole fire department be busy with a huge emergency requiring all stu
 
 ### Declaring an Emergency
 
+Should there be an emergency inside a confined space all applications switch into an emergency mode. Fireman and dispatchers are shown clear instructions on how to react corresponding to the previously mentioned **REALE** @selman_2019_confined guideline. Additionally, any registered hazards and their resolutions will be shown in a clear and understandable way.
+
+An emergency can be initiated in a variety of ways:
+
+  * Someone makes a call to the fire department
+  * A person on sight uses the *Worker* application to trigger an emergency
+  * The *Worker* application has detected a sensor value exceeding a certain threshold
+  * The operation has not been marked as completed by one of the workers and the operation has exceeded the scheduled time limit
+
 ## Architecture
 
 <!-- Only for one fire department -->
@@ -125,17 +126,17 @@ Should the whole fire department be busy with a huge emergency requiring all stu
 
 ## Data Model
 
-For the whole application I have come up with a complex data model. I have tried to capture the most relevant information and created room for expansion where necessary. Inside the data model distinctions between the actual entity and nested type interfaces are being made. The nested objects provide further structure thought the application, but unlike the entities these types are always stored inside an entity and therefor are not directly referenceable by any object. This helps with data persistence and is especially important for later verifying the correct handling of an emergency.
+For the whole application I have come up with a complex data model. I have tried to capture the most relevant information and created room for expansion where necessary. Inside the data model distinctions between the actual entity and nested type interfaces are being made. The nested objects provide further structure thought the application, but unlike the entities these types are always stored inside an entity and therefor are not directly referenceable by any other object inside the database.
 
 <!-- TODO: Add source (Eigene Darstellung) -->
 <!-- TODO: Update -->
 ![Condensed Entity Relationship Diagram](images/erd-shrunk.png){#fig:erdShrunk}
 
-Each entity has a unique identifier ((+UUID))^[A **Universally Unique IDentifier** or short **UUID** is generated from a set of five different algorithms which produce a 128 Bit long string that helps with unique labeling of data for better "sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general". @leach_2005_a] by which to reference the particular document and some additional metadata. The metadata holds information like a timestamp -- when the entity was last changed `LastUpdated: Timestamp` and a reference to the user who performed that change `LastUpdatedByUser: Ref(User)`. The names are purposely chosen to only reflect the latest change. Any change gets documented inside a subcollection called `History`.
+Each entity has a unique identifier ((+UUID))^[A **Universally Unique IDentifier** or short **UUID** is generated from a set of five different algorithms which produce a 128 Bit long string that helps with unique labeling of data for better "sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general". @leach_2005_a] by which to reference the particular document. Adding to that -- metadata information like a timestamp -- when the entity was last changed `LastUpdated` and a reference to the user who performed that change `LastUpdatedByUser` are added to each entity. The names are purposely chosen to only reflect the latest change. Any manipulation to a document gets stored inside a subcollection called `History`.
 
-To keep data usage at a minimum the `History` subcollection does not store complete snapshots of the object but only holds the changes that have been made to it. Besides the actual change made to the object each change document will always include the previously mentioned `LastUpdated` and `LastUpdatedByUser` fields. The Internet Engineering Task Force ((+IETF))^[The **IETF** or *Internet Engineering Task Force* is a standards body that focuses on developing and publishing standards for the open web. @ietfinternetengineeringtaskforce_2019_about] published an Request For Comments ((+RFC))^[**(+RFC)** stands for *Request For Comments* and describes a standard published to the (+IETF). It is called *Request For Comments* as a standard is not directly recommended by the (+IETF) and requests to be evaluated by anyone @drjulianonions_2021_rfc, @nottingham_2018_how. It first has to go through a number of stages before it should be used in production by anyone. @emberjs_rfc] that describes how one might store changes made to a JSON object in a standardized way. The standard has been published in April 2013 under the name "JavaScript Object Notion (JSON) Patch" ([RFC 9602](https://www.rfc-editor.org/rfc/rfc6902.html)) by Paul C. Bryan and Mark Nottingham. @bryan_2013_rfc, @dharmafly_2022_json
+To keep data usage at a minimum the `History` subcollection does not store complete snapshots of the object but only holds the changes that have been made performed on the previous data snapshot. Besides the actual change made to the object each change-document will always include the previously mentioned `LastUpdated` and `LastUpdatedByUser` fields. The Internet Engineering Task Force ((+IETF))^[The **IETF** or *Internet Engineering Task Force* is a standards body that focuses on developing and publishing standards for the open web. @ietfinternetengineeringtaskforce_2019_about] put out a Request For Comments ((+RFC))^[**(+RFC)** stands for *Request For Comments* and describes a standard published to the (+IETF). It is called *Request For Comments* as a standard is not directly recommended by the (+IETF) and requests to be evaluated by anyone @drjulianonions_2021_rfc, @nottingham_2018_how. It first has to go through a number of stages before it should be used in production by anyone. @emberjs_rfc] that describes how one might store changes made to a JSON object. The standard has been published in April 2013 under the name "JavaScript Object Notion (JSON) Patch" ([RFC 9602](https://www.rfc-editor.org/rfc/rfc6902.html)) by Paul C. Bryan and Mark Nottingham. @bryan_2013_rfc, @dharmafly_2022_json
 
-The standard has been adapted by many existing libraries for all major programming languages @dharmafly_2022_json. And is therefor fairly straightforward to implement into the application.
+It has been adapted by many existing libraries for all major programming languages @dharmafly_2022_json. It is therefor fairly straightforward to implement into the application.
 
 As an example for the following object...
 
@@ -164,7 +165,7 @@ Each change inside the array describes one of 6 different case-sensitive operati
   - `copy`: Copy a property to another location.
   - `test`: Test that a property exists and has the expected value.
 
-Only the `add`, `remove` and `replace` operations are of interest to the application.
+Only the `add`, `remove` and `replace` operations are of interest to this application.
 
 With all of that information a history graph can be created and traversed to the user that created or modified the object at any point in time.
 
@@ -172,37 +173,39 @@ With all of that information a history graph can be created and traversed to the
 
 ![Contact Entity](images/erd-contact.png){ #fig:erdContact width=80% }
 
-A contact holds relevant information about an actor involved in the confined space process. The entity stores relevant contact information like the persons name, address, phone number, email address and a selection of types to better identify the duty of the person. Each contact has a few mandatory fields and additional information like the persons body measurements which are optional^[Present in many modern programming languages an **optional value** is one that can deliberately be omitted. The absence of a value is often denoted by a special `undefined`, `nil` or `null` value. A type annotation often uses a `?` to indicate that the value is optional. @microsoft_2022_documentation, @appleinc_the] -- symbolized in Figure @fig:erdContact by the `?` question mark. These fields will most likely not be provided and are a demonstration of where additional fields might be implemented. Any frontend application accessing the data needs to be able to handle the absence of these values. 
+A contact holds relevant information about an actor involved in the confined space process. The entity stores data like the persons name, address, phone number, email address and a selection of types to better identify the duty of the person. Each contact has a few mandatory fields and additional information like the persons body measurements which are optional^[Present in many modern programming languages an **optional value** is one that can deliberately be omitted. The absence of a value is often denoted by a special `undefined`, `nil` or `null` value. A type annotation often uses a `?` to indicate that the value is optional. @microsoft_2022_documentation, @appleinc_the] -- symbolized in Figure @fig:erdContact by the `?` question mark. These fields will most likely not be provided and are a demonstration of where additional fields might be implemented. Any frontend application accessing the data needs to be able to handle the absence of these values accordingly. 
 
 As the contact information plays an important role for the traceability of information the contact object is not allowed to be deleted. The contact entity in Figure @fig:erdShrunk shows no connection to any other objects as the contact entity can be found all throughout the model structure.
 
 ### Users
 
 <!-- TODO: Look where to put this -->
-As with the `LastUpdatedByUser` metadata field any reference always has an indication of the entity that can be expected from that reference.
+<!-- As with the `LastUpdatedByUser` metadata field any reference always has an indication of the entity that can be expected from that reference. -->
 
 <!-- TODO: Update -->
 ![User Entity](images/erd-user.png){ #fig:erdUser width=30% }
 
-Every person that wants to interact with the application has to be a registered user. Users have a role assigned to them. The `UserRole` field determines what operations the individual user is allowed to perform and which parts of the application he is able to see. 
+Every person that wants to interact with the application has to be a registered user. Users have a role assigned to them. The `UserRole` field determines what operations the individual user is allowed to perform and which parts of the application he is allowed to access. 
 
 
 <!-- TODO: What happens on user deletion -->
 
 ### Contractors
 
-Any institution that wants the fire department to be their emergency responder for any of their planned confined space entries has to sign a contract assuring the fire department that they will provide them with accurate information about their work place and the hazards that are to be expected inside the confined spaces. 
+Any institution that wants the fire department to be their emergency responder for any of their planned confined space entries has to sign a contract assuring the fire department that they will provide them with accurate information about their work place and the hazards that are to be expected inside their confined spaces. 
 
-The Contractor entity holds general information, like the companies name and information about whom to contact for any administrative or technical issues related to the work place. Furthermore, the Contractor entity holds references to their confined spaces and their workers' user accounts. More on that later.
+The contractor entity holds general information, like the companies name and information about whom to contact for any administrative or technical issues related to the work place. Furthermore, the contractor entity holds references to their confined spaces and their workers' user accounts. More on that later. 
+<!-- TODO: Is more on that later been realized anywhere -->
 
 Inside the `Documents` property the fire department is able to store any documents that are relevant to the work place, like the signed contract, maps, floor plans, etc. As for Firebase -- any files that have been uploaded will get stored inside the Firebase Storage service. The property inside the database document will then hold a URL to access the particular file.
 
 ### Confined Spaces
 
-Confined space build a vital part of the application. Each confined space object is referenced by a single contractor. As mentioned in *2.3.1 (Hazard Assessment)* the contractor has to conduct an assessment of the hazards that are to be expected inside the confined space. 
+A confined space builds a vital part of the application. Each confined space object is referenced by a single contractor. As mentioned in *2.3.1 (Hazard Assessment)* the contractor has to conduct an assessment of the hazards that are to be expected inside the confined space. 
 
 #### Assessment
-For each confined space there are subsidiary assessment interfaces holding the information about who performed the assessment, a timestamp when the assessment took place, further documents and an array of hazards found inside that confined space. If the assessment is to old the
+For each confined space there are subsidiary assessment interfaces holding the information about who performed the assessment, a timestamp when the assessment took place, further documents and an array of hazards found inside that confined space. (See Figure X)
+<!-- TODO: Figure -->
 
 #### Hazard
 A hazard gives the application knowledge about 
