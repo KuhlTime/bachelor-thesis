@@ -13,6 +13,7 @@ header-includes:
     - \usepackage{pgfplots}
     - \usepackage{rotating}
     - \usepackage{lscape}
+    - \usepackage{cancel}
 include-after:
     - \newpage
     - \listoffigures

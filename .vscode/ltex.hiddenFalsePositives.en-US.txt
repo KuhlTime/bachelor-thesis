@@ -2,3 +2,4 @@
 {"rule":"ABLE_TO_PASSIVE","sentence":"^\\QSelf rescue where entrants are able to evacuate the confined space on their own\nNon-entry rescue entrants are unable to leave the confined space on their own but are able to be retrieved through an extraction system^\nEntry rescue\\E$"}
 {"rule":"ABLE_TO_PASSIVE","sentence":"^\\QNon-entry rescue Entrants are unable to leave the confined space on their own but are able to be retrieved through an extraction system.\\E$"}
 {"rule":"ARTICLE_ADJECTIVE_OF","sentence":"^\\QAny frontend application accessing the data needs to be able to handle the absent of this data.\\E$"}
+{"rule":"COLLECTIVE_NOUN_VERB_AGREEMENT_VBP","sentence":"^\\QAssessment\nFor each confined space there are subsidiary assessment interfaces holding the information about who performed the assessment, a timestamp when the assessment took place, further documents and an array of hazards found inside that confined space.\\E$"}

@@ -164,11 +164,53 @@ The Fire Department of Campbell River provides this kind of service to local com
 
 ### Standards
 
-A standard is a guideline which was established by a group of expert in a certain topic. Whilst regulations and govermental laws build the basis, standards ensures that certain tasks are performed with quality and efficiency in mind @foundationofcannabisunifiedstandardsinc_standards. 
+A standard is a guideline which was established by a group of expert in a certain topic. Whilst regulations and governmental laws build the basis, standards ensures that certain tasks are performed with quality and efficiency in mind @foundationofcannabisunifiedstandardsinc_standards. 
 
 Common standards for operating a confined space in Canada are the (+CSA) Z1006 and the (+NFPA) 350 @mcpherson_2020_webinar.
 
 <!-- TODO: US and Canada closely related -->
+
+### Hazard Diamond
+
+In the (+NFPA) 704 "Standard System for the Identification of the Hazards of Materials for Emergency Response" the association has constituted a sign for quickly identifying and assessing the potential risks from any substances or materials @nfpanationalfireprotectionassociation_2022_nfpa. The sign is in the shape of a diamond and therefor often referred to as a "hazard diamond". 
+
+<!-- TODO: @nfpanationalfireprotectionassociation_2022_nfpa + sap + Own depiction -->
+![Hazard Diamond](images/diamond.png){ #fig:diamond width=30% }
+
+The diamond is divided up into four different colored sections (see Figure @fig:diamond), three of them showing a number with the associated risk level. Numbers range from $0$ (no-risk) to $4$ (highest-risk). Each color represents a different hazard:
+
+  - Blue: Health Hazard
+    - $0$: Normal Material
+    - $1$: Slightly Hazardous
+    - $2$: Hazardous
+    - $3$: Extreme Danger
+    - $4$: Deadly
+  - Red: Fire Hazard
+    - $0$: Will Not Burn
+    - $1$: Above $200\text{°F} \text{ (}\approx 93\text{°C)}$
+    - $2$: Below $200\text{°F} \text{ (}\approx 93\text{°C)}$
+    - $3$: Below $100\text{°F} \text{ (}\approx 37\text{°C)}$
+    - $4$: Below $73\text{°F} \text{ (}\approx 22\text{°C)}$
+  - Yellow: Instability Hazard
+    - $0$: Stable
+    - $1$: Unstable if Heated
+    - $2$: Violent Chemical Change
+    - $3$: Shock and Heat may Detonate
+    - $4$: May Detonate
+
+Conversions from °F to °C were rounded down and have been taken from WolframAlpha @wolframalpha_2022_wolframalpha.
+
+<!-- TODO: Fix Section -->
+The white section remarks a special area where hazards like:
+
+  - `ACID`: Acid
+  - `ALK`: Alkali
+  - `COR`: Corrosive
+  - `OX`: Oxidizer
+  - $?$: Radiation
+  - $?$: Use no Water
+
+All previous hazard descriptions have been taken from Michael Mulders' blog posting @mulder_2022_nfpa.
 
 ### Statistics
 

@@ -51,7 +51,7 @@ Should the date of the hazard assessment be older than the maximum 3 years -- th
 
 ### Updating a Confined Space
 
-Besides adding a confined space the operator should be able to update the information about a confined space. This may be needed when some conditions inside the confined space changed 
+Besides adding a confined space the operator should be able to update the information about a confined space. This may be needed when some conditions inside the confined space changed.
 
 ### Schedule Confined Space
 
@@ -195,11 +195,17 @@ Any institution that wants the fire department to be their emergency responder f
 
 The Contractor entity holds general information, like the companies name and information about whom to contact for any administrative or technical issues related to the work place. Furthermore, the Contractor entity holds references to their confined spaces and their workers' user accounts. More on that later.
 
-Inside the `Documents` property the fire department is able to store any documents that are relevant to the work place, like the signed contract, maps, floor plans, etc. As for Firebase any files that have been uploaded will get stored inside the Firebase Storage service. The actual object will then hold a URL to access the particular file.
+Inside the `Documents` property the fire department is able to store any documents that are relevant to the work place, like the signed contract, maps, floor plans, etc. As for Firebase -- any files that have been uploaded will get stored inside the Firebase Storage service. The property inside the database document will then hold a URL to access the particular file.
 
 ### Confined Spaces
 
-Confined space build a vital part that should be modeled with this application. 
+Confined space build a vital part of the application. Each confined space object is referenced by a single contractor. As mentioned in *2.3.1 (Hazard Assessment)* the contractor has to conduct an assessment of the hazards that are to be expected inside the confined space. 
+
+#### Assessment
+For each confined space there are subsidiary assessment interfaces holding the information about who performed the assessment, a timestamp when the assessment took place, further documents and an array of hazards found inside that confined space. If the assessment is to old the
+
+#### Hazard
+A hazard gives the application knowledge about 
 
   - Assessment
     - Notification when older than 3 years
@@ -232,6 +238,8 @@ Confined space build a vital part that should be modeled with this application.
 ### Communication
 
 ### Data Access Control
+
+<!-- TODO: Add diagramm -->
 
 ### Data Privacy
 
