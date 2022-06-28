@@ -13,7 +13,8 @@ The software should be rolled out in multiple release cycles with an increasing 
 
 In order for the application to quickly be deployed into the field, the first two releases only consist of a very basic feature set to indicate whether there is an ongoing operation or not. With each release the application should evolve into a more complex and feature-rich application. Version 1 is the bare minimum of what is needed by the fire department. This would already drastically improve their safety concerning confined spaces, as they currently use sticky notes taped to the windshield of the vehicles to indicate that there is an ongoing confined space operation. @bellefleur_2022_in
 
-The complete ecosystem should consist of multiple applications that should all handle a different task. In the following subchapters I will explain the purpose of each of the pieces of software and how they evolve throughout the different releases. I will list the requirements made by the fire department and add additional features and ideas that I came up with. See Figure @fig:nature.
+The complete ecosystem should consist of multiple applications that should all handle a different task. In the following subchapters I will explain the purpose of each of the pieces of software and how they evolve throughout the different releases. I will list the requirements made by the fire department and add additional features and ideas that I came up with. See Figure X.
+<!-- TODO: Set Figure -->
 
 <!-- Based on: https://latex-tutorial.com/landscape-page/ -->
 

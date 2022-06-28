@@ -100,7 +100,7 @@ Should the whole fire department be busy with a huge emergency requiring all stu
 
 ### Declaring an Emergency
 
-Should there be an emergency inside a confined space all applications switch into an emergency mode. Fireman and dispatchers are shown clear instructions on how to react corresponding to the previously mentioned **REALE** @selman_2019_confined guideline. Additionally, any registered hazards and their resolutions will be shown in a clear and understandable way.
+Should there be an emergency inside a confined space all applications switch into an emergency mode. Fireman and dispatchers are shown clear instructions on how to react corresponding to the previously mentioned **REALE** @selman_2019_confined guidelines. Additionally, any registered hazards and their resolutions will be shown in a clear and understandable way.
 
 An emergency can be initiated in a variety of ways:
 
@@ -205,7 +205,7 @@ Inside the `Documents` property the fire department is able to store any documen
 
 ### Confined Spaces
 
-![Confined Space Entity](images/erd-confined-space.png){ #fig:erdConfinedSpace width=75% }
+![Confined Space Entity](images/erd-confined-space.png){ #fig:erdConfinedSpace width=75%  }
 
 A confined space builds a vital part of the application. Each confined space object is referenced by a single contractor. As mentioned in *2.3.1 (Hazard Assessment)* the contractor has to conduct an assessment of the hazards that are to be expected inside the confined space. 
 
@@ -249,10 +249,25 @@ In case of an emergency a hazard interface gives clear instructions on what to b
 
 ### Operations
 
-- Ideas
-  - Approved by User
-- Emergency Report
-- Injury
+Each operation inside a confined space has to be announced by the contractor at least 24 hours prior to the start of the operation. Information inside the object includes the space where the operation is going to take place, the scheduled start and end-time of the operation, a description of the work that is going to be performed, the workers involved in the operation. The optional `ApprovedByUser` field gets filled by an operator as soon as he gives the get go for the operation. This field is only to be set 30 minutes before the scheduled start so that approval can only be gained judging the current workload of the fire department. For further documentation an optional `StartedAt` and `EndedAt` date can be used to track the actual start and end of the operation. Not mentioned rescue information can be specified in a string field called `RescueInformation`. 
+
+#### Capture Point
+
+This interface enables some of the smart features that should set this software apart from other software packages and enables the (+NG911) aspect of the application. Any entrant using the *Worker* application has the ability to transmit live data back to the fire department. In predetermined interval the app will send status updates that include the users' location, the battery level the signal strength. Should a device be offline the data will be stored on device with a signal strength of 0 and transmitted as soon as the device is back online again. Should there be an outage the fire department will get notified after some time that connection to a device was lost.
+
+Integrated into the capture point is a enumeration of different `SensorEvent`s that enables the device to send special events back to the *Dispatcher*. Through the same interface an emergency event can be triggered which will immediately activate the emergency mode inside the *Dispatcher* and the *Terminal* apps. For testing purposes a special testing flag `IsTest` can be set. This will prevent the production applications from reacting to any of the sent data. For the initial release there are five `SensorEvent`s implemented into the application:
+
+- `DeclareEmergency`: An immediate emergency is triggered. Either the worker pressed the emergency button or the device considers there to be an emergency.
+- `HighAcceleration`: The phone or the connected smartwatch has experienced a high acceleration spike which might be an indication for an accident.
+- `HighHearthRate`: A connected smartwatch has detected a high heart rate.
+- `LowHearthRate`: A connected smartwatch has detected a low heart rate of the worker.
+
+In the future the application should be able to communicate with on-sight sensors to further monitor any dangers.
+
+- `MeasurementExceeded`: A predefined threshold has been exceeded.
+
+#### Emergency Report
+
 
 ### Capture Points
 
