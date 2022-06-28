@@ -126,6 +126,8 @@ An emergency can be initiated in a variety of ways:
 
 ## Data Model
 
+<!-- TODO: Size all images to fit -->
+
 For the whole application I have come up with a complex data model. I have tried to capture the most relevant information and created room for expansion where necessary. Inside the data model distinctions between the actual entity and nested type interfaces are being made. The nested objects provide further structure thought the application, but unlike the entities these types are always stored inside an entity and therefor are not directly referenceable by any other object inside the database.
 
 <!-- TODO: Add source (Eigene Darstellung) -->
@@ -192,6 +194,8 @@ Every person that wants to interact with the application has to be a registered 
 
 ### Contractors
 
+![Contractor Entity](images/erd-contractor.png){ #fig:erdContractor width=40% }
+
 Any institution that wants the fire department to be their emergency responder for any of their planned confined space entries has to sign a contract assuring the fire department that they will provide them with accurate information about their work place and the hazards that are to be expected inside their confined spaces. 
 
 The contractor entity holds general information, like the companies name and information about whom to contact for any administrative or technical issues related to the work place. Furthermore, the contractor entity holds references to their confined spaces and their workers' user accounts. More on that later. 
@@ -201,20 +205,47 @@ Inside the `Documents` property the fire department is able to store any documen
 
 ### Confined Spaces
 
+![Confined Space Entity](images/erd-confined-space.png){ #fig:erdConfinedSpace width=75% }
+
 A confined space builds a vital part of the application. Each confined space object is referenced by a single contractor. As mentioned in *2.3.1 (Hazard Assessment)* the contractor has to conduct an assessment of the hazards that are to be expected inside the confined space. 
 
 #### Assessment
-For each confined space there are subsidiary assessment interfaces holding the information about who performed the assessment, a timestamp when the assessment took place, further documents and an array of hazards found inside that confined space. (See Figure X)
-<!-- TODO: Figure -->
+For each confined space there are subsidiary assessment interfaces holding the information about who performed the assessment, a timestamp when the assessment took place, further documents and an array of hazards found inside that confined space. (See Figure @fig:erdConfinedSpace)
 
 #### Hazard
-A hazard gives the application knowledge about 
+In case of an emergency a hazard interface gives clear instructions on what to be expected when arriving at the scene. It states threshold values `Measurment` that need to be checked before entry and mitigation strategies that have to be carried out. A possible hazard object might look as follows:
 
-  - Assessment
-    - Notification when older than 3 years
-  - Hazard
-  - Measurement
-  - Equipment
+```json
+{
+  "category": "physical",
+  "name": "Extreme Temperatures",
+  "description": "Inside the machinary compartment temperatures 
+    might exceed 50°C.",
+  "mitigation": [
+    "Turn off the machine.",
+    "Open up emergency cooling vents."
+  ],
+  "measurements": [
+    {
+      "name": "Temperature",
+      "min": null,
+      "max": 65,
+      "unit": "°C",
+      "description": "The temperature inside the machinary 
+        compartment."
+    }
+  ],
+  "safetyEquipment": {
+    "entrant": [
+      "Drinking Water to prevent hidration",
+      "Thermostate with an overheating alert",
+    ],
+    "rescuer": [
+      "Heat resistive suite"
+    ]
+  }
+}
+```
 
 ### Operations
 
