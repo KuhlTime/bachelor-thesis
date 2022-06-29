@@ -3,7 +3,7 @@
 
 ## Project Management
 
-As time for this thesis is limited a strict project management strategy was needed. Each release version was broken down into 
+As time for this thesis is limited a strict project management strategy was needed. Each release version was broken down into smaller more manageable steps.  
 
 ![Kanban Board - Source: Author](images/kanban-board.jpg){#fig:kanbanBoard height=400px}
 
@@ -18,7 +18,9 @@ As multiple applications relied up on electron as their application core I first
 
 ## Firebase
 
-### Firebase Database
+
+
+### Firebase Firestore
 
 ### Firebase Rules
 
@@ -38,3 +40,7 @@ As multiple applications relied up on electron as their application core I first
   <!-- How is data being stored? -->
 
 ## cs-models
+
+## Dispatcher
+
+## CI / CD

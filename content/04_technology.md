@@ -21,7 +21,7 @@ Though electron applications are quite large and resource extensive compared to 
 
 ## VueJS
 
-VueJS is a reactive frontend framework that is used to build complex web applications. VueJS like other popular frontend frameworks such as React or Svelte is component based. That means that the final application is divided up into a multitude of different `.vue` component files. Each of these components holds its own state and logic @delany_2020_vuejs, @you_introduction. This enforces a reusable programming style and enables a faster design and development process.
+VueJS is a reactive frontend framework that is used to build complex web applications. It was developed and published by Evan You in February 2014. VueJS like other popular frontend frameworks such as React or Svelte is component based. That means that the final application is divided up into a multitude of different `.vue` component files. Each of these components holds its own state and logic @delany_2020_vuejs, @you_introduction. This enforces a reusable programming style and enables a faster design and development process.
 
 ```html
 <script setup>
@@ -41,22 +41,60 @@ button {
 
 The code snippet above shows a very simple VueJS component depicting a simple counter. The `count` variable is a reference to a number that is incremented each time the button is clicked. As soon as a change to the `count` variable is detected, the component will be re-rendered. This is what's called reactivity -- where any input to the data automatically triggers the Browser to update. In vanilla JavaScript^[**Vanilla JavaScript** refers to JavaScript without the use of any Frameworks and simply relying on the built-in JavaScript features.] the developer would need to handle the re-rendering of the component manually.
 
+VueJS consists of a large developer community who have developed all sort of different libraries over the years.
+
 <!-- Tauri -->
 <!-- Vite -->
 
 ## Firebase
-<!-- What database should be used? What features should it poses? -->
-  <!-- How is logging of changes enabled? -->
 
-#### No-SQL vs SQL
+Acquired by Google back in 2014 @wikipediacontributors_2022_firebase Firebase is an App Development Platform @google_firebase making it easy to build small and large scale applications. Their business case has grown over the years from a real-time database to an authentication provider, data storage provider, analytics and cloud computing service @google_firebase. As of right now, their offering counts 18 products and services @wikipediacontributors_2022_firebase to streamline the whole development cycle of a modern application. Official SDKs are available for all major platforms and programming languages.
+
+#### Firestore
+
+Firebase offers two kinds of database services to their customers. Starting with the initial release of Firebase their Realtime Database Service was the default. With the introduction of Firestore in 2017 they made available a second solution which instead of using a JSON-Tree for storing data now uses a NoSQL database model. With the concepts of a document, collections and indexes this meant that queries where much faster and less cumbersome to implement. @kerpelman_2019_cloud
+
+#### Authentication & Rules
+
+To restrict access to an application and to the database -- Firebase Authentication provides an SDK for client-side authentication of a user. Multiply ways of authentication link e-mail and password authentication, magic-link authentication, 3rd party OAuth authentication and many more are supported. Through a custom domain-specific language @mcdonald_2017_firebase called "Common Expression Language" @google_2022_security each request will be checked against a predefined rule set @google_2022_common. "The rule set should follow the principle of least privilege" @kerpelman_2020_unit. That means that any user by default should not have any privileges to read or write to the database. Access will than be given by whitelisting certain actions on certain documents. 
+
+In the example below any request made to the `/users/{uid}` document will get checked for the right permissions. Only users that are logged in (with a valid JWT token) will be able to `read` any document inside the `/users` collection. Through custom authentication claims a role based access control can be realized @kerpelman_2020_unit, @google_2022_control. In this example users belonging to the administrator role (role `0`) are able to both `read` and `write` to any document inside the `/users` collection. Giving `write` access implies that the user is allowed to `create`, `update` and `delete` a certain document. Furthermore, users that are logged in are allowed to perform a `update`-request on if the `/users` object matches the ID of the user itself `allow update: if matchesUID()`.
+
+```
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid} {
+      allow read: if loggedIn()
+      allow write: if isAdmin()
+    	allow update: if matchesUID()
+    }
+    
+    // Checks if the user is logged in
+    function loggedIn() {
+    	return request.auth != null
+    }
+  
+  	// Checks if the requested resource id matches the 
+    // uid of the caller
+  	function matchesUID() {
+    	return loggedIn() && request.auth.uid == resource.id
+    }
+    
+    // Checks if the caller belongs to the admin group
+    function isAdmin() {
+    	return request.auth.token.role == 0
+    }
+  }
+}
+```
 
 #### Firebase Functions
-
-#### Firebase Rules
+On many other cloud providers oftentimes referred to as lambda functions^[In many programming languages so-called **lambda functions** refer to a concept of anonymous functions. In these languages functions can be assigned to a variable and be executed on demand.] Firebase offers a cloud service called Firebase Functions. By setting event triggers small operations can be executed without the need of a dedicated server infrastructure. A trigger might be an HTTP request to a predefined endpoint or a change inside the database.
 
 ## Version Control
 
 ## Unit Testing
+
 <!-- What is static Code Quality Analysis? How does it work? -->
 <!-- What parts of the application need testing scripts in order to continously check their correct behaviour? -->
 
