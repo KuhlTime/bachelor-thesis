@@ -89,9 +89,13 @@ service cloud.firestore {
 ```
 
 #### Firebase Functions
-On many other cloud providers oftentimes referred to as lambda functions^[In many programming languages so-called **lambda functions** refer to a concept of anonymous functions. In these languages functions can be assigned to a variable and be executed on demand.] Firebase offers a cloud service called Firebase Functions. By setting event triggers small operations can be executed without the need of a dedicated server infrastructure. A trigger might be an HTTP request to a predefined endpoint or a change inside the database.
+On many other cloud providers oftentimes referred to as lambda functions^[In many programming languages so-called **lambda functions** refer to a concept of anonymous functions. In these languages functions can be assigned to a variable and be executed on demand.] Firebase offers a cloud service called Firebase Functions. By setting event triggers small operations can be executed without the need of a dedicated server infrastructure. A trigger might be an HTTP request to a predefined endpoint or a change inside the database. A full list of supported environments and languages can be found under: [https://cloud.google.com/functions/docs/concepts/execution-environment](https://cloud.google.com/functions/docs/concepts/execution-environment) @vanpuffelen_2020_server.
 
 ## Version Control
+
+A version control system makes it easy to track changes made to a project. Over the years "Git has become the de facto standard for version control" @athalye_2020_lecture. In a 2021 survey by StackOverflow it ranked as the number one developer tool @stackoverflow_2021_stack. Git is a distributed version control system @git_2019_git and therefor allows for multiple users to work on the same project. Git is a free and open source software that was developed by the Linus Torvalds back in 2005 @wikipediacontributors_2019_git. He originally created the project to better maintain the development of his ever-growing Linux operating system @wikipediacontributors_2019_git. Git is a command line application and does not require a Graphical User Interface (+GUI). Every change gets tracked inside a special `.git` repository folder. Along with some metadata each change gets tracked and can be traversed to the original editor @athalye_2020_lecture. A Git repository can either be stored locally or on a remote server. You can set up your own repository server or use on of the many hosted services, like GitHub or GitLab.
+
+GitHub calls itself "the largest and most advanced development platform in the world" @github_build. The service comes with additional features to track issues, review and merge pull requests, and more. 
 
 ## Unit Testing
 
