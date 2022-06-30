@@ -43,6 +43,8 @@ The code snippet above shows a very simple VueJS component depicting a simple co
 
 VueJS consists of a large developer community who have developed all sort of different libraries over the years.
 
+<!-- TODO: Write some more -->
+
 <!-- Tauri -->
 <!-- Vite -->
 
@@ -100,6 +102,14 @@ GitHub calls itself "the largest and most advanced development platform in the w
 ## Automated Testing
 
 As the name "Automated Testing" implies automated testing scripts can be written to validate the operability and correct behavior of a software system. Instead of checking the functionality of a system manually on every change made to the codebase testing scripts will check defined conditions on their own. In practices like Continuous Integration ((+CI)) and Continuous Delivery ((+CD)) where code commits are pushed frequently to production automated testing ensures no bugs find its way into the deployment. @rehkopf_automated
+
+In the most popular testing framework for JavaScript "Jest" a test might be written as such. Should someone change the behavior of the summation `sum` function the automated test will fail, and the developer will be notified.
+
+```javascript
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3)
+})
+```
 
 <!-- What is static Code Quality Analysis? How does it work? -->
 <!-- What parts of the application need testing scripts in order to continously check their correct behaviour? -->

@@ -34,7 +34,7 @@ The city of Campbell River is located in the western part of Canada. It is the s
 The city is reachable by car, ferry, plane and seaplane and is about a 30-minute flight away from the metropolis of Vancouver.
 
 <!-- TODO: Add Source -->
-![Map of Canada](images/map.png){#fig:map}
+![Map of Canada - Source: Mapbox @mapbox_maps, Author](images/map.png){#fig:map}
 
 The Fire Department is covering the wider area of Campbell River. <!-- TODO: Ask Kelly for specific operation radius --> The main fire station is located near the city center and houses a wide range of different fire trucks and rescue vehicles. @a2022_campbell
 
