@@ -43,4 +43,4 @@ As multiple applications relied up on electron as their application core I first
 
 ## Dispatcher
 
-## CI / CD
+## DevOps

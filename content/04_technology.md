@@ -11,13 +11,13 @@ A common application can be divided into two parts. The **frontend**, the applic
 
 Electron is a development framework^[A **framework** is a collection of libraries that abstracts some functionality and provides a starting point for all kinds of different application.] that enables developers to build cross platform^[**Cross platform** meaning that the same program can be run on different operating systems. @wikipediacontributors_2019_crossplatform, @openjsfoundation_build] desktop applications. Electron is based on Chromium and Node.js which both use the Google developed V8 browser engine^[A **browser engine** is used to render HTML documents, compile and run JavaScript code.]. Browser applications written in HTML, CSS and JavaScript can be run on any of the supported platforms. Different to a normal website the application does not need to be hosted on a server but instead gets downloaded and installed just like a normal executable would. Additionally, to using all the available APIs inside of Chromium, Electron comes with its own set of libraries for performing window manipulation or communicating with the host PC. @electron_build
 
-The library can be installed via the Node Package Manager^[A **Package Manager** is a piece of software that is normally provided with a programming language. It provides a way of installing libraries from a large repository of publicly shared software packages. Some examples of common package managers include: (+npm) (Node.js), gem (Ruby), pip (Python), spm (Swift), pub (Dart), ...] ((+npm)). The following command will install the latest version of electron:
+The library can be installed via the Node Package Manager^[A **Package Manager** is a piece of software that is normally provided with a programming language. It provides a way of installing libraries from a large repository of publicly shared software packages. Some examples of common package managers include: (+npm) (Node.js), gem (Ruby), pip (Python), spm (Swift), pub (Dart), ...] ((+npm)).
 
 ``` bash
 npm install electron
 ```
 
-Though electron applications are quite large and resource extensive compared to natively compiled applications many big companies use it for their software. Microsoft Teams, Visual Studio Code, Discord, Slack, WhatsApp Desktop and many more all rely on Electron @electron_electron.
+Though Electron applications are quite large and resource extensive compared to natively compiled applications many big companies use it for their software. Microsoft Teams, Visual Studio Code, Discord, Slack, WhatsApp Desktop and many more all rely on Electron @electron_electron.
 
 ## VueJS
 
@@ -39,6 +39,8 @@ button {
 </style>
 ```
 
+<!-- TODO: Add screenshot -->
+
 The code snippet above shows a very simple VueJS component depicting a simple counter. The `count` variable is a reference to a number that is incremented each time the button is clicked. As soon as a change to the `count` variable is detected, the component will be re-rendered. This is what's called reactivity -- where any input to the data automatically triggers the Browser to update. In vanilla JavaScript^[**Vanilla JavaScript** refers to JavaScript without the use of any Frameworks and simply relying on the built-in JavaScript features.] the developer would need to handle the re-rendering of the component manually.
 
 VueJS consists of a large developer community who have developed all sort of different libraries over the years.
@@ -58,9 +60,9 @@ Firebase offers two kinds of database services to their customers. Starting with
 
 #### Authentication & Rules
 
-To restrict access to an application and to the database -- Firebase Authentication provides an SDK for client-side authentication of a user. Multiply ways of authentication link e-mail and password authentication, magic-link authentication, 3rd party OAuth authentication and many more are supported. Through a custom domain-specific language @mcdonald_2017_firebase called "Common Expression Language" @google_2022_security each request will be checked against a predefined rule set @google_2022_common. "The rule set should follow the principle of least privilege" @kerpelman_2020_unit. That means that any user by default should not have any privileges to read or write to the database. Access will than be given by whitelisting certain actions on certain documents. 
+To restrict access to an application and to the database -- Firebase Authentication provides an SDK for client-side authentication of a user. Multiply ways of authentication like e-mail and password authentication, magic-link authentication, 3rd party OAuth authentication and many more are supported. Through a custom domain-specific language @mcdonald_2017_firebase called "Common Expression Language" @google_2022_security each request will be checked against a predefined rule set @google_2022_common. "The rule set should follow the principle of least privilege" @kerpelman_2020_unit. That means that any user by default should not have any privileges to read or write to the database. Access will than be given by whitelisting certain actions on certain documents. 
 
-In the example below any request made to the `/users/{uid}` document will get checked for the right permissions. Only users that are logged in (with a valid JWT token) will be able to `read` any document inside the `/users` collection. Through custom authentication claims a role based access control can be realized @kerpelman_2020_unit, @google_2022_control. In this example users belonging to the administrator role (role `0`) are able to both `read` and `write` to any document inside the `/users` collection. Giving `write` access implies that the user is allowed to `create`, `update` and `delete` a certain document. Furthermore, users that are logged in are allowed to perform a `update`-request on if the `/users` object matches the ID of the user itself `allow update: if matchesUID()`.
+In the example below any request made to the `/users/{uid}` document will get checked for the right permissions. Only users that are logged in (with a valid JWT token) will be able to `read` any document inside the `/users` collection. Through custom authentication claims a role based access control can be realized @kerpelman_2020_unit, @google_2022_control. In this example users belonging to the administrator role (role `0`) are able to both `read` and `write` to any document inside the `/users` collection. Giving `write` access implies that the user is allowed to `create`, `update` and `delete` a certain document. Furthermore, users that are logged in are allowed to perform a `update`-request if the `/users` object matches the ID of the user itself `allow update: if matchesUID()`.
 
 ```
 service cloud.firestore {
@@ -68,7 +70,7 @@ service cloud.firestore {
     match /users/{uid} {
       allow read: if loggedIn()
       allow write: if isAdmin()
-    	allow update: if matchesUID()
+      allow update: if matchesUID()
     }
     
     // Checks if the user is logged in
