@@ -97,11 +97,20 @@ A version control system makes it easy to track changes made to a project. Over 
 
 GitHub calls itself "the largest and most advanced development platform in the world" @github_build. The service comes with additional features to track issues, review and merge pull requests, and more. 
 
-## Unit Testing
+## Automated Testing
+
+As the name "Automated Testing" implies automated testing scripts can be written to validate the operability and correct behavior of a software system. Instead of checking the functionality of a system manually on every change made to the codebase testing scripts will check defined conditions on their own. In practices like Continuous Integration ((+CI)) and Continuous Delivery ((+CD)) where code commits are pushed frequently to production automated testing ensures no bugs find its way into the deployment. @rehkopf_automated
 
 <!-- What is static Code Quality Analysis? How does it work? -->
 <!-- What parts of the application need testing scripts in order to continously check their correct behaviour? -->
 
-## Continuous Deployment
+## CI/CD
+
+In a philosophy of Continuous Integration (+CI) and Continuous Delivery (+CD) the development process is split into two phases:
+
+  * Continuous Integration: Is the process of verifying the quality of the code and checking the defined test cases.
+  * Continuous Delivery: The process of pushing the code to production.
+
+Rather than using many feature branches inside a repository, which normally delays the deployment process due to many merge conflicts^[A **merge conflict** occurs when two developers happen to work on the same lines of code. One of the developers then needs to manually evaluate the right logic and resolve the issue.], developers are encouraged to work as close to production as possible. 
 
 ## Sentry
