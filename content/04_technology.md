@@ -106,11 +106,11 @@ As the name "Automated Testing" implies automated testing scripts can be written
 
 ## CI/CD
 
-In a philosophy of Continuous Integration (+CI) and Continuous Delivery (+CD) the development process is split into two phases:
+In the philosophy of Continuous Integration (+CI) and Continuous Delivery (+CD) the development process is split into two phases:
 
   * Continuous Integration: Is the process of verifying the quality of the code and checking the defined test cases.
   * Continuous Delivery: The process of pushing the code to production.
 
-Rather than using many feature branches inside a repository, which normally delays the deployment process due to many merge conflicts^[A **merge conflict** occurs when two developers happen to work on the same lines of code. One of the developers then needs to manually evaluate the right logic and resolve the issue.], developers are encouraged to work as close to production as possible. 
+Rather than using many feature branches inside a repository, which normally delays the deployment process due to many merge conflicts^[A **merge conflict** occurs when two developers happen to work on the same lines of code. One of the developers then needs to manually evaluate the right logic and resolve the issue.], developers are encouraged to work as close to production as possible. Specially programmed pipelines will then handle the complete deployment process. Updates will happen at a more frequent rate hence boosting general productivity.
 
-## Sentry
+The process of developing these pipelines is refereed to as Development Operations ((+DevOps)). Through the use of CI/CD tools like Jenkins, Travis, CircleCI, GitLab CI, GitHub Actions these will be run automatically as soon as a change is pushed to the repository. GitHub Action uses a `.yaml` file to specify the operations to be executed.
