@@ -109,21 +109,6 @@ An emergency can be initiated in a variety of ways:
   * The *Worker* application has detected a sensor value exceeding a certain threshold
   * The operation has not been marked as completed by one of the workers and the operation has exceeded the scheduled time limit
 
-## Architecture
-
-<!-- Only for one fire department -->
-  <!-- No cross fire department data -->
-<!-- Additional fire department through a terraform script -->
-
-<!-- What is the architecture of this application? -->
-  <!-- What do books recommend on how a good system architecture should look like? -->
-
-<!-- How will the different applications communicate with one another? -->
-
-<!-- Does the software needs to be scalable? -->
-
-<!-- What should be the maximum cost of the ecostytem? -->
-
 ## Data Model
 
 <!-- TODO: Size all images to fit -->
@@ -269,6 +254,14 @@ Integrated into the capture point is a enumeration of different `SensorEvent`s t
 In the future the application should be able to communicate with on-sight sensors to further monitor any dangers.
 
 - `MeasurementExceeded`: A predefined threshold has been exceeded.
+
+## Infrastructure
+
+There are two ways of how the whole application infrastructure can be set up. Both ways come with their advantages and disadvantages. One might choose a fully managed service like *Firebase* which has strong security guidelines against potential attackers though raises some data privacy concerns. The other way is to set up a dedicated server that can be customized to your needs, this may eliminate most of the privacy concerns at the cost of a far more complex setup and maintenance process.
+
+To safe time I have gone for the fully-managed solution as I am quite familiar with Firebase and have been using it across many of my projects. For transparency users would need to be informed that the application is hosted on Googles Server. Firebase offers an extensive free tier that should fit the needs of this application just fine, but it has to be kept in mind that a fully-managed solution is most likely much more expensive at scale than a custom solution.
+
+Purpose of many (+NG911) applications is to provide interoperability between different emergency services, as this is not the focus for the application that aspect has been discarded. In case multiple fire departments wanted to use the software a Terraform^[**Terraform** is an *Infrastructure as Code* tool that allows for programmatically defining and setting up server infrastructure. @delaney_2021_terraform] script could be created to quickly spin up new instances of the application.
 
 ## Safety
 

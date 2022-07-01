@@ -11,7 +11,7 @@ As time for this thesis is limited a strict project management strategy was need
 <!-- What project management tools have I used in order to keep track of my tasks? Notion, GitHub Issues, Tags, Gantt-Chart -->
 
 <!-- What does the electron-vite-fusion boilerplate do? -->
-## Electron Boilerplate
+## electron-vite-boilerplate
 
 As multiple applications relied up on electron as their application core I first created a boilerplate that 
   <!-- Code Signing -->
@@ -39,8 +39,14 @@ As multiple applications relied up on electron as their application core I first
   <!-- How are the security rules defined? -->
   <!-- How is data being stored? -->
 
+## cs-firebase-manager
+
 ## cs-models
 
-## Dispatcher
+## cs-dispatcher
 
-## DevOps
+<!-- Router -->
+  <!-- Route Guard -->
+<!-- i18n -->
+
+
