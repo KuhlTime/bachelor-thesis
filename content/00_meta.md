@@ -14,6 +14,8 @@ header-includes:
     - \usepackage{rotating}
     - \usepackage{lscape}
     - \usepackage{cancel}
+    - \usepackage{array,ragged2e}
+    - \usepackage{tabularray}
 include-after:
     - \newpage
     - \listoffigures

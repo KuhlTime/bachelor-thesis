@@ -263,25 +263,13 @@ To safe time I have gone for the fully-managed solution as I am quite familiar w
 
 Purpose of many (+NG911) applications is to provide interoperability between different emergency services, as this is not the focus for the application that aspect has been discarded. In case multiple fire departments wanted to use the software a Terraform^[**Terraform** is an *Infrastructure as Code* tool that allows for programmatically defining and setting up server infrastructure. @delaney_2021_terraform] script could be created to quickly spin up new instances of the application.
 
-## Safety
-
-<!-- What are common errors that need to be prevented? e.g. User error (Incorrect use), Network Connectivity -->
-  <!-- How is the application protected against hackers? -->
-  <!-- What attack surfaces does the application poses? -->
-  <!-- What are the consquences of someone breaching different parts of the system -->
-  <!-- How can this be prevented? -->
-
-  <!-- How is future provness guaranteed? -->
-
-### Communication
-
 ### Data Access Control
 
 <!-- TODO: Add diagramm -->
 
-### Data Privacy
+To protect users from accessing or manipulating data that is not intended for them data rules have been set up as seen in Figure @fig:dataAccess.
 
-@googleinc_2022_privacy
+![Data Access](images/data-access.png){ #fig:dataAccess width=75% }
 
 ## Quality
 
@@ -294,20 +282,6 @@ Purpose of many (+NG911) applications is to provide interoperability between dif
 
 <!-- How should issues and crashes be handled? -->
 <!-- What Fallback is there in case of a malfuntion or a complete system outage? -->
-
-## Interface Design
-
-For the User Interface^[The **User Interface** ((+UI)) describes the visual style of an application @dumont_2021_ui] ((+UI)) and the User Experience^[The **User Experience** ((+UX)) describes the functionality of an application. As to *what steps need to be taken in order to perform a certain task*. When talking about a "good" (+UX) that generally means that a software is intuitive and easy to use.] ((+UX))
-
-#### Terminal
-
-![Indicator States - Source: Author](images/indicator-states.png){#fig:indicatorStates}
-
-#### Trigger
-
-#### Dispatcher
-
-For the dispatchment application I have come up with a complete design system that should bring uniformity to all screen and 
 
 <!-- TODO: Use the following passage somewhere -->
 <!-- NOTE: A rescue is a balancing act between speed and safety. No rescue comes without risks that is why it is important to have only the most demanding information visiable that is vital to perform an operation. -->

@@ -43,7 +43,7 @@ button {
 
 The code snippet above shows a very simple VueJS component depicting a simple counter. The `count` variable is a reference to a number that is incremented each time the button is clicked. As soon as a change to the `count` variable is detected, the component will be re-rendered. This is what's called reactivity -- where any input to the data automatically triggers the Browser to update. In vanilla JavaScript^[**Vanilla JavaScript** refers to JavaScript without the use of any Frameworks and simply relying on the built-in JavaScript features.] the developer would need to handle the re-rendering of the component manually.
 
-VueJS consists of a large developer community who have developed all sort of different libraries over the years.
+I choose VueJS as it has numerous developers who have created all sort of different libraries over the years. It is therefor one of the most popular frontend frameworks. Personally I like how VueJS functions as it is quite comfortable to read and write the components.
 
 <!-- TODO: Write some more -->
 
