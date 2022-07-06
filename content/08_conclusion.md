@@ -8,7 +8,7 @@
 
 <!-- Could this application be distributed to other fire departments? -->
 
-In the future I could imagine a system where IOT sensors are connected to this software and report back live measurements of machine states and environmental conditions inside the confined space.
+As I already planned for a way to connect on-sight sensors to the application this would be the next step the application can take.
 
 <!-- TODO: Rewrite -->
-Some companies are already testing the use of autonomous inspection robots for inspecting confined spaces, this would reduce the risk of accidents even greater.
+For confined space inspection some companies already test the use of autonomous robots and drones that are equipped with sensors to detect and report on the safety of a confined space.

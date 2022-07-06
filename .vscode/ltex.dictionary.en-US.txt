@@ -6,3 +6,4 @@ WorkSafeBC
 referenceable
 subcollection
 Firestore
+dismissable

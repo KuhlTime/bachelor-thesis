@@ -45,9 +45,55 @@ As multiple applications relied up on Electron as their application core I first
 
 ### cs-firebase-manager
 
-This repository holds the security rules for the Firestore Database as well as the Firebase Functions that are to be executed. On each push to the repository two GitHub actions are run to automatically deploy the code to Firebase. One for the
+This repository holds the security rules for the Firestore Database as well as the Firebase Functions that are to be executed. On each push to the repository two GitHub Action workflows are run to automatically deploy the code to Firebase.
+
+
+#### Functions
+
+As of now there are two lambda functions enabled.
+The first will synchronize the settings of the Firestore users document with the user data in the Firebase Authentication service.
+The second lambda function can be triggered by an HTTP POST request made to the `/createNewUser` endpoint. The function checks that the user making the request belongs to the Administrator role. If so both a Firebase Authentication User and a new Firestore document with the users unique identifier `uid` is created. On creation a new user is assigned a randomized token generated using the `uuid` NPM package. The user will then be sent an email with a link to the registration page and the generated token as a query parameter.
+
+```HTTP
+https://crfd.ca/verify?email=andre@kuhlti.me&token=some_random_token
+```
+
+For the email that is sent out to a new user I am using a service called Postmark @activecampaignllc_postmark which allows one to sent out 100 emails per month for free. Using email templates the emails can be pre-styled and filled with content by naming the variables in the template. A variable might be used like follows: `<p>{{{example_variable}}}</p>`. 
+
+![Registration E-Mail](images/gmail.png){#fig:email width=400px}
+
+#### Security Rules
+
+The security rules are checked against a large set of test cases that all need to be passed. These test cases all try to perform CRUD^[**CRUD** stands for **Create**, **Read**, **Update** and **Delete** and are different kind of operations that can be performed on a database] operations on different documents inside the Firestore database. The tests can either be run on device using the `npm run test` command or get executed automatically when the rules are pushed to the GitHub repository. In order for Firebase to test the rules an emulation service needs to be executed. This will spin up a fake Firebase emulator inside which the rules can be tested without causing any harm to the real Firebase service. The action will be executed on a Linux machine and contains the following steps:
+
+  1. Clone the repository to the runner instance
+  2. Setup Node.JS
+  3. Install the NPM packages
+  4. Setup Java (needed for the emulator)
+  5. Install the Firebase Emulator Suite
+  6. Start the emulator
+  7. Perform the tests
+  8. If tests passed: Deploy the rules to Firebase
 
 ### cs-models
+
+All applications are written mostly in TypeScript or JavaScript. To ensure interoperability between the different applications I have created a NPM package that can be easily imported and used inside all applications. The package is automatically distributed to the official NPM registry and can be installed by running the following command:
+
+```shell
+npm install @crfd/cs-models
+```
+
+On every version tag assigned to a commit the package is then automatically bundled and uploaded by a GitHub Action workflow. The workflow installs all packages and runs the TypeScript compilation. The upload is then handed over to a third party action. In order to sign in to the correct NPM account an API token `NPM_TOKEN` has to be provided to the action. The token is stored inside the repository secrets,
+
+```yaml
+- name: Publish to NPM
+  uses: JS-DevTools/npm-publish@v1
+  with:
+    access: public
+    token: ${{ secrets.NPM_TOKEN }}
+```
+
+<!-- TODO: Display pipeline -->
 
 ### cs-dispatcher
 
@@ -105,22 +151,24 @@ Here are some of the components used inside the application:
   \hline
 
   \textbf{Avatar:}
-  Displays the user's profile picture and name. The component takes the users \texttt{name}, \texttt{image}, \texttt{email} and the \texttt{avatar-size} as arguments. Should no \texttt{image} be set the \texttt{email} is checked for a Gravatar image. The \texttt{avatar-size} is used to define the size of the image. Depending on the size -- on hover the full-name or the initials get shown. &
-  Normal Avatars \newline
+  Displays the user's profile picture and name. The component takes the users \texttt{name}, \texttt{image}, \texttt{email} and the \texttt{avatar-size} as arguments. Should no \texttt{image} be set the \texttt{email} is checked for a Gravatar image. The \texttt{avatar-size} is used to define the size of the image. Depending on the size -- on hover the full-name or the initials get shown. \newline \newline \emph{Left}: No Image Found \newline \emph{Middle}: Gravatar \newline \emph{Right}: Custom Image (Hover) &
+  Normal Avatars: \newline
   \includegraphics[width=154pt]{avatar-nm}
-  XL Avatars \newline
-  \includegraphics[width=154pt]{avatar-xl}
-  \newline \emph{Left}: No Image Found \newline \emph{Middle}: Gravatar \newline \emph{Right}: Custom Image (Hover) \\
+  XL Avatars: \newline
+  \includegraphics[width=154pt]{avatar-xl} \\
   \hline
 
   \textbf{Box:} A Box component is used to provide a common interface throughout the application. Each Box has a footer to display any state information on the left and buttons on the right. State information may be some validation error or a success message when the boxes content was executed without errors. &
   \includegraphics[width=154pt]{box} \\
   \hline
 
-  \textbf{Button:} Buttons inside the applications come in 6 different flavors. Critical operations are denoted with a bright red color and all uppercase text. Optionally an icon can be set that is displayed in front of the buttons text. &
+  \textbf{Button:} Buttons inside the applications come in 6 different flavors. Critical operations are denoted with a bright red color and all uppercase text. Optionally an icon can be set that is displayed in front of the buttons text. \newline \newline \emph{Left}: Button with Icon \newline \emph{Middle}: Button without Icon \newline \emph{Right}: Button without Icon (Disabled) &
+  Primary:
   \includegraphics[width=154pt]{button-primary}
+  Secondary:
   \newline
   \includegraphics[width=154pt]{button-secondary}
+  Critical:
   \newline
   \includegraphics[width=154pt]{button-critical} \\
   \hline
@@ -137,44 +185,50 @@ Here are some of the components used inside the application:
 
   \hline
 
-  \textbf{Command Palette:} &
-  \includegraphics[width=154pt]{palette} \\
+  \textbf{Command Palette:} The Command Palette is accessible throughout the whole application either by pressing the search button in the navigation bar or by pressing the hotkey \texttt{CMD}+\texttt{K} or \texttt{STRG}+\texttt{K} and provides an easy way to jump between pages or execute common actions. Each command has its own \texttt{Command} typescript model. Inside the model exists a \texttt{name}, an \texttt{icon} and a \texttt{action} property. The latter is holding a lambda function which gets executed when the user selects the particular command. Extending on the \texttt{Command} model are different command categories like \texttt{RouteCommand} that takes a vue-router route as a variable. Objects like \texttt{Space}s \texttt{Contractor}s \texttt{Operation}s stored inside the Database can be searched for as well. \newline \newline When the command palette opens up the search field is automatically selected. When entering a search string the list of avialable results will get filtered. &
+  Command Palette:
+  \newline
+  \newline
+  \includegraphics[width=154pt]{palette}
+  \newline
+  \newline
+  Navigation Bar:
+  \newline
+  \includegraphics[width=154pt]{search-button} \\
   \hline
 
-  \textbf{Detail:} &
-  \includegraphics[width=154pt]{box} \\
+  \textbf{Detail:} Custom styled detailed box. Using a VueJS \texttt{<slot></slot>} element the content inside the detail can be customized. &
+  \includegraphics[width=154pt]{detail-collapsed}
+  \includegraphics[width=154pt]{detail-expanded} \\
   \hline
 
-  \textbf{Dropdown:} &
-  \includegraphics[width=154pt]{box} \\
+  \textbf{Select:} The selection element is a rather complex component that allows a user to select from a list of provided options. He can either scroll through the list of possible options or he can enter a value to filter the shown list. To make the experience more pleasant the element has some saddle animations. &
+  \includegraphics[width=154pt]{select}
+  \includegraphics[width=154pt]{select-extended} \\
+  \hline
+\end{tblr}
+\end{center}
+\end{table}
+
+
+
+\begin{table}
+\begin{center}
+\begin{tblr}{ | Q[165pt,valign=t] | Q[154pt,valign=h] | }
+
   \hline
 
-  \textbf{Hazard Diamond:} &
-  \includegraphics[width=154pt]{hazard-diamond} \\
+  \textbf{Hazard Diamond:} To more easily identify the hazards present inside a confined space a special hazard diamond (NFPA 704) component can be used. On hover the user can see a quick description of the present hazard and the respective risk level displayed in one of the four quadrants. &
+  \includegraphics[width=154pt]{hazard-diamond}
+  \includegraphics[width=154pt]{hazard-diamond-hover} \\
   \hline
 
-  \textbf{Input:} &
-  \includegraphics[width=154pt]{box} \\
+  \textbf{Message:} There are two types of messages that can be displayed. One that is auto-dismissed when the message is just used to inform the user over some none critical process, or it can be permanent to only be dismissable by the user clicking the dismiss button. All messages are overlaid over the applications content in a special \texttt{<message-center />} component. &
+  \includegraphics[width=154pt]{message} \\
   \hline
 
-  \textbf{Label:} &
-  \includegraphics[width=154pt]{box} \\
-  \hline
-
-  \textbf{Message:} &
-  \includegraphics[width=154pt]{box} \\
-  \hline
-
-  \textbf{Modifier:} &
-  \includegraphics[width=154pt]{box} \\
-  \hline
-
-  \textbf{Path:} &
-  \includegraphics[width=154pt]{box} \\
-  \hline
-
-  \textbf{Tooltip:} &
-  \includegraphics[width=154pt]{box} \\
+  \textbf{Path:} To display progress a multitude of different steps to better guide the user. &
+  \includegraphics[width=154pt]{path} \\
   \hline
 \end{tblr}
 \end{center}
