@@ -13,8 +13,8 @@ The software should be rolled out in multiple release cycles with an increasing 
 
 In order for the application to quickly be deployed into the field, the first two releases only consist of a very basic feature set to indicate whether there is an ongoing operation or not. With each release the application should evolve into a more complex and feature-rich application. Version 1 is the bare minimum of what is needed by the fire department. This would already drastically improve their safety concerning confined spaces, as they currently use sticky notes taped to the windshield of the vehicles to indicate that there is an ongoing confined space operation. @bellefleur_2022_in
 
-The complete ecosystem should consist of multiple applications that should all handle a different task. In the following subchapters I will explain the purpose of each of the pieces of software and how they evolve throughout the different releases. I will list the requirements made by the fire department and add additional features and ideas that I came up with. See Figure X.
-<!-- TODO: Set Figure -->
+The complete ecosystem should consist of multiple applications that should all handle a different task. In the following subchapters I will explain the purpose of each of the pieces of software and how they evolve throughout the different releases. I will list the requirements made by the fire department and add additional features and ideas that I came up with. See Figure 8.
+<!-- TODO: Check Figure -->
 
 <!-- Based on: https://latex-tutorial.com/landscape-page/ -->
 
@@ -54,7 +54,7 @@ In case of an emergency the application should present an easy guideline on how 
 
 This application runs on the operators desktop inside the dispatchment center. Whenever a worker calls in to enter a confined space and gets approval by the operators they are able to press a button that sends the status change to all running *Terminal* applications inside the vehicles.
 
-As the software is not allowed on the main dispatchment devices this application will most likely run externally on a Microsoft Surface Pro tablets owned by the fire deparmtent. @bellefleur_2022_in
+As the software is not allowed on the main dispatchment devices this application will most likely run externally on a Microsoft Surface Pro tablet owned by the fire department. @bellefleur_2022_in
 
 ![Dispatchment Center Campbell River - Source: NI911 @ni911_contact](images/cr-dispatchment-center.jpg){#fig:cr-dispatchment-center}
 
@@ -70,9 +70,7 @@ Discontinued and replaced by the *Dispatcher* application.
 
 ## Dispatcher
 
-With the introduction of version 3 the *Trigger* application will be replaced by a better application that should allow dispatchers to control operations with far more precision.
-
-<!-- TODO: Important Metrics, like Oxygen requirements should be highlighted -->
+With the introduction of version 3 the *Trigger* will be replaced by a more feature rich application that should allow dispatchers to control operations with far more precision.
 
 #### Version 3
 
@@ -112,7 +110,7 @@ Possible data that can be transmitted to the operators might include:
 
 This would open up new ways of responding to emergencies and give the workers an extra level of security. 
 
-Although iOS usage on smartphones in Canada is quite high compared to Europe. The application should be developed for both major mobile operating systems iOS (57.3% @statcounter_2022_mobile) and Android (42.5% @statcounter_2022_mobile) to ensure maximum coverage.
+Although iOS usage on smartphones in Canada is quite high compared to Europe. The application should be developed for both major mobile operating systems iOS (Market Share Canada: 57.3% @statcounter_2022_mobile) and Android (Market Share Canada: 42.5% @statcounter_2022_mobile) to ensure maximum coverage.
 
 <!-- What requirements should the application fullfill? -->
 

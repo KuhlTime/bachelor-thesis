@@ -21,7 +21,7 @@ Though Electron applications are quite large and resource extensive compared to 
 
 ## VueJS
 
-VueJS is a reactive frontend framework that is used to build complex web applications. It was developed and published by Evan You in February 2014. VueJS like other popular frontend frameworks such as React or Svelte is component based. That means that the final application is divided up into a multitude of different `.vue` component files. Each of these components holds its own state and logic @delany_2020_vuejs, @you_introduction. This enforces a reusable programming style and enables a faster design and development process.
+VueJS is a reactive frontend framework that is used to build complex web applications. It was developed and published by Evan You in February 2014 @wikipediacontributors_2020_vuejs. VueJS like other popular frontend frameworks such as React or Svelte is component based. That means that the final application is divided up into a multitude of different `.vue` component files. Each of these components holds its own state and logic @delany_2020_vuejs, @you_introduction. This enforces a reusable programming style and enables a faster design and development process.
 
 ```html
 <script setup>
@@ -105,7 +105,7 @@ GitHub calls itself "the largest and most advanced development platform in the w
 
 As the name "Automated Testing" implies automated testing scripts can be written to validate the operability and correct behavior of a software system. Instead of checking the functionality of a system manually on every change made to the codebase testing scripts will check defined conditions on their own. In practices like Continuous Integration ((+CI)) and Continuous Delivery ((+CD)) where code commits are pushed frequently to production automated testing ensures no bugs find its way into the deployment. @rehkopf_automated
 
-In the most popular testing framework for JavaScript "Jest" a test might be written as such. Should someone change the behavior of the summation `sum` function the automated test will fail, and the developer will be notified.
+In the most popular testing framework for JavaScript "Jest" a test might be written as such:
 
 ```javascript
 test('adds 1 + 2 to equal 3', () => {
@@ -113,16 +113,18 @@ test('adds 1 + 2 to equal 3', () => {
 })
 ```
 
+Should someone change the behavior of the summation `sum` function the automated test will fail, and the developer will be notified.
+
 <!-- What is static Code Quality Analysis? How does it work? -->
 <!-- What parts of the application need testing scripts in order to continously check their correct behaviour? -->
 
 ## CI/CD
 
-In the philosophy of Continuous Integration (+CI) and Continuous Delivery (+CD) the development process is split into two phases:
+In the philosophy of Continuous Integration ((+CI)) and Continuous Delivery ((+CD)) the development process is split into two phases:
 
   * Continuous Integration: Is the process of verifying the quality of the code and checking the defined test cases.
   * Continuous Delivery: The process of pushing the code to production.
 
 Rather than using many feature branches inside a repository, which normally delays the deployment process due to many merge conflicts^[A **merge conflict** occurs when two developers happen to work on the same lines of code. One of the developers then needs to manually evaluate the right logic and resolve the issue.], developers are encouraged to work as close to production as possible. Specially programmed pipelines will then handle the complete deployment process. Updates will happen at a more frequent rate hence boosting general productivity.
 
-The process of developing these pipelines is refereed to as Development Operations ((+DevOps)). Through the use of CI/CD tools like Jenkins, Travis, CircleCI, GitLab CI, GitHub Actions these will be run automatically as soon as a change is pushed to the repository. GitHub Action uses a `.yaml` file to specify the operations to be executed.
+The process of developing these pipelines is refereed to as Development Operations ((+DevOps)). Through the use of CI/CD tools like Jenkins, Travis, CircleCI, GitLab CI and GitHub Actions the pipelines will be run automatically as soon as a change is pushed to the repository. GitHub Action uses a `.yaml` file to specify the operations to be executed. Inside this pipeline configuration file things like the branch or the operating system of the server executing the tasks is defined.

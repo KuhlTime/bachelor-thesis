@@ -6,7 +6,7 @@ As the whole ecosystem is made up of many smaller software pieces discussed in t
 
 ## Application Flows
 
-For a good user experience the interactions with the software were designed before developing the applications. Each flow represents the flow in which firemen, operators, workers and employers might work with the software.
+For a good user experience the interactions with the software were designed before developing the applications. Each flow describes the way in which a fireman, an operator, a worker and an employer might work with the software to complete a certain task.
 
 **Version 1 and 2** are rather limited -- their whole purpose is to simply signal and remind the fireman inside the fire trucks of any ongoing confined spaces operations. When approved by the operators they are able to press a button to notify all vehicles that there is a confined space operation running. As there are multiple operators inside the dispatchment center their triggering applications will also be informed about the status change.
 
@@ -113,7 +113,7 @@ An emergency can be initiated in a variety of ways:
 
 <!-- TODO: Size all images to fit -->
 
-For the whole application I have come up with a complex data model. I have tried to capture the most relevant information and created room for expansion where necessary. Inside the data model distinctions between the actual entity and nested type interfaces are being made. The nested objects provide further structure thought the application, but unlike the entities these types are always stored inside an entity and therefor are not directly referenceable by any other object inside the database.
+For the whole application I have come up with a complex data model. I have tried to capture the most relevant information and created room for expansion where necessary. Inside the data model distinctions between the actual entity and nested type interfaces are being made. The nested objects provide further structure throughout the application, but unlike the entities these types are always stored inside an entity and therefor are not directly referenceable by any other object inside the database.
 
 <!-- TODO: Add source (Eigene Darstellung) -->
 <!-- TODO: Update -->
@@ -121,7 +121,7 @@ For the whole application I have come up with a complex data model. I have tried
 
 Each entity has a unique identifier ((+UUID))^[A **Universally Unique IDentifier** or short **UUID** is generated from a set of five different algorithms which produce a 128 Bit long string that helps with unique labeling of data for better "sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general". @leach_2005_a] by which to reference the particular document. Adding to that -- metadata information like a timestamp -- when the entity was last changed `LastUpdated` and a reference to the user who performed that change `LastUpdatedByUser` are added to each entity. The names are purposely chosen to only reflect the latest change. Any manipulation to a document gets stored inside a subcollection called `History`.
 
-To keep data usage at a minimum the `History` subcollection does not store complete snapshots of the object but only holds the changes that have been made performed on the previous data snapshot. Besides the actual change made to the object each change-document will always include the previously mentioned `LastUpdated` and `LastUpdatedByUser` fields. The Internet Engineering Task Force ((+IETF))^[The **IETF** or *Internet Engineering Task Force* is a standards body that focuses on developing and publishing standards for the open web. @ietfinternetengineeringtaskforce_2019_about] put out a Request For Comments ((+RFC))^[**(+RFC)** stands for *Request For Comments* and describes a standard published to the (+IETF). It is called *Request For Comments* as a standard is not directly recommended by the (+IETF) and requests to be evaluated by anyone @drjulianonions_2021_rfc, @nottingham_2018_how. It first has to go through a number of stages before it should be used in production by anyone. @emberjs_rfc] that describes how one might store changes made to a JSON object. The standard has been published in April 2013 under the name "JavaScript Object Notion (JSON) Patch" ([RFC 9602](https://www.rfc-editor.org/rfc/rfc6902.html)) by Paul C. Bryan and Mark Nottingham. @bryan_2013_rfc, @dharmafly_2022_json
+To keep data usage at a minimum the `History` subcollection does not store complete snapshots of the object but only holds the changes that have been performed on the previous data snapshot. Besides the actual change made to the object each change-document will always include the previously mentioned `LastUpdated` and `LastUpdatedByUser` fields. The Internet Engineering Task Force ((+IETF))^[The **IETF** or *Internet Engineering Task Force* is a standards body that focuses on developing and publishing standards for the open web. @ietfinternetengineeringtaskforce_2019_about] put out a Request For Comments ((+RFC))^[**(+RFC)** stands for *Request For Comments* and describes a standard published to the (+IETF). It is called *Request For Comments* as a standard is not directly recommended by the (+IETF) and requests to be evaluated by anyone @drjulianonions_2021_rfc, @nottingham_2018_how. It first has to go through a number of stages before it should be used in production by anyone. @emberjs_rfc] that describes how one might store changes made to a JSON object. The standard has been published in April 2013 under the name "JavaScript Object Notion (JSON) Patch" ([RFC 9602](https://www.rfc-editor.org/rfc/rfc6902.html)) by Paul C. Bryan and Mark Nottingham. @bryan_2013_rfc, @dharmafly_2022_json
 
 It has been adapted by many existing libraries for all major programming languages @dharmafly_2022_json. It is therefor fairly straightforward to implement into the application.
 
@@ -198,7 +198,7 @@ A confined space builds a vital part of the application. Each confined space obj
 For each confined space there are subsidiary assessment interfaces holding the information about who performed the assessment, a timestamp when the assessment took place, further documents and an array of hazards found inside that confined space. (See Figure @fig:erdConfinedSpace)
 
 #### Hazard
-In case of an emergency a hazard interface gives clear instructions on what to be expected when arriving at the scene. It states threshold values `Measurment` that need to be checked before entry and mitigation strategies that have to be carried out. A possible hazard object might look as follows:
+In case of an emergency a hazard interface gives clear instructions on what to be expected when arriving at the scene. It states threshold values inside the `measurements` property that need to be checked before entry and potential mitigation strategies that have to be carried out. A possible hazard object might look as follows:
 
 ```json
 {
@@ -242,9 +242,9 @@ In case of an emergency each operation can have its own emergency report. The ob
 
 ### Capture Point
 
-This entity enables some of the smart features that should set this software apart from other software packages and enables the (+NG911) aspect of the application. Any entrant using the *Worker* application has the ability to transmit live data back to the fire department. In predetermined interval the app will send status updates that include the users' location, the battery level the signal strength. Should a device be offline the data will be stored on device with a signal strength of 0 and transmitted as soon as the device is back online again. Should there be an outage the fire department will get notified after some time that connection to a device was lost.
+This entity enables some of the smart features that should set this software apart from other software packages and enables the (+NG911) aspect of the application. Any entrant using the *Worker* application has the ability to transmit live data back to the fire department. In a predetermined interval the app will send status updates that include the users' location, the battery level and the signal strength. Should a device be offline the data will be stored on device with a signal strength of 0 and transmitted as soon as the device is back online again. Should the workers phone stay offline for a long time the operator will get notified that no device data is coming in.
 
-Integrated into the capture point is a enumeration of different `SensorEvent`s that enables the device to send special events back to the *Dispatcher*. Through the same interface an emergency event can be triggered which will immediately activate the emergency mode inside the *Dispatcher* and the *Terminal* apps. For testing purposes a special testing flag `IsTest` can be set. This will prevent the production applications from reacting to any of the sent data. For the initial release there are five `SensorEvent`s implemented into the application:
+Integrated into the capture point is an enumeration of different `SensorEvent`s that enables the device to send special messages back to the *Dispatcher*. One of these special messages is the `SensorEvent.DeclareEmergency` which will immediately switch all applications into an emergency mode. For testing purposes a special testing flag `IsTest` can be set. This will prevent the applications from reacting to any of the sent data. For the initial release there are five `SensorEvent`s implemented into the application:
 
 - `DeclareEmergency`: An immediate emergency is triggered. Either the worker pressed the emergency button or the device considers there to be an emergency.
 - `HighAcceleration`: The phone or the connected smartwatch has experienced a high acceleration spike which might be an indication for an accident.
@@ -259,7 +259,7 @@ In the future the application should be able to communicate with on-sight sensor
 
 There are two ways of how the whole application infrastructure can be set up. Both ways come with their advantages and disadvantages. One might choose a fully managed service like *Firebase* which has strong security guidelines against potential attackers though raises some data privacy concerns. The other way is to set up a dedicated server that can be customized to your needs, this may eliminate most of the privacy concerns at the cost of a far more complex setup and maintenance process.
 
-To safe time I have gone for the fully-managed solution as I am quite familiar with Firebase and have been using it across many of my projects. For transparency users would need to be informed that the application is hosted on Googles Server. Firebase offers an extensive free tier that should fit the needs of this application just fine, but it has to be kept in mind that a fully-managed solution is most likely much more expensive at scale than a custom solution.
+To safe time I have gone for the fully-managed solution as I am quite familiar with Firebase and have been using it across many of my projects. For transparency users would need to be informed that the application is hosted on Googles Servers. Firebase offers an extensive free tier that should fit the needs of this application just fine, but it has to be kept in mind that a fully-managed solution is most likely much more expensive at scale than a custom solution.
 
 Purpose of many (+NG911) applications is to provide interoperability between different emergency services, as this is not the focus for the application that aspect has been discarded. In case multiple fire departments wanted to use the software a Terraform^[**Terraform** is an *Infrastructure as Code* tool that allows for programmatically defining and setting up server infrastructure. @delaney_2021_terraform] script could be created to quickly spin up new instances of the application.
 
@@ -271,27 +271,8 @@ To protect users from accessing or manipulating data that is not intended for th
 
 ![Data Access](images/data-access.png){ #fig:dataAccess width=75% }
 
-## Quality
-
-<!-- What qualitiy / security standards need to be set? -->
-  <!-- What defines a software to be of high quality? - See:  Ensuring the Software Quality for Critical Infrastructure Objects -->
-  
-  <!-- What happens when there is no network connection? -->
-
 ### Reliability
 
-<!-- How should issues and crashes be handled? -->
-<!-- What Fallback is there in case of a malfuntion or a complete system outage? -->
+For an application to be reliable it has to be thoroughly tested. In the case that there is an error either in the communication infrastructure or a bug inside the software the application has to be able to recover from it or at least provide the user with a clear error message.
 
-<!-- TODO: Use the following passage somewhere -->
-<!-- NOTE: A rescue is a balancing act between speed and safety. No rescue comes without risks that is why it is important to have only the most demanding information visiable that is vital to perform an operation. -->
-
-#### Worker
-
-<!-- How should the UI function? -->
-<!-- How can incorrect usage of the application be prevented? How does the UI reflect these protections? -->
-<!-- What DevOps Pipelines need to be developed? -->
-<!-- What pages are needed for the Dispatcher? -->
-<!-- UI components and their use cases? -->
-
-<!-- How should Forms in the Dispatcher application should look like? What data is needed by the operator? -->
+For all the applications I have used a service (Sentry) that automatically generates error reports and capture them inside a detailed list telling me what went wrong.
