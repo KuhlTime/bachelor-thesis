@@ -14,13 +14,18 @@ As time for this thesis is limited a strict project management strategy was need
 
 ## Interface Design
 
-To speed up the development process most of the User Interface I have designed beforehand in an application called "Figma". I have tried to come up with a unique and intuitive design that is easy to understand. Colors are kept at a minimum to not distract from what is most important to the person using the application.
+To speed up the development process most of the User Interface I have designed beforehand in a user interface design application called "Figma". I have tried to come up with a unique and intuitive design that is easy to understand. Colors are kept at a minimum to not distract from what is most important to the person using the application. Examples of the interface are shown in Figure @fig:indicatorStates and Figure @fig:figmaMockup.
+
+<!-- TODO: Write a little more -->
+
+![Figma Terminal Indicator States](images/indicator-states.png){#fig:indicatorStates}
+
+![Figma Dispatcher Mockup](images/figma-mockup.png){ #fig:figmaMockup }
 
 ## Software
 
-Names of the different software reflect their repository names on GitHub.
+Following each software implementation is explained in greater detail. The chapters are named like their repository counterparts.
 
-<!-- What does the electron-vite-fusion boilerplate do? -->
 ### electron-vite-fusion
 
 ![Electron Vite Fusion Logo - Source: Author](images/electron-vite-fusion-logo.png){#fig:electronViteFusionLogo height=2.5cm}
@@ -28,25 +33,32 @@ Names of the different software reflect their repository names on GitHub.
 As multiple applications relied up on Electron as their application core I first created a boilerplate to more quickly get started with writing the actual applications. The boilerplate which can be found under [https://github.com/KuhlTime/electron-vite-fusion](https://github.com/KuhlTime/electron-vite-fusion) includes a build tool called "Vite" @you_2022_vite. Depending on the environment the application is run in (development/production) the Electron app either servers content from a local development server or uses the distribution build which includes the compiled VueJS application. The development server has hot module replacement enabled so that the application can be reloaded without a full reload of the actual webpage shown inside the Electron window. A package called "electron-builder" was used to automatically generate the binaries to be installed on the target platforms.
   <!-- Code Signing -->
 
-### cs-trigger
+### cs-trigger and cs-terminal
 
+Based on the design I have created in Figma and the *electron-vite-boilerplate* the application is fully operable and can be used by the fire department. A continuous deployment action on GitHub is responsible for automatically deploying the application to the target platforms (macOS, Linux, Windows) and providing GitHub with the executables which are made available to download through the releases' section of the repository.
 
+![GitHub Actions Electron Deploy](images/github-action-cs-trigger.png){#fig:githubActionCsTrigger}
 
-### cs-terminal
+As seen in Figure @fig:githubActionCsTrigger the application has to be compiled for each target platform individually. For that GitHub Actions can define a matrix of options an action can be executed with.
 
-<!-- What features / code snippets need deeper explaination? -->
-  <!-- What are these features / sntippets used for? -->
-  <!-- What language are they written in? -->
-  <!-- How do these feature / snippets function? -->
+```yaml
+jobs:
+  build:
+    strategy:
+      matrix:
+        os:
+          - macos-latest
+          - ubuntu-latest
+          - windows-latest
+    runs-on: ${{ matrix.os }}
+    ...
+```
 
-<!-- How much data is firestore using when on cellular? Make some tests to see how much data is beeing used -->
-  <!-- How are the security rules defined? -->
-  <!-- How is data being stored? -->
+The `build` job will therefor be executed on three different runners (servers).
 
 ### cs-firebase-manager
 
 This repository holds the security rules for the Firestore Database as well as the Firebase Functions that are to be executed. On each push to the repository two GitHub Action workflows are run to automatically deploy the code to Firebase.
-
 
 #### Functions
 
@@ -234,6 +246,19 @@ Here are some of the components used inside the application:
 \end{center}
 \end{table}
 
+\newpage
+To view the application and it's components yourself visit [dispatcher.kuhlti.me](https://dispatcher.kuhlti.me). 
+
+Following are some screenshots from within the application:
+
+![Dispatcher Map Page](images/dispatcher-map.png){#fig:dispatcherMap}
+
+![Dispatcher Spaces Table](images/dispatcher-spaces.png){#fig:dispatcherSpaces}
+
+![Dispatcher New Space Page](images/dispatcher-new-space.png){#fig:dispatcherNewSpace}
+
+![Dispatcher Settings Page](images/dispatcher-feedback.png){#fig:dispatcherSettings}
+
 <!-- DataTable component -->
 
 <!-- Router -->
@@ -242,3 +267,7 @@ Here are some of the components used inside the application:
 
 \newpage
 ### cs-worker
+
+The earlier prototype I have made of this application was made using Swift and SwiftUI. It already possessed the ability to send accelerometer, battery and location data back to the Firebase Firestore database. When the transmission was active the *Terminal* would indicate the active confined space operation. The user would be presented with a misuse warning whenever he would start his work session.
+
+![Worker Application Prototype](images/iphone-mockup.png){#fig:workerPrototype height=400px}
