@@ -15,7 +15,6 @@ More modern implementations of such a software are oftentimes referred to as **N
 
 These features allow for better emergency service through new ways of communication and enable faster response times to incoming accidents.
 
-<!-- TODO: Rewrite -->
 What most of these software products have in common is list of current emergencies and a map view that displays the location of any emergency units and the current incidents.
 <!-- TODO: Add something -->
 
@@ -23,20 +22,15 @@ The fire department of Campbell River is currently using a (+CAD) software by a 
 
 ![Centralsquare CAD - Source: K. Bellefleur](images/cad.png){#fig:cad}
 
-  <!-- TODO: What disptach softwares are out there? -->
-  <!-- TODO: What have they been using so far? -->
-  <!-- TODO: How do these softwares operate? -->
-
 
 ## Campbell River Fire Department
 
 The city of Campbell River is located in the western part of Canada. It is the second-largest city on Vancouver Island. With a total population of more than 37,800 permanent residents @cityofcampbellriver_2019_connect.
 The city is reachable by car, ferry, plane and seaplane and is about a 30-minute flight away from the metropolis of Vancouver.
 
-<!-- TODO: Add Source -->
 ![Map of Canada - Source: Mapbox @mapbox_maps, Author](images/map.png){#fig:map}
 
-The Fire Department is covering the wider area of Campbell River. <!-- TODO: Ask Kelly for specific operation radius --> The main fire station is located near the city center and houses a wide range of different fire trucks and rescue vehicles. @a2022_campbell
+The Fire Department is covering the wider area of Campbell River. The main fire station is located near the city center and houses a wide range of different fire trucks and rescue vehicles. @a2022_campbell
 
 ![2015 Rosenbauer Commander 4000 - Source: S. MacKichan @mackichan_2021_campbell](images/cr-tower.jpg){#fig:cr-tower}
 
@@ -44,10 +38,7 @@ A second, smaller fire station is located to the south of Campbell River and hou
 
 Roughly 60% of all incoming emergencies happen to be medical calls, where the fire brigade is assisting with medical treatment of a patient. Approximately 10% of all responses are fire related and have to be extinguished. Besides these operations public assists, car accidents and false alarms are quite common. @bellefleur_2022_in
 
-<!-- TODO: Where lay the operational differences between firebrigades here in Germany and Canada? -->
-
 ## Confined Spaces
-<!-- TODO: Declutter, does not look good for opener -->
 As defined by the Canadian Department of Justice, inside the **Occupational Health and Safety Regulations** ((+COHSR)) a **Confined Space** is met by the following criteria @canadiandepartmentofjustice_2022_sor86304 (11.01):
 
 A space that...
@@ -93,14 +84,11 @@ Inside a confined space one might encounter one or more of the following hazards
   like
   *working alone*, *claustrophobia*, *fatigue*, ...
 
-<!-- TODO: List more exampled brought up in @governmentofcanada_2021_confined -->
 Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place @bellefleur_2022_in, @governmentofcanada_2021_confined, @worksafebc_confined.
 
 ![Hazardous Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg){#fig:draegerConfinedSpace}
 
-<!-- TODO: Does there need to be an emergency responder on sight? -->
-
-### Legislation <!-- TODO: Is it a regulation or legislation? -->
+### Legislation
 
 Before a person is allowed to enter a confined space the employer first needs to perform, what is called a confined spaces identification and a hazard assessment, as described in subsection 11.02 to 11.03 of the (+COHSR) @canadiandepartmentofjustice_2022_sor86304. From there on up a procedure for safe entry and exit can be established. Besides the (+COHSR) each state builds up on these fundamental regulations and adds their own definition upon these.
 
@@ -122,7 +110,6 @@ The previously mentioned steps have been broken down to their core concepts. The
 
 For every confined space the assigned qualified person has to produce a detailed hazard report. The report has to include the following information @canadiandepartmentofjustice_2022_sor86304 (11.03), @governmentofcanada_2021_confined:
 
-<!-- TODO: Reorder list -->
 - The date at which the hazard assessment was carried out.
 - An extensive list of all the hazards a person entering that space may encounter. Each hazard has to have a resolution on how a certain threat can be prevented, controlled or extinguished.
 - It needs to mention which equipment is required on site by the worker entering the space and what equipment might be required by the first aid responders.
@@ -130,28 +117,17 @@ For every confined space the assigned qualified person has to produce a detailed
 - It needs to clarify the way of getting approval to enter that space.
 - Any additional information for the worker or the emergency responders has to be stated.
 
-<!-- TODO:  (2)(f) any situation in which an entry permit system is required. -->
-<!-- TODO: What is an Entry Permit System? @governmentofcanada_2021_confined -->
+Only persons that have certain training and are qualified to perform a hazard assessment are allowed to fill out such a report @canadiandepartmentofjustice_2022_sor86304 (11.03), @governmentofcanada_2021_confined. In case of any accidents that have to do with a lack of information on that report the person whose job it was to create the report might be held responsible and might face legal consequences.
 
-Only persons that have certain training and are qualified to perform a hazard assessment are allowed to fill out such a report @canadiandepartmentofjustice_2022_sor86304 (11.03), @governmentofcanada_2021_confined. In case of any accidents that have to do with a lack of information on that report the person whose job it was to create the report might be held responsible and might face legal consequences. 
-<!-- TODO: Find ressource legal consequences -->
-
-<!-- TODO: Reread -->
 Just like the identification of the confined spaces has to be reviewed every 3 years and updated as soon as any changes happen to that confined space the hazards have to be reassessed as well. An exception being when the confined space was not entered in the previous 3 years and is not planed to be entered @governmentofcanada_2021_confined. 
 
 #### Establishing Procedures
 
-From the previous two reports a procedure for a safe entry and exit of a confined space can be derived. The procedures will set up a roadmap for all the actors involved. Every confined space needs to have "safe entry and exit procedures", "two-way communication and person check systems" and "emergency response measures" @canadiandepartmentofjustice_2022_sor86304 (11.04(2)(a)). <!-- TODO: Not entirely sure! --> In case of a hazardous confined space the procedure plan has to state which safety tests need to be performed ahead of time and what equipment has to be prepared for both the workers and the emergency response personal. @canadiandepartmentofjustice_2022_sor86304 (11.04).
+From the previous two reports a procedure for a safe entry and exit of a confined space can be derived. The procedures will set up a roadmap for all the actors involved. Every confined space needs to have "safe entry and exit procedures", "two-way communication and person check systems" and "emergency response measures" @canadiandepartmentofjustice_2022_sor86304 (11.04(2)(a)). In case of a hazardous confined space the procedure plan has to state which safety tests need to be performed ahead of time and what equipment has to be prepared for both the workers and the emergency response personal. @canadiandepartmentofjustice_2022_sor86304 (11.04).
 
-In case an entry permit system^[An **entry permit system** is a further safety system that includes a governing instance controlled by the employer. Its task is to schedule operations and hand out permits to the workers entering a hazardous confined space @usdepartmentofhomelandsecurity_2011_tech.] is in place the qualified person has to fill out a permit handed out by the employer. <!-- TODO: Rewrite --> A permit holds additional information about the hazardous confined space.  @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
+In case an entry permit system^[An **entry permit system** is a further safety system that includes a governing instance controlled by the employer. Its task is to schedule operations and hand out permits to the workers entering a hazardous confined space @usdepartmentofhomelandsecurity_2011_tech.] is in place the qualified person has to fill out a permit handed out by the employer. A permit holds additional information about the hazardous confined space.  @canadiandepartmentofjustice_2022_sor86304 (11.04(3))
 
 Depending on the type of hazard found in a confined space special rules and thresholds may apply. See subsection 11.05(1) of the (+COHSR).
-
-<!-- TODO: Example @usdeperatmentoflabor_2018_confined -->
-
-<!-- TODO: How does the flow of entering a confined space look like? Flow-Chart -->
-<!-- TODO: What happens in case of an emegrency? -->
-<!-- TODO: What equipment is needed to perform an operation inside a confined space? -->
 
 ### Regional Legislations
 
@@ -159,11 +135,7 @@ British Columbia ((+BC)) is the 3rd largest state and also the most western stat
 
 Under subsection 9.37 'Provision of rescue services' of the WorkSafeBC extended (+COHSR) it is required, that any company has to supply a qualified rescue person on their own @governmentofbritishcolumbia_2021_bc (9.37(1)) or has to contract a 3rd party rescue service to perform a rescue if necessary @governmentofbritishcolumbia_2021_bc (9.37(2)). 
 
-<!-- TODO: Let Kelly check if any of this is classified -->
 The Fire Department of Campbell River provides this kind of service to local companies in their vicinity. Companies that claim their services have to sign a contract that enforces them to provide detailed information on their confined spaces described in *[2.2.1 Legislation](#legislation)*. Before workers are granted access to perform work inside a confined space they have to provide a form to notify the fire department of their intended start and end time. In addition to that the form has to state possible hazards, the lockout board location^[A **lockout board** or **lockout station** is a safety system that should prevent any hazards from happening by disabling and physically locking their functionality or control interface. When everything has been locked the key gets stored in a final container. Only the worker who is entering the confined space can remove all applied locks. That way it is made sure that no one can accidentally re-enable some functionality and cause an accident. @bellefleur_2022_in, @wikipediacontributors_2020_lockouttagout], the workers involved, information on entry and exit and the equipment required. Only after handing in that form and receiving the "get-go" from the fire departments operators -- they are allowed to begin their work. @bellefleur_2022_in
-
-<!-- TODO: Add a user flow diagramm -->
-<!-- TODO: If allowed provide the Confined Space Rescue Standby (Off‐Site) Request Form-->
 
 ### Standards
 
@@ -171,14 +143,11 @@ A standard is a guideline established by a group of expert in a certain topic. W
 ß
 Common standards for operating a confined space in Canada are the (+CSA) Z1006 and the (+NFPA) 350 @mcpherson_2020_webinar.
 
-<!-- TODO: US and Canada closely related -->
-
 ### Hazard Diamond
 
 In the (+NFPA) 704 "Standard System for the Identification of the Hazards of Materials for Emergency Response" the association has constituted a sign for quickly identifying and assessing the potential risks from any substances or materials @nfpanationalfireprotectionassociation_2022_nfpa. The sign is in the shape of a diamond and therefor often referred to as a "hazard diamond". 
 
-<!-- TODO: @nfpanationalfireprotectionassociation_2022_nfpa + sap + Own depiction -->
-![Hazard Diamond](images/diamond.png){ #fig:diamond width=30% }
+![Hazard Diamond - Source: @nfpanationalfireprotectionassociation_2022_nfpa, Author](images/diamond.png){ #fig:diamond width=30% }
 
 The diamond is divided up into four different colored sections (see Figure @fig:diamond), three of them showing a number with the associated risk level. Numbers range from $0$ (no-risk) to $4$ (highest-risk). Each color represents a different hazard:
 
@@ -294,6 +263,3 @@ A citation of these steps from their publication 'Confined space rescue: A propo
 3. **Accessing** the casualty, in which a minimal number of rescuers enter the confined space and make contact with the casualty.
 4. Provision of **Life-saving** first aid to the casualty
 5. **Extrication** of the casualty as required
-
-<!-- TODO: What is the obligation of an emegency responder? -->
-<!-- TODO: What do operators of the CRFD need to know about a confined space operation? -->

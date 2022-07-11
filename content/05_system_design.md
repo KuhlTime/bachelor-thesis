@@ -1,7 +1,6 @@
 <!-- Goal: 12 pages -->
 # System Design
 
-<!-- TODO: Rewrite -->
 As the whole ecosystem is made up of many smaller software pieces discussed in the previous part *[3 Capabilities](#capabilities)* many design considerations had to be made. In this chapter I will walk over all the important concepts I have come up with and will go into more detail the more this chapter progresses. First I will lay out general concepts on how the application should function. Later I will get more specific and explain the individual software libraries and technologies used in order to accomplish the previously set goals.
 
 ## Application Flows
@@ -17,9 +16,6 @@ For a good user experience the interactions with the software were designed befo
 Local companies are required by law to either have an emergency responder on their own or have a contract with one @bellefleur_2022_in. Each new contractor of the fire department will be able to get registered inside the system. When creating a new client inside the software a form should ask for relevant information about the work place. As there has been a huge gab in the detail of any contractors' documentation about their work sites @bellefleur_2022_in some information should be made mandatory to be provided, to ensure consistency across all confined spaces. The documentation of some ranged from complete folders of documents, hazards assessments to almost no information at all @bellefleur_2022_in.
 
 A copy of the contract and any other documents regarding the company should be uploaded to the system to remove the need for the operator to go through any folder and look for the documents. A physical copy should always be kept on hand in case of a system failure.
-
-<!-- TODO: 3 year hazard report warning -->
-<!-- TODO: Confirmation E-Mail for the Contractor to sign that the information is correct. -->
 
 
 ### Adding a Confined Space
@@ -111,13 +107,9 @@ An emergency can be initiated in a variety of ways:
 
 ## Data Model
 
-<!-- TODO: Size all images to fit -->
-
 For the whole application I have come up with a complex data model. I have tried to capture the most relevant information and created room for expansion where necessary. Inside the data model distinctions between the actual entity and nested type interfaces are being made. The nested objects provide further structure throughout the application, but unlike the entities these types are always stored inside an entity and therefor are not directly referenceable by any other object inside the database.
 
-<!-- TODO: Add source (Eigene Darstellung) -->
-<!-- TODO: Update -->
-![Condensed Entity Relationship Diagram](images/erd-shrunk.png){#fig:erdShrunk}
+![Condensed Entity Relationship Diagram - Source: Author](images/erd-shrunk.png){#fig:erdShrunk}
 
 Each entity has a unique identifier ((+UUID))^[A **Universally Unique IDentifier** or short **UUID** is generated from a set of five different algorithms which produce a 128 Bit long string that helps with unique labeling of data for better "sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general". @leach_2005_a] by which to reference the particular document. Adding to that -- metadata information like a timestamp -- when the entity was last changed `LastUpdated` and a reference to the user who performed that change `LastUpdatedByUser` are added to each entity. The names are purposely chosen to only reflect the latest change. Any manipulation to a document gets stored inside a subcollection called `History`.
 
@@ -166,16 +158,10 @@ As the contact information plays an important role for the traceability of infor
 
 ### Users
 
-<!-- TODO: Look where to put this -->
-<!-- As with the `LastUpdatedByUser` metadata field any reference always has an indication of the entity that can be expected from that reference. -->
-
 <!-- TODO: Update -->
 ![User Entity](images/erd-user.png){ #fig:erdUser width=30% }
 
 Every person that wants to interact with the application has to be a registered user. Users have a role assigned to them. The `UserRole` field determines what operations the individual user is allowed to perform and which parts of the application he is allowed to access. 
-
-
-<!-- TODO: What happens on user deletion -->
 
 ### Contractors
 
@@ -183,8 +169,7 @@ Every person that wants to interact with the application has to be a registered 
 
 Any institution that wants the fire department to be their emergency responder for any of their planned confined space entries has to sign a contract assuring the fire department that they will provide them with accurate information about their work place and the hazards that are to be expected inside their confined spaces. 
 
-The contractor entity holds general information, like the companies name and information about whom to contact for any administrative or technical issues related to the work place. Furthermore, the contractor entity holds references to their confined spaces and their workers' user accounts. More on that later. 
-<!-- TODO: Is more on that later been realized anywhere -->
+The contractor entity holds general information, like the companies name and information about whom to contact for any administrative or technical issues related to the work place. Furthermore, the contractor entity holds references to their confined spaces and their workers' user accounts. More on that later.
 
 Inside the `Documents` property the fire department is able to store any documents that are relevant to the work place, like the signed contract, maps, floor plans, etc. As for Firebase -- any files that have been uploaded will get stored inside the Firebase Storage service. The property inside the database document will then hold a URL to access the particular file.
 

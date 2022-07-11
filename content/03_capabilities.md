@@ -1,5 +1,3 @@
-<!-- TODO: Find a better title for this chapter. -->
-<!-- Goal: 500 Words -->
 # Capabilities
 
 <!-- What gaps / issues does the software need to address? -->
@@ -7,8 +5,6 @@ Canadian authorities prohibited the management of confined spaces through the (+
 
 The software should be rolled out in multiple release cycles with an increasing amount of functionality and complexity. As for the features required I have created a roadmap (Figure @fig:cs-release-plan) that indicates the functionality implemented in each cycle.
 
-<!-- TODO: Fix Image Size -->
-<!-- TODO: Remove In Progress Sound (Dublicate) -->
 ![Software Release Roadmap - Source: Author](images/cs-release-plan.png){#fig:cs-release-plan}
 
 In order for the application to quickly be deployed into the field, the first two releases only consist of a very basic feature set to indicate whether there is an ongoing operation or not. With each release the application should evolve into a more complex and feature-rich application. Version 1 is the bare minimum of what is needed by the fire department. This would already drastically improve their safety concerning confined spaces, as they currently use sticky notes taped to the windshield of the vehicles to indicate that there is an ongoing confined space operation. @bellefleur_2022_in

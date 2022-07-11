@@ -16,8 +16,6 @@ As time for this thesis is limited a strict project management strategy was need
 
 To speed up the development process most of the User Interface I have designed beforehand in a user interface design application called "Figma". I have tried to come up with a unique and intuitive design that is easy to understand. Colors are kept at a minimum to not distract from what is most important to the person using the application. Examples of the interface are shown in Figure @fig:indicatorStates and Figure @fig:figmaMockup.
 
-<!-- TODO: Write a little more -->
-
 ![Figma Terminal Indicator States](images/indicator-states.png){#fig:indicatorStates}
 
 ![Figma Dispatcher Mockup](images/figma-mockup.png){ #fig:figmaMockup }
@@ -104,8 +102,6 @@ On every version tag assigned to a commit the package is then automatically bund
     access: public
     token: ${{ secrets.NPM_TOKEN }}
 ```
-
-<!-- TODO: Display pipeline -->
 
 ### cs-dispatcher
 
