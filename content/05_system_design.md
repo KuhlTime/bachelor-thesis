@@ -17,7 +17,7 @@ Local companies are required by law to either have an emergency responder on the
 
 A copy of the contract and any other documents regarding the company should be uploaded to the system to remove the need for the operator to go through any folder and look for the documents. A physical copy should always be kept on hand in case of a system failure.
 
-
+\newpage
 ### Adding a Confined Space
 
 Before an operation can be scheduled the confined space needs to be registered. This process is done by the operator entering the information the contractor provided. The operator will be guided through this process to ensure all relevant information is captured.
@@ -92,6 +92,7 @@ Both the cancelation and the decline of an operation require additional informat
 
 Each step gets documented with the time and date of the event. This will provide essential knowledge to prove the correct execution of each of the steps.
 
+\newpage
 Should the whole fire department be busy with a huge emergency requiring all stuff the operators are able to decline all requests automatically and display a message to the *Worker* saying that operations are currently on hold.
 
 ### Declaring an Emergency
@@ -105,6 +106,7 @@ An emergency can be initiated in a variety of ways:
   * The *Worker* application has detected a sensor value exceeding a certain threshold
   * The operation has not been marked as completed by one of the workers and the operation has exceeded the scheduled time limit
 
+\newpage
 ## Data Model
 
 For the whole application I have come up with a complex data model. I have tried to capture the most relevant information and created room for expansion where necessary. Inside the data model distinctions between the actual entity and nested type interfaces are being made. The nested objects provide further structure throughout the application, but unlike the entities these types are always stored inside an entity and therefor are not directly referenceable by any other object inside the database.
@@ -148,6 +150,7 @@ Only the `add`, `remove` and `replace` operations are of interest to this applic
 
 With all of that information a history graph can be created and traversed to the user that created or modified the object at any point in time.
 
+\newpage
 ### Contact
 
 ![Contact Entity](images/erd-contact.png){ #fig:erdContact width=80% }
@@ -156,6 +159,7 @@ A contact holds relevant information about an actor involved in the confined spa
 
 As the contact information plays an important role for the traceability of information the contact object is not allowed to be deleted. The contact entity in Figure @fig:erdShrunk shows no connection to any other objects as the contact entity can be found all throughout the model structure.
 
+\newpage
 ### Users
 
 <!-- TODO: Update -->
@@ -171,6 +175,7 @@ Any institution that wants the fire department to be their emergency responder f
 
 The contractor entity holds general information, like the companies name and information about whom to contact for any administrative or technical issues related to the work place. Furthermore, the contractor entity holds references to their confined spaces and their workers' user accounts. More on that later.
 
+\newpage
 Inside the `Documents` property the fire department is able to store any documents that are relevant to the work place, like the signed contract, maps, floor plans, etc. As for Firebase -- any files that have been uploaded will get stored inside the Firebase Storage service. The property inside the database document will then hold a URL to access the particular file.
 
 ### Confined Spaces
@@ -219,6 +224,8 @@ In case of an emergency a hazard interface gives clear instructions on what to b
 
 ### Operations
 
+![Operation Entity](images/erd-operation.png){#fig:erdOperation width=50% }
+
 Each operation inside a confined space has to be announced by the contractor at least 24 hours prior to the start of the operation. Information inside the object includes the space where the operation is going to take place, the scheduled start and end-time of the operation, a description of the work that is going to be performed, the workers involved in the operation. The optional `ApprovedByUser` field gets filled by an operator as soon as he gives the get go for the operation. This field is only to be set 30 minutes before the scheduled start so that approval can only be gained judging the current workload of the fire department. For further documentation an optional `StartedAt` and `EndedAt` date can be used to track the actual start and end of the operation. Not mentioned rescue information can be specified in a string field called `RescueInformation`. 
 
 #### Emergency Report
@@ -226,6 +233,8 @@ Each operation inside a confined space has to be announced by the contractor at 
 In case of an emergency each operation can have its own emergency report. The object is optional and can be used to further document what happened during the operation and what lead to the emergency.
 
 ### Capture Point
+
+![Capture Point Entity](images/erd-capture-point.png){#fig:erdCapturePoint width=70%}
 
 This entity enables some of the smart features that should set this software apart from other software packages and enables the (+NG911) aspect of the application. Any entrant using the *Worker* application has the ability to transmit live data back to the fire department. In a predetermined interval the app will send status updates that include the users' location, the battery level and the signal strength. Should a device be offline the data will be stored on device with a signal strength of 0 and transmitted as soon as the device is back online again. Should the workers phone stay offline for a long time the operator will get notified that no device data is coming in.
 
@@ -248,15 +257,7 @@ To safe time I have gone for the fully-managed solution as I am quite familiar w
 
 Purpose of many (+NG911) applications is to provide interoperability between different emergency services, as this is not the focus for the application that aspect has been discarded. In case multiple fire departments wanted to use the software a Terraform^[**Terraform** is an *Infrastructure as Code* tool that allows for programmatically defining and setting up server infrastructure. @delaney_2021_terraform] script could be created to quickly spin up new instances of the application.
 
-### Data Access Control
-
-<!-- TODO: Add diagramm -->
-
-To protect users from accessing or manipulating data that is not intended for them data rules have been set up as seen in Figure @fig:dataAccess.
-
-![Data Access](images/data-access.png){ #fig:dataAccess width=75% }
-
-### Reliability
+## Reliability
 
 For an application to be reliable it has to be thoroughly tested. In the case that there is an error either in the communication infrastructure or a bug inside the software the application has to be able to recover from it or at least provide the user with a clear error message.
 

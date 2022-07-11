@@ -16,6 +16,8 @@ header-includes:
     - \usepackage{cancel}
     - \usepackage{array,ragged2e}
     - \usepackage{tabularray}
+    - \usepackage{ifsym}
+    - \usepackage{soul}
 include-after:
     - \newpage
     - \listoffigures

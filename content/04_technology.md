@@ -19,6 +19,7 @@ npm install electron
 
 Though Electron applications are quite large and resource extensive compared to natively compiled applications many big companies use it for their software. Microsoft Teams, Visual Studio Code, Discord, Slack, WhatsApp Desktop and many more all rely on Electron @electron_electron.
 
+\newpage
 ## VueJS
 
 VueJS is a reactive frontend framework that is used to build complex web applications. It was developed and published by Evan You in February 2014 @wikipediacontributors_2020_vuejs. VueJS like other popular frontend frameworks such as React or Svelte is component based. That means that the final application is divided up into a multitude of different `.vue` component files. Each of these components holds its own state and logic @delany_2020_vuejs, @you_introduction. This enforces a reusable programming style and enables a faster design and development process.
@@ -46,6 +47,7 @@ I choose VueJS as it has numerous developers who have created all sort of differ
 <!-- Tauri -->
 <!-- Vite -->
 
+\newpage
 ## Firebase
 
 Acquired by Google back in 2014 @wikipediacontributors_2022_firebase Firebase is an App Development Platform @google_firebase making it easy to build small and large scale applications. Their business case has grown over the years from a real-time database to an authentication provider, data storage provider, analytics and cloud computing service @google_firebase. As of right now, their offering counts 18 products and services @wikipediacontributors_2022_firebase to streamline the whole development cycle of a modern application. Official SDKs are available for all major platforms and programming languages.
@@ -60,6 +62,7 @@ To restrict access to an application and to the database -- Firebase Authenticat
 
 In the example below any request made to the `/users/{uid}` document will get checked for the right permissions. Only users that are logged in (with a valid JWT token) will be able to `read` any document inside the `/users` collection. Through custom authentication claims a role based access control can be realized @kerpelman_2020_unit, @google_2022_control. In this example users belonging to the administrator role (role `0`) are able to both `read` and `write` to any document inside the `/users` collection. Giving `write` access implies that the user is allowed to `create`, `update` and `delete` a certain document. Furthermore, users that are logged in are allowed to perform a `update`-request if the `/users` object matches the ID of the user itself `allow update: if matchesUID()`.
 
+\newpage
 ```
 service cloud.firestore {
   match /databases/{database}/documents {

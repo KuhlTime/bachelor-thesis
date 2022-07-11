@@ -18,10 +18,10 @@ These features allow for better emergency service through new ways of communicat
 What most of these software products have in common is list of current emergencies and a map view that displays the location of any emergency units and the current incidents.
 <!-- TODO: Add something -->
 
-The fire department of Campbell River is currently using a (+CAD) software by a company called Centralsquare. @centralsquare_computeraided. Even though newer versions with more functionalities of that product do exist an older version is still used as the fire department is not directly in control of what software is allowed to be used on their official IT infrastructure.
+The fire department of Campbell River is currently using a (+CAD) software by a company called Centralsquare (See Figure @fig:cad). @centralsquare_computeraided. Even though newer versions with more functionalities of that product do exist an older version is still used as the fire department is not directly in control of what software is allowed to be used on their official IT infrastructure.
 
+\newpage
 ![Centralsquare CAD - Source: K. Bellefleur](images/cad.png){#fig:cad}
-
 
 ## Campbell River Fire Department
 
@@ -38,6 +38,7 @@ A second, smaller fire station is located to the south of Campbell River and hou
 
 Roughly 60% of all incoming emergencies happen to be medical calls, where the fire brigade is assisting with medical treatment of a patient. Approximately 10% of all responses are fire related and have to be extinguished. Besides these operations public assists, car accidents and false alarms are quite common. @bellefleur_2022_in
 
+\newpage
 ## Confined Spaces
 As defined by the Canadian Department of Justice, inside the **Occupational Health and Safety Regulations** ((+COHSR)) a **Confined Space** is met by the following criteria @canadiandepartmentofjustice_2022_sor86304 (11.01):
 
@@ -61,6 +62,7 @@ A confined space is considered **Hot Work** if any source of fire or ignition is
 
 Figure @fig:csclassification shows a visual representation of the different kinds of confined spaces classifications.
 
+\newpage
 ![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png){#fig:csclassification}
 
 Inside a confined space one might encounter one or more of the following hazards @governmentofcanada_2021_confined, @mcpherson_2020_webinar:
@@ -140,14 +142,15 @@ The Fire Department of Campbell River provides this kind of service to local com
 ### Standards
 
 A standard is a guideline established by a group of expert in a certain topic. Whilst regulations and governmental laws build the basis, standards ensures that certain tasks are performed with a high safety and a repeatable efficiency @foundationofcannabisunifiedstandardsinc_standards. 
-ß
+
 Common standards for operating a confined space in Canada are the (+CSA) Z1006 and the (+NFPA) 350 @mcpherson_2020_webinar.
 
+\newpage
 ### Hazard Diamond
 
 In the (+NFPA) 704 "Standard System for the Identification of the Hazards of Materials for Emergency Response" the association has constituted a sign for quickly identifying and assessing the potential risks from any substances or materials @nfpanationalfireprotectionassociation_2022_nfpa. The sign is in the shape of a diamond and therefor often referred to as a "hazard diamond". 
 
-![Hazard Diamond - Source: @nfpanationalfireprotectionassociation_2022_nfpa, Author](images/diamond.png){ #fig:diamond width=30% }
+![Hazard Diamond - Source: @nfpanationalfireprotectionassociation_2022_nfpa, Author](images/diamond.png){ #fig:diamond width=20% }
 
 The diamond is divided up into four different colored sections (see Figure @fig:diamond), three of them showing a number with the associated risk level. Numbers range from $0$ (no-risk) to $4$ (highest-risk). Each color represents a different hazard:
 
@@ -179,8 +182,7 @@ The white section remarks a special area where hazards like:
   - `ALK`: Alkali
   - `COR`: Corrosive
   - `OX`: Oxidizer
-  - $?$: Radiation
-  - $?$: Use no Water
+  - \st{W}: Use no Water
 
 All previous hazard descriptions have been taken from Michael Mulders' blog posting @mulder_2022_nfpa.
 
@@ -246,6 +248,7 @@ In order for someone to be allowed access to a confined space they need special 
 
 About 90% of firefighters at the Campbell River Fire Department have undergone thorough training in Rope and Confined Space Rescue @bellefleur_2022_in. Because they are a comparably small fire department "everyone has to be good at everything" @bellefleur_2022_in.
 
+\newpage
 ### Rescue
 
 In case of an emergency inside a confined space there are three types of rescue operations with increasing amount of complexity and risk @selman_2019_confined: 

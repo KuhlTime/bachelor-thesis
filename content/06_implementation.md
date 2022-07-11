@@ -37,6 +37,7 @@ Based on the design I have created in Figma and the *electron-vite-boilerplate* 
 
 ![GitHub Actions Electron Deploy](images/github-action-cs-trigger.png){#fig:githubActionCsTrigger}
 
+\newpage
 As seen in Figure @fig:githubActionCsTrigger the application has to be compiled for each target platform individually. For that GitHub Actions can define a matrix of options an action can be executed with.
 
 ```yaml
@@ -49,7 +50,7 @@ jobs:
           - ubuntu-latest
           - windows-latest
     runs-on: ${{ matrix.os }}
-    ...
+    #...
 ```
 
 The `build` job will therefor be executed on three different runners (servers).
@@ -68,10 +69,12 @@ The second lambda function can be triggered by an HTTP POST request made to the 
 https://crfd.ca/verify?email=andre@kuhlti.me&token=some_random_token
 ```
 
+\newpage
 For the email that is sent out to a new user I am using a service called Postmark @activecampaignllc_postmark which allows one to sent out 100 emails per month for free. Using email templates the emails can be pre-styled and filled with content by naming the variables in the template. A variable might be used like follows: `<p>{{{example_variable}}}</p>`. 
 
 ![Registration E-Mail](images/gmail.png){#fig:email width=400px}
 
+\newpage
 #### Security Rules
 
 The security rules are checked against a large set of test cases that all need to be passed. These test cases all try to perform CRUD^[**CRUD** stands for **Create**, **Read**, **Update** and **Delete** and are different kind of operations that can be performed on a database] operations on different documents inside the Firestore database. The tests can either be run on device using the `npm run test` command or get executed automatically when the rules are pushed to the GitHub repository. In order for Firebase to test the rules an emulation service needs to be executed. This will spin up a fake Firebase emulator inside which the rules can be tested without causing any harm to the real Firebase service. The action will be executed on a Linux machine and contains the following steps:
@@ -107,6 +110,7 @@ On every version tag assigned to a commit the package is then automatically bund
 
 Instead of using an Electron window to display the dispatchment application. I have gone for a complete web solution. The application is hosted on a server that is accessible from the internet. Changes to the repository are automatically being uploaded to the server. 
 
+\newpage
 Equally, to all the other UI applications I am using VueJS as the frontend framework. As this is the largest application of them all, multiple pages are of need. For this I used a VueJS standard library called "vue-router". Instead of providing each endpoint with its own HTML page, every request made to the website is automatically forward to the index page of the website. This is called a single page application as there is only one page that is effectively being displayed. Every route change is captured by the vue-router and triggers an on-page component to be loaded inside the `<router-view />` tag. Figure @fig:vueRouter shows the difference between a "normal" website that does not use a single page for its content (left) and the vue-router (right).
 
 ![Vue Router - Source: Author](images/vue-router.png){#fig:vueRouter}

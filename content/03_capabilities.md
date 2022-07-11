@@ -38,6 +38,7 @@ The first version of the application should have the very basic feature of displ
 
 Building up on the first version. The terminal should now implement a sound whenever the state of the LED indicator changes and maybe play a little animation to subtly get the attention of whoever is looking at the monitor.
 
+\newpage
 #### Version 3
 
 As the application gets much bigger with the 3rd version of the ecosystem. More data will be provided by the operators. This will give the opportunity to display a list of confined spaces inside the vehicle.
@@ -64,6 +65,7 @@ A simple button to toggle the confined space state on or off is more than enough
 
 Discontinued and replaced by the *Dispatcher* application.
 
+\newpage
 ## Dispatcher
 
 With the introduction of version 3 the *Trigger* will be replaced by a more feature rich application that should allow dispatchers to control operations with far more precision.
