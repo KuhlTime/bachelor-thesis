@@ -131,6 +131,7 @@ In case an entry permit system^[An **entry permit system** is a further safety s
 
 Depending on the type of hazard found in a confined space special rules and thresholds may apply. See subsection 11.05(1) of the (+COHSR).
 
+\newpage
 ### Regional Legislations
 
 British Columbia ((+BC)) is the 3rd largest state and also the most western state of Canada @wikipediacontributors_2019_british. Additional to the laws and regulations published by the Canadian Department of Justice, through the (+COHSR) the British Columbian statutory authority^["A **statutory body** or **statutory authority** is a body set up by law (statute) that is authorized to implement certain legislation on behalf of the relevant country or state" @wikipediacontributors_2022_statutory] WorkSafeBC is responsible for concretizing these governmental laws.
