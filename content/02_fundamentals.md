@@ -15,7 +15,7 @@ More modern implementations of such a software are oftentimes referred to as **N
 
 These features allow for better emergency service through new ways of communication and enable faster response times to incoming accidents.
 
-What most of these software products have in common is list of current emergencies and a map view that displays the location of any emergency units and the current incidents.
+What most of these software products have in common is a list of current emergencies and a map view that displays the location of any emergency units and the current incidents.
 <!-- TODO: Add something -->
 
 The fire department of Campbell River is currently using a (+CAD) software by a company called Centralsquare (See Figure @fig:cad). @centralsquare_computeraided. Even though newer versions with more functionalities of that product do exist an older version is still used as the fire department is not directly in control of what software is allowed to be used on their official IT infrastructure.
@@ -177,13 +177,15 @@ The diamond is divided up into four different colored sections (see Figure @fig:
 Conversions from °F to °C were rounded down and have been taken from WolframAlpha @wolframalpha_2022_wolframalpha.
 
 <!-- TODO: Fix Section -->
-The white section remarks a special area where hazards like:
+The white section remarks a special area where hazards like
 
   - `ACID`: Acid
   - `ALK`: Alkali
   - `COR`: Corrosive
   - `OX`: Oxidizer
   - \st{W}: Use no Water
+
+can be denoted.
 
 All previous hazard descriptions have been taken from Michael Mulders' blog posting @mulder_2022_nfpa.
 
@@ -256,11 +258,11 @@ In case of an emergency inside a confined space there are three types of rescue 
 
 1. **Self rescue** Where entrants are able to evacuate the confined space on their own.
 2. **Non-entry rescue** Entrants are unable to leave the confined space on their own but are able to be retrieved through an extraction system.
-3. **Entry rescue** Entrants are unable to leave on their own and no extraction system is in place. A trained rescuer has to enter the confined space recover the person inside.
+3. **Entry rescue** Entrants are unable to leave on their own and no extraction system is in place. A trained rescuer has to enter the confined space and recover the person inside.
 
 Australian researchers Jason Selman, Jeffrey Spicket, Janis Jansz and Benjamnin Mullis proposed a five-step resuce system they call **(+REALE)** @selman_2019_confined. The system should provide a framework for emergency responders to ensure a well-organized sequence of events.
 
-A citation of these steps from their publication 'Confined space rescue: A proposed procedure to reduce the risks' @selman_2019_confined:
+A citation of these steps from their publication 'Confined space rescue: A proposed procedure to reduce the risks' @selman_2019_confined states:
 
 1. **Reconnaissance** of the rescue task
 2. **Elimination** or reduction of hazards

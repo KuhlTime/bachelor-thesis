@@ -8,7 +8,7 @@ In conjunction with the fire department of Campbell River I set out to create a 
 
 ## Structure
 
-The thesis is divided into several parts. Each of which builds up on the previous one. After giving an overview on what needs to be achieved and which features need to be implemented, I will go into more detail on how the whole system architecture has come to be. Everything is then followed up by summarizing what issues have been resolved and what could be improved.
+The thesis is divided into several parts. Each of which builds up on the previous one. After giving an overview on what needs to be achieved and which features need to be implemented, I will go into more detail on how the whole system architecture has come to be.
 
 <!-- What problem does this thesis try to solve? -->
 <!-- How will I address this issue? -->
