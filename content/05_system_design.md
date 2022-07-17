@@ -261,4 +261,4 @@ Purpose of many (+NG911) applications is to provide interoperability between dif
 
 For an application to be reliable it has to be thoroughly tested. In the case that there is an error either in the communication infrastructure or a bug inside the software the application has to be able to recover from it or at least provide the user with a clear error message.
 
-For all the applications I have used a service (Sentry) that automatically generates error reports and capture them inside a detailed list telling me what went wrong.
+For all the applications I have used a service (Sentry) that automatically generates error reports and captures them inside a detailed list telling me what went wrong.

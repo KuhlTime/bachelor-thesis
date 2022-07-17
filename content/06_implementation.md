@@ -1,7 +1,7 @@
 <!-- Goal: 1500 Words -->
 # Implementation
 
-Besides conceptualizing the application, I have fully developed the first two versions of the applications. As time ran out at the end the 3rd and 4th versions are still in development and need some refinement to be completed. In the following sections I have documented all software I have implemented so far:
+Besides conceptualizing the application, I have fully developed the first two versions of the applications. As time ran out at the end -- the 3rd and 4th versions are still in development and need some refinement to be completed. In the following sections I have documented all software I have implemented so far.
 
 ## Project Management
 
@@ -63,7 +63,9 @@ This repository holds the security rules for the Firestore Database as well as t
 
 As of now there are two lambda functions enabled.
 The first will synchronize the settings of the Firestore users document with the user data in the Firebase Authentication service.
-The second lambda function can be triggered by an HTTP POST request made to the `/createNewUser` endpoint. The function checks that the user making the request belongs to the Administrator role. If so both a Firebase Authentication User and a new Firestore document with the users unique identifier `uid` is created. On creation a new user is assigned a randomized token generated using the `uuid` NPM package. The user will then be sent an email with a link to the registration page and the generated token as a query parameter.
+The second lambda function can be triggered by an HTTP POST request made to the `/createNewUser` endpoint. The function checks that the user making the request belongs to the Administrator role. If so -- both a Firebase Authentication User and a new Firestore document with the users unique identifier `uid` is created. 
+
+On creation a new user is assigned a randomized token generated using the `uuid` NPM package. The user will then be sent an email with a link to the registration page and the generated token as a query parameter.
 
 ```HTTP
 https://crfd.ca/verify?email=andre@kuhlti.me&token=some_random_token
@@ -77,7 +79,7 @@ For the email that is sent out to a new user I am using a service called Postmar
 \newpage
 #### Security Rules
 
-The security rules are checked against a large set of test cases that all need to be passed. These test cases all try to perform CRUD^[**CRUD** stands for **Create**, **Read**, **Update** and **Delete** and are different kind of operations that can be performed on a database] operations on different documents inside the Firestore database. The tests can either be run on device using the `npm run test` command or get executed automatically when the rules are pushed to the GitHub repository. In order for Firebase to test the rules an emulation service needs to be executed. This will spin up a fake Firebase emulator inside which the rules can be tested without causing any harm to the real Firebase service. The action will be executed on a Linux machine and contains the following steps:
+The security rules are checked against a large set of test cases that all need to be passed. These test cases all try to perform CRUD^[**CRUD** stands for **Create**, **Read**, **Update** and **Delete** and are different kind of operations that can be performed on a database] operations on different documents inside the Firestore database. The tests can either be run on device using the `npm run test` command or get executed automatically when the rules are pushed to the GitHub repository. In order for Firebase to test the rules an emulation service needs to be executed. This will spin up a fake Firebase emulator inside of which the rules can be tested without causing any harm to the real Firebase service. The action will be executed on a Linux machine and contains the following steps:
 
   1. Clone the repository to the runner instance
   2. Setup Node.JS
@@ -96,7 +98,7 @@ All applications are written mostly in TypeScript or JavaScript. To ensure inter
 npm install @crfd/cs-models
 ```
 
-On every version tag assigned to a commit the package is then automatically bundled and uploaded by a GitHub Action workflow. The workflow installs all packages and runs the TypeScript compilation. The upload is then handed over to a third party action. In order to sign in to the correct NPM account an API token `NPM_TOKEN` has to be provided to the action. The token is stored inside the repository secrets,
+On every version tag assigned to a commit the package is then automatically bundled and uploaded by a GitHub Action workflow. The workflow installs all packages and runs the TypeScript compilation. The upload is then handed over to a third party action. In order to sign in to the correct NPM account an API token `NPM_TOKEN` has to be provided to the action. The token is stored inside the repository secrets.
 
 ```yaml
 - name: Publish to NPM
