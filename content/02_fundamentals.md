@@ -21,14 +21,14 @@ What most of these software products have in common is a list of current emergen
 The fire department of Campbell River is currently using a (+CAD) software by a company called Centralsquare (See Figure @fig:cad). @centralsquare_computeraided. Even though newer versions with more functionalities of that product do exist an older version is still used as the fire department is not directly in control of what software is allowed to be used on their official IT infrastructure.
 
 \newpage
-![Centralsquare CAD - Source: K. Bellefleur](images/cad.png){#fig:cad}
+![Centralsquare CAD - Source: K. Bellefleur @bellefleur_2022_images](images/cad.png){#fig:cad}
 
 ## Campbell River Fire Department
 
 The city of Campbell River is located in the western part of Canada. It is the second-largest city on Vancouver Island. With a total population of more than 37,800 permanent residents @cityofcampbellriver_2019_connect.
 The city is reachable by car, ferry, plane and seaplane and is about a 30-minute flight away from the metropolis of Vancouver.
 
-![Map of Canada - Source: Mapbox @mapbox_maps, Author](images/map.png){#fig:map}
+![Map of Canada - Source: Mapbox @mapbox, Author](images/map.png){#fig:map}
 
 The Fire Department is covering the wider area of Campbell River. The main fire station is located near the city center and houses a wide range of different fire trucks and rescue vehicles. @a2022_campbell
 
@@ -63,7 +63,7 @@ A confined space is considered **Hot Work** if any source of fire or ignition is
 Figure @fig:csclassification shows a visual representation of the different kinds of confined spaces classifications.
 
 \newpage
-![Confined Spaces Classification - Source: @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png){#fig:csclassification}
+![Confined Spaces Classification - Source: Canadian Department of Justice @canadiandepartmentofjustice_2022_sor86304 (11.01), Author](images/cs-classification.png){#fig:csclassification}
 
 Inside a confined space one might encounter one or more of the following hazards @governmentofcanada_2021_confined, @mcpherson_2020_webinar:
 
@@ -88,7 +88,7 @@ Inside a confined space one might encounter one or more of the following hazards
 
 Confined spaces are commonly part of a fabrication sites or public infrastructure and can be anything from a chemical tank to a sewage pipe. In order to protect workers entering these spaces, strict guidelines are put into place @bellefleur_2022_in, @governmentofcanada_2021_confined, @worksafebc_confined.
 
-![Hazardous Confined Space Entry - Source: Dräger @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg){#fig:draegerConfinedSpace}
+![Hazardous Confined Space Entry - Source: Drägerwerk AG & Co. KGaA @drgerwerkagcokgaa_2015_training](images/draeger-confined-space.jpg){#fig:draegerConfinedSpace}
 
 ### Legislation
 
@@ -151,7 +151,7 @@ Common standards for operating a confined space in Canada are the (+CSA) Z1006 a
 
 In the (+NFPA) 704 "Standard System for the Identification of the Hazards of Materials for Emergency Response" the association has constituted a sign for quickly identifying and assessing the potential risks from any substances or materials @nfpanationalfireprotectionassociation_2022_nfpa. The sign is in the shape of a diamond and therefor often referred to as a "hazard diamond". 
 
-![Hazard Diamond - Source: @nfpanationalfireprotectionassociation_2022_nfpa, Author](images/diamond.png){ #fig:diamond width=20% }
+![Hazard Diamond - Source: NFPA - National Fire Protection Association @nfpanationalfireprotectionassociation_2022_nfpa, Author](images/diamond.png){ #fig:diamond width=20% }
 
 The diamond is divided up into four different colored sections (see Figure @fig:diamond), three of them showing a number with the associated risk level. Numbers range from $0$ (no-risk) to $4$ (highest-risk). Each color represents a different hazard:
 

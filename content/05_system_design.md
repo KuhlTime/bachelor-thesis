@@ -111,7 +111,7 @@ An emergency can be initiated in a variety of ways:
 
 For the whole application I have come up with a complex data model. I have tried to capture the most relevant information and created room for expansion where necessary. Inside the data model distinctions between the actual entity and nested type interfaces are being made. The nested objects provide further structure throughout the application, but unlike the entities these types are always stored inside an entity and therefor are not directly referenceable by any other object inside the database.
 
-![Condensed Entity Relationship Diagram - Source: Author](images/erd-shrunk.png){#fig:erdShrunk}
+![Condensed Entity Relationship Diagram](images/erd-shrunk.png){#fig:erdShrunk}
 
 Each entity has a unique identifier ((+UUID))^[A **Universally Unique IDentifier** or short **UUID** is generated from a set of five different algorithms which produce a 128 Bit long string that helps with unique labeling of data for better "sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general". @leach_2005_a] by which to reference the particular document. Adding to that -- metadata information like a timestamp -- when the entity was last changed `LastUpdated` and a reference to the user who performed that change `LastUpdatedByUser` are added to each entity. The names are purposely chosen to only reflect the latest change. Any manipulation to a document gets stored inside a subcollection called `History`.
 

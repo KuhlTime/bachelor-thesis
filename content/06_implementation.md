@@ -7,7 +7,7 @@ Besides conceptualizing the application, I have fully developed the first two ve
 
 As time for this thesis is limited a strict project management strategy was needed. In a process called Kanban every task was broken down into smaller more manageable steps that provided a clear roadmap for each of the releases. In the end time was at a premium, so I decided to switch to a more agile development approach. Which meant that I had to implement both version 3 and 4 at the same time to get some presentable results.
 
-![Kanban Board - Source: Author](images/kanban-board.jpg){#fig:kanbanBoard height=400px}
+![Kanban Board](images/kanban-board.jpg){#fig:kanbanBoard height=400px}
 
 <!-- How have I designed the application road map? -->
 <!-- What project management tools have I used in order to keep track of my tasks? Notion, GitHub Issues, Tags, Gantt-Chart -->
@@ -26,7 +26,7 @@ Following each software implementation is explained in greater detail. The chapt
 
 ### electron-vite-fusion
 
-![Electron Vite Fusion Logo - Source: Author](images/electron-vite-fusion-logo.png){#fig:electronViteFusionLogo height=2.5cm}
+![Electron Vite Fusion Logo](images/electron-vite-fusion-logo.png){#fig:electronViteFusionLogo height=2.5cm}
 
 As multiple applications relied up on Electron as their application core I first created a boilerplate to more quickly get started with writing the actual applications. The boilerplate which can be found under [https://github.com/KuhlTime/electron-vite-fusion](https://github.com/KuhlTime/electron-vite-fusion) includes a build tool called "Vite" @you_2022_vite. Depending on the environment the application is run in (development/production) the Electron app either servers content from a local development server or uses the distribution build which includes the compiled VueJS application. The development server has hot module replacement enabled so that the application can be reloaded without a full reload of the actual webpage shown inside the Electron window. A package called "electron-builder" was used to automatically generate the binaries to be installed on the target platforms.
   <!-- Code Signing -->
@@ -115,7 +115,7 @@ Instead of using an Electron window to display the dispatchment application. I h
 \newpage
 Equally, to all the other UI applications I am using VueJS as the frontend framework. As this is the largest application of them all, multiple pages are of need. For this I used a VueJS standard library called "vue-router". Instead of providing each endpoint with its own HTML page, every request made to the website is automatically forward to the index page of the website. This is called a single page application as there is only one page that is effectively being displayed. Every route change is captured by the vue-router and triggers an on-page component to be loaded inside the `<router-view />` tag. Figure @fig:vueRouter shows the difference between a "normal" website that does not use a single page for its content (left) and the vue-router (right).
 
-![Vue Router - Source: Author](images/vue-router.png){#fig:vueRouter}
+![Vue Router](images/vue-router.png){#fig:vueRouter}
 
 All routes are defined in a settings object and passed to a new instance of the router. For manipulating the (+UI) or restricting access to certain pages each route has special metadata object to define additional properties. The code snippet below shows the definition of a single route.
 
