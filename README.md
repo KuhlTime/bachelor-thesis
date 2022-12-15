@@ -2,16 +2,23 @@
   <img src="assets/Banner.png" alt="Banner" max-height="220px">
 </p>
 
+[Thesis PDF](https://opus4.kobv.de/opus4-hs-duesseldorf/frontdoor/deliver/index/docId/3757/file/Thesis-v20221005_201531.pdf) | [Ceremony Slides PDF](https://raw.githubusercontent.com/KuhlTime/bachelors-thesis/main/slides/VDE%20Presentation%208-Dec-2022.pdf)
+
 As part of my bachelor's thesis I developed a software solution for improving security of workers in confined spaces. Through connected smart device emergency responders will get live telemetry of endangered workers.
 
 **For this work I have been recognized with a promotional prize for the best bachelor's thesis in the field of electrical and information technology by the VDE Düsseldorf.**
 
-For the listeners present at the ceremony I have given a brief 10-minute overview of my thesis and showed an interactive demo of the emergency system in action.<br>
-The **presentation slides** of which can be found [here](https://raw.githubusercontent.com/KuhlTime/bachelors-thesis/main/slides/VDE%20Presentation%208-Dec-2022.pdf).
+For the listeners present at the ceremony I have given a brief 10-minute talk of my thesis and showed an interactive demo of the emergency system in action.
 
-# 📄 Access
+# 📄 View Thesis
 
-You can access the full publication via the official university servers under: 
+<p align="center">
+  <a href="https://opus4.kobv.de/opus4-hs-duesseldorf/frontdoor/index/index/docId/3757" target="_blank">
+    <img src="assets/Preview.png" alt="Banner" max-height="220px">
+  </a>
+</p>
+
+**You can access the full publication via the official university servers under:**
 
 [HSD Opus - Development of a Confined Spaces Dispatch Software for a Canadian Fire Brigade](https://opus4.kobv.de/opus4-hs-duesseldorf/frontdoor/index/index/docId/3757)
 
