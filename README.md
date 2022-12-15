@@ -10,7 +10,7 @@ As part of my bachelor's thesis I developed a software solution for improving se
 
 For the listeners present at the ceremony I have given a brief 10-minute talk of my thesis and showed an interactive demo of the emergency system in action.
 
-# 📄 View Thesis
+## 📄 View Thesis
 
 <p align="center">
   <a href="https://opus4.kobv.de/opus4-hs-duesseldorf/frontdoor/index/index/docId/3757" target="_blank">
@@ -22,12 +22,12 @@ For the listeners present at the ceremony I have given a brief 10-minute talk of
 
 [HSD Opus - Development of a Confined Spaces Dispatch Software for a Canadian Fire Brigade](https://opus4.kobv.de/opus4-hs-duesseldorf/frontdoor/index/index/docId/3757)
 
-# 🔖 Abstract
+## 🔖 Abstract
 
 This work focuses on designing an application ecosystem for a Canadian fire department. As it is part of the critical infrastructure, safety and code quality is of main concern. The thesis will go over the complete development life cycle, from planning to the actual implementation of a Computer-Aided Dispatch software for confined spaces.
 It is looked into the Canadian legislation to derive application flows and data structure from it. At the end, the reader will have a thorough understanding of confined spaces and how to come up with a working application infrastructure.
 
-# Questions
+## 🙋 Questions
 
 Feel more than welcome to contact me if you got any questions.
 
@@ -36,7 +36,7 @@ Feel more than welcome to contact me if you got any questions.
 I am using a custom developed markdown to latex conversion script that allowed me to focus on writing instead of fiddling around with the right Latex format.<br>
 You can use this template yourself [KuhlTime/hsd-markdown-thesis](https://github.com/KuhlTime/hsd-markdown-thesis)
 
-# 📣 Attribution / License
+## 📣 Attribution / License
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
