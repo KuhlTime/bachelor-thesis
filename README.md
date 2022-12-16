@@ -2,7 +2,7 @@
   <img src="assets/Banner.png" alt="Banner" max-height="220px">
 </p>
 
-[Thesis PDF](https://opus4.kobv.de/opus4-hs-duesseldorf/frontdoor/deliver/index/docId/3757/file/Thesis-v20221005_201531.pdf) | [Ceremony Slides PDF](https://raw.githubusercontent.com/KuhlTime/bachelors-thesis/main/slides/VDE%20Presentation%208-Dec-2022.pdf)
+[Thesis PDF](https://opus4.kobv.de/opus4-hs-duesseldorf/frontdoor/deliver/index/docId/3757/file/Thesis-v20221005_201531.pdf) | [Presentation Slides PDF (DE)](https://raw.githubusercontent.com/KuhlTime/bachelors-thesis/main/slides/VDE%20Presentation%208-Dec-2022.pdf)
 
 As part of my bachelor's thesis I developed a software solution for improving security of workers in confined spaces. Through connected smart device emergency responders will get live telemetry of endangered workers.
 
